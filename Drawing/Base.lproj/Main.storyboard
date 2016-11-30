@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Drawing" customModuleProvider="target" sceneMemberID="viewController">
@@ -22,11 +22,55 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="QLV-fB-Mri"/>
+                    <tabBarItem key="tabBarItem" title="" image="home_icon" id="QLV-fB-Mri">
+                        <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="138.98050974512745"/>
+            <point key="canvasLocation" x="1057" y="-227"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tqX-N9-tjq">
+            <objects>
+                <viewController id="kMw-TX-14e" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gay-5Q-N43"/>
+                        <viewControllerLayoutGuide type="bottom" id="dZO-w0-fOU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="auj-5K-9nF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="create_icon" id="l1Y-MZ-CBq">
+                        <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ffq-KV-mny" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="514"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Y1n-yz-jKq">
+            <objects>
+                <viewController id="N7D-P4-x7k" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XnZ-zq-IXg"/>
+                        <viewControllerLayoutGuide type="bottom" id="red-I5-f8T"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="frW-XZ-OyF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="profile_icon" id="JnN-Jp-nre">
+                        <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iZE-Js-Nk0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1902" y="139"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="1iI-TO-ubX">
@@ -34,16 +78,26 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="9Fr-fp-Pem" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Q7G-Hy-dJW">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Ysd-aI-PTr"/>
+                        <segue destination="kMw-TX-14e" kind="relationship" relationship="viewControllers" id="8m5-cz-Qgp"/>
+                        <segue destination="N7D-P4-x7k" kind="relationship" relationship="viewControllers" id="ocy-zM-m13"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m4E-Nz-ESL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="202" y="139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="create_icon" width="20" height="20"/>
+        <image name="home_icon" width="19" height="24"/>
+        <image name="profile_icon" width="20" height="20"/>
+    </resources>
 </document>
