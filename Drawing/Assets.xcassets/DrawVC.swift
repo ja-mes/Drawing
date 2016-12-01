@@ -12,13 +12,9 @@ class SketchVC: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     
     var lastPoint = CGPoint.zero
-    var red: CGFloat = 0.0
-    var green: CGFloat = 0.0
-    var blue: CGFloat = 0.0
-    
-    var brushWidth: CGFloat = 10
-    var opacity: CGFloat = 1.0
+    var brushWidth: CGFloat = 64
     var swiped = false
+    var color = UIColor.black
     
     
     
@@ -44,14 +40,12 @@ class SketchVC: UIViewController {
         context?.addLine(to: toPoint)
         context?.setLineCap(CGLineCap.round)
         context?.setLineWidth(brushWidth)
-        context?.setStrokeColor(UIColor.black.cgColor)
+        context?.setStrokeColor(color.cgColor)
         context?.setBlendMode(CGBlendMode.normal)
         
         context?.strokePath()
         
         imageView.image = UIGraphicsGetImageFromCurrentImageContext()
-        imageView.alpha = opacity
-        
         
         UIGraphicsEndImageContext()
     }
@@ -67,4 +61,30 @@ class SketchVC: UIViewController {
         }
     }
     
+    @IBAction func erasePressed(_ sender: Any) {
+        color = UIColor.white
+    }
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
