@@ -31,10 +31,10 @@
             </objects>
             <point key="canvasLocation" x="1057" y="-227"/>
         </scene>
-        <!--View Controller-->
+        <!--SketchVC-->
         <scene sceneID="tqX-N9-tjq">
             <objects>
-                <viewController id="kMw-TX-14e" sceneMemberID="viewController">
+                <viewController id="kMw-TX-14e" customClass="SketchVC" customModule="Drawing" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gay-5Q-N43"/>
                         <viewControllerLayoutGuide type="bottom" id="dZO-w0-fOU"/>
@@ -174,6 +174,9 @@
                     <tabBarItem key="tabBarItem" title="" image="create_icon" id="l1Y-MZ-CBq">
                         <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="imageView" destination="TCd-sr-Wpl" id="Y7i-AP-Fiz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ffq-KV-mny" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
