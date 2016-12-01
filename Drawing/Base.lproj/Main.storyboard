@@ -155,10 +155,17 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TCd-sr-Wpl">
+                                <rect key="frame" x="0.0" y="72" width="375" height="489"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="TAd-oB-GyF" firstAttribute="centerX" secondItem="auj-5K-9nF" secondAttribute="centerX" id="0fJ-xG-AX0"/>
+                            <constraint firstItem="TAd-oB-GyF" firstAttribute="top" secondItem="TCd-sr-Wpl" secondAttribute="bottom" constant="8" id="8oZ-in-Fj0"/>
+                            <constraint firstItem="TCd-sr-Wpl" firstAttribute="top" secondItem="zWz-Ng-AH0" secondAttribute="bottom" constant="8" id="DWw-3G-uSt"/>
+                            <constraint firstAttribute="trailing" secondItem="TCd-sr-Wpl" secondAttribute="trailing" id="H6t-Fo-4jT"/>
+                            <constraint firstItem="TCd-sr-Wpl" firstAttribute="leading" secondItem="auj-5K-9nF" secondAttribute="leading" id="KaS-MY-gyM"/>
                             <constraint firstItem="dZO-w0-fOU" firstAttribute="top" secondItem="TAd-oB-GyF" secondAttribute="bottom" constant="25" id="YJw-9w-KLu"/>
                             <constraint firstItem="zWz-Ng-AH0" firstAttribute="leading" secondItem="auj-5K-9nF" secondAttribute="leadingMargin" id="bMm-sJ-yK1"/>
                             <constraint firstItem="zWz-Ng-AH0" firstAttribute="top" secondItem="gay-5Q-N43" secondAttribute="bottom" constant="20" id="tbZ-N6-cex"/>
