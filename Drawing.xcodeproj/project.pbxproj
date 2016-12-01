@@ -11,6 +11,7 @@
 		9B6B0FB11DF0A57D0057E116 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6B0FB01DF0A57D0057E116 /* HomeVC.swift */; };
 		9B6B0FB31DF0A5B50057E116 /* DrawVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6B0FB21DF0A5B50057E116 /* DrawVC.swift */; };
 		9B6B0FB51DF0A64B0057E116 /* Sketch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6B0FB41DF0A64B0057E116 /* Sketch.swift */; };
+		9B6B0FB91DF0E1100057E116 /* ColorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6B0FB81DF0E1100057E116 /* ColorVC.swift */; };
 		9BA68F061DEE2AA500979A7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA68F051DEE2AA500979A7F /* AppDelegate.swift */; };
 		9BA68F0B1DEE2AA500979A7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BA68F091DEE2AA500979A7F /* Main.storyboard */; };
 		9BA68F0E1DEE2AA500979A7F /* Drawing.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9BA68F0C1DEE2AA500979A7F /* Drawing.xcdatamodeld */; };
@@ -23,6 +24,7 @@
 		9B6B0FB01DF0A57D0057E116 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeVC.swift; path = ../HomeVC.swift; sourceTree = "<group>"; };
 		9B6B0FB21DF0A5B50057E116 /* DrawVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawVC.swift; path = Assets.xcassets/DrawVC.swift; sourceTree = "<group>"; };
 		9B6B0FB41DF0A64B0057E116 /* Sketch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sketch.swift; sourceTree = "<group>"; };
+		9B6B0FB81DF0E1100057E116 /* ColorVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorVC.swift; sourceTree = "<group>"; };
 		9BA68F021DEE2AA500979A7F /* Drawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drawing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BA68F051DEE2AA500979A7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BA68F0A1DEE2AA500979A7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,6 +48,7 @@
 		9B6B0FAB1DF0A3BB0057E116 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				9B6B0FB81DF0E1100057E116 /* ColorVC.swift */,
 				9B6B0FB01DF0A57D0057E116 /* HomeVC.swift */,
 				9B6B0FB21DF0A5B50057E116 /* DrawVC.swift */,
 			);
@@ -179,6 +182,7 @@
 				9B6B0FB51DF0A64B0057E116 /* Sketch.swift in Sources */,
 				9B6B0FB31DF0A5B50057E116 /* DrawVC.swift in Sources */,
 				9B6B0FAF1DF0A3DC0057E116 /* CustomButton.swift in Sources */,
+				9B6B0FB91DF0E1100057E116 /* ColorVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
