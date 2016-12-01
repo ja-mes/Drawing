@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B6B0FAF1DF0A3DC0057E116 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6B0FAE1DF0A3DC0057E116 /* CustomButton.swift */; };
 		9BA68F061DEE2AA500979A7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA68F051DEE2AA500979A7F /* AppDelegate.swift */; };
 		9BA68F081DEE2AA500979A7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA68F071DEE2AA500979A7F /* ViewController.swift */; };
 		9BA68F0B1DEE2AA500979A7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BA68F091DEE2AA500979A7F /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B6B0FAE1DF0A3DC0057E116 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		9BA68F021DEE2AA500979A7F /* Drawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drawing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BA68F051DEE2AA500979A7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BA68F071DEE2AA500979A7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +39,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B6B0FAB1DF0A3BB0057E116 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		9B6B0FAC1DF0A3C00057E116 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9B6B0FAE1DF0A3DC0057E116 /* CustomButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9B6B0FAD1DF0A3C80057E116 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		9BA68EF91DEE2AA500979A7F = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +80,9 @@
 		9BA68F041DEE2AA500979A7F /* Drawing */ = {
 			isa = PBXGroup;
 			children = (
+				9B6B0FAD1DF0A3C80057E116 /* Model */,
+				9B6B0FAC1DF0A3C00057E116 /* View */,
+				9B6B0FAB1DF0A3BB0057E116 /* Controller */,
 				9BA68F051DEE2AA500979A7F /* AppDelegate.swift */,
 				9BA68F071DEE2AA500979A7F /* ViewController.swift */,
 				9BA68F091DEE2AA500979A7F /* Main.storyboard */,
@@ -143,6 +170,7 @@
 				9BA68F081DEE2AA500979A7F /* ViewController.swift in Sources */,
 				9BA68F061DEE2AA500979A7F /* AppDelegate.swift in Sources */,
 				9BA68F0E1DEE2AA500979A7F /* Drawing.xcdatamodeld in Sources */,
+				9B6B0FAF1DF0A3DC0057E116 /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +334,7 @@
 				9BA68F191DEE2AA500979A7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
