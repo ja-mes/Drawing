@@ -10,6 +10,7 @@ import UIKit
 
 class Sketch {
     private var _color = UIColor.black
+    private var _brushWidth: CGFloat = 3
     private var _isErasing = false
     
     private var _previousColor: UIColor?
@@ -23,13 +24,20 @@ class Sketch {
         }
     }
     
+    var brushWidth: CGFloat {
+        get {
+            return _brushWidth
+        } set {
+            _brushWidth = newValue
+        }
+    }
+    
     var isErasing: Bool {
         return _isErasing
     }
     
     
     func toggleEraser() {
-        
         if _isErasing {
             _isErasing = false
             
@@ -44,5 +52,25 @@ class Sketch {
             _previousColor = _color
             _color = UIColor.white
         }
+    }
+    
+    func drawPointsWith(imageView: UIImageView, fromPoint: CGPoint, toPoint: CGPoint) {
+        UIGraphicsBeginImageContextWithOptions(imageView.frame.size, false, 0.0)
+        let context = UIGraphicsGetCurrentContext()
+        
+        imageView.image?.draw(in: CGRect(x: 0, y: 0, width: imageView.frame.width, height: imageView.frame.height))
+        
+        context?.move(to: fromPoint)
+        context?.addLine(to: toPoint)
+        context?.setLineCap(CGLineCap.round)
+        context?.setLineWidth(_brushWidth)
+        context?.setStrokeColor(_color.cgColor)
+        context?.setBlendMode(CGBlendMode.normal)
+        
+        context?.strokePath()
+        
+        imageView.image = UIGraphicsGetImageFromCurrentImageContext()
+        
+        UIGraphicsEndImageContext()
     }
 }
