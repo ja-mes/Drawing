@@ -47,6 +47,9 @@ class SketchVC: UIViewController {
         sketch.toggleEraser()
     }
     
+    @IBAction func colorPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "ColorVC", sender: nil)
+    }
 }
 
 
