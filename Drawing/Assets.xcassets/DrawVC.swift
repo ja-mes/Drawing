@@ -16,10 +16,13 @@ class SketchVC: UIViewController {
     var swiped = false
     var color = UIColor.black
     
+    var sketch: Sketch!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        sketch = Sketch()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -40,7 +43,7 @@ class SketchVC: UIViewController {
         context?.addLine(to: toPoint)
         context?.setLineCap(CGLineCap.round)
         context?.setLineWidth(brushWidth)
-        context?.setStrokeColor(color.cgColor)
+        context?.setStrokeColor(sketch.color.cgColor)
         context?.setBlendMode(CGBlendMode.normal)
         
         context?.strokePath()
@@ -62,7 +65,7 @@ class SketchVC: UIViewController {
     }
     
     @IBAction func erasePressed(_ sender: Any) {
-        color = UIColor.white
+        sketch.toggleEraser()
     }
     
 }
