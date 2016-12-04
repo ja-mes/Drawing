@@ -60,7 +60,7 @@ class Sketch {
     
     var prevPoint2: CGPoint {
         get {
-            return _prevPoint1
+            return _prevPoint2
         } set {
             _prevPoint2 = newValue
         }
@@ -89,9 +89,11 @@ class Sketch {
         }
     }
         
-    func drawPointsWith(touch: UITouch, prevPoint1: CGPoint, prevPoint2: CGPoint) -> CGPoint {
+    func drawPointsWith(touch: UITouch) {
         UIGraphicsBeginImageContextWithOptions(_imageView.frame.size, false, 0.0)
         let currentPoint = touch.location(in: _imageView)
+        _prevPoint2 = _prevPoint1
+        _prevPoint1 = touch.previousLocation(in: _imageView)
         
         let context = UIGraphicsGetCurrentContext()
         
@@ -115,7 +117,7 @@ class Sketch {
         
         UIGraphicsEndImageContext()
         
-        return currentPoint
+        _lastPoint = currentPoint
     }
 }
 

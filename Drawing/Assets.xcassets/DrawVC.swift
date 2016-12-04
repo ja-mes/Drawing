@@ -11,10 +11,6 @@ import UIKit
 class SketchVC: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     
-    var lastPoint = CGPoint.zero
-    var prevPoint1 = CGPoint.zero
-    var prevPoint2 = CGPoint.zero
-    
     var brushWidth: CGFloat = 64
     var color = UIColor.black
     
@@ -42,19 +38,16 @@ class SketchVC: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
-            prevPoint1 = touch.previousLocation(in: view)
-            prevPoint2 = touch.previousLocation(in: view)
+            sketch.prevPoint1 = touch.previousLocation(in: view)
+            sketch.prevPoint2 = touch.previousLocation(in: view)
 
-            lastPoint = touch.location(in: imageView)
+            sketch.lastPoint = touch.location(in: imageView)
         }
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
-            prevPoint2 = prevPoint1
-            prevPoint1 = touch.previousLocation(in: imageView)
-            
-            lastPoint = sketch.drawPointsWith(touch: touch, prevPoint1: prevPoint1, prevPoint2: prevPoint2)
+            sketch.drawPointsWith(touch: touch)
         }
     }
     
