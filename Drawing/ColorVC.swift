@@ -8,29 +8,14 @@
 
 import UIKit
 
-class ColorVC: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
-    @IBOutlet weak var collectionView: UICollectionView!
+class ColorVC: UIViewController {
+    
+    let colors = [UIColor.red, UIColor.black, UIColor.green, UIColor.orange, UIColor.purple]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        collectionView.delegate = self
-        collectionView.dataSource = self
-    }
-    
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ColorCell", for: indexPath)
-        cell.contentView.backgroundColor = UIColor.red
         
-        return cell
     }
     
     
