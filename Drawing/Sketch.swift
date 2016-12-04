@@ -9,10 +9,12 @@
 import UIKit
 
 class Sketch {
+    private var _imageView: UIImageView
+    
     private var _color = UIColor.black
     private var _brushWidth: CGFloat = 3
     private var _isErasing = false
-    
+
     private var _previousColor: UIColor?
 
     
@@ -36,6 +38,10 @@ class Sketch {
         return _isErasing
     }
     
+    init(imageView: UIImageView) {
+        _imageView = imageView
+    }
+    
     
     func toggleEraser() {
         if _isErasing {
@@ -53,15 +59,22 @@ class Sketch {
             _color = UIColor.white
         }
     }
-    
-    func drawPointsWith(imageView: UIImageView, fromPoint: CGPoint, toPoint: CGPoint) {
-        UIGraphicsBeginImageContextWithOptions(imageView.frame.size, false, 0.0)
+        
+    func drawPointsWith(touch: UITouch, prevPoint1: CGPoint, prevPoint2: CGPoint) -> CGPoint {
+        UIGraphicsBeginImageContextWithOptions(_imageView.frame.size, false, 0.0)
+        let currentPoint = touch.location(in: _imageView)
+        
         let context = UIGraphicsGetCurrentContext()
         
-        imageView.image?.draw(in: CGRect(x: 0, y: 0, width: imageView.frame.width, height: imageView.frame.height))
+        _imageView.image?.draw(in: CGRect(x: 0, y: 0, width: _imageView.frame.width, height: _imageView.frame.height))
         
-        context?.move(to: fromPoint)
-        context?.addLine(to: toPoint)
+        
+        let mid1 = CGPoint(x: (prevPoint1.x + prevPoint2.x) * 0.5, y: (prevPoint1.y + prevPoint2.y) * 0.5)
+        let mid2 = CGPoint(x: (currentPoint.x + prevPoint1.x) * 0.5, y: (currentPoint.y + prevPoint1.y) * 0.5)
+        
+        context?.move(to: mid1)
+        context?.addQuadCurve(to: mid2, control: prevPoint1)
+
         context?.setLineCap(CGLineCap.round)
         context?.setLineWidth(_brushWidth)
         context?.setStrokeColor(_color.cgColor)
@@ -69,8 +82,22 @@ class Sketch {
         
         context?.strokePath()
         
-        imageView.image = UIGraphicsGetImageFromCurrentImageContext()
+        _imageView.image = UIGraphicsGetImageFromCurrentImageContext()
         
         UIGraphicsEndImageContext()
+        
+        return currentPoint
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+

@@ -12,8 +12,10 @@ class SketchVC: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     
     var lastPoint = CGPoint.zero
+    var prevPoint1 = CGPoint.zero
+    var prevPoint2 = CGPoint.zero
+    
     var brushWidth: CGFloat = 64
-    var swiped = false
     var color = UIColor.black
     
     var sketch: Sketch!
@@ -22,7 +24,7 @@ class SketchVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        sketch = Sketch()
+        sketch = Sketch(imageView: imageView)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -39,20 +41,20 @@ class SketchVC: UIViewController {
     
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        swiped = false
-        
         if let touch = touches.first {
+            prevPoint1 = touch.previousLocation(in: view)
+            prevPoint2 = touch.previousLocation(in: view)
+
             lastPoint = touch.location(in: imageView)
         }
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        swiped = true
-        
         if let touch = touches.first {
-            let currentPoint = touch.location(in: imageView)
-            sketch.drawPointsWith(imageView: imageView, fromPoint: lastPoint, toPoint: currentPoint)
-            lastPoint = currentPoint
+            prevPoint2 = prevPoint1
+            prevPoint1 = touch.previousLocation(in: imageView)
+            
+            lastPoint = sketch.drawPointsWith(touch: touch, prevPoint1: prevPoint1, prevPoint2: prevPoint2)
         }
     }
     
