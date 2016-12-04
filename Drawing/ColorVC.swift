@@ -10,7 +10,13 @@ import UIKit
 
 class ColorVC: UIViewController {
     
-    let colors = [UIColor.red, UIColor.black, UIColor.green, UIColor.orange, UIColor.purple]
+    let colors = [
+        UIColor(red:0.96, green:0.26, blue:0.21, alpha:1.0),
+        UIColor(red:0.91, green:0.12, blue:0.39, alpha:1.0),
+        UIColor(red:0.61, green:0.15, blue:0.69, alpha:1.0),
+        UIColor(red:0.4, green:0.23, blue:0.72, alpha:1.0),
+        UIColor(red:0.25, green:0.32, blue:0.71, alpha:1.0)
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()

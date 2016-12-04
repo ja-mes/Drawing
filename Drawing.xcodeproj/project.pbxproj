@@ -12,7 +12,6 @@
 		9B6B0FB31DF0A5B50057E116 /* DrawVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6B0FB21DF0A5B50057E116 /* DrawVC.swift */; };
 		9B6B0FB51DF0A64B0057E116 /* Sketch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6B0FB41DF0A64B0057E116 /* Sketch.swift */; };
 		9B6B0FB91DF0E1100057E116 /* ColorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6B0FB81DF0E1100057E116 /* ColorVC.swift */; };
-		9B6B0FBB1DF0E4620057E116 /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6B0FBA1DF0E4620057E116 /* ColorCell.swift */; };
 		9B78B83B1DF45E3C00347436 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B78B83A1DF45E3C00347436 /* CustomView.swift */; };
 		9B78B83D1DF46B3A00347436 /* Extension_UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B78B83C1DF46B3A00347436 /* Extension_UIColor.swift */; };
 		9BA68F061DEE2AA500979A7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA68F051DEE2AA500979A7F /* AppDelegate.swift */; };
@@ -28,7 +27,6 @@
 		9B6B0FB21DF0A5B50057E116 /* DrawVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawVC.swift; path = Assets.xcassets/DrawVC.swift; sourceTree = "<group>"; };
 		9B6B0FB41DF0A64B0057E116 /* Sketch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sketch.swift; sourceTree = "<group>"; };
 		9B6B0FB81DF0E1100057E116 /* ColorVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorVC.swift; sourceTree = "<group>"; };
-		9B6B0FBA1DF0E4620057E116 /* ColorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorCell.swift; sourceTree = "<group>"; };
 		9B78B83A1DF45E3C00347436 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		9B78B83C1DF46B3A00347436 /* Extension_UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension_UIColor.swift; sourceTree = "<group>"; };
 		9BA68F021DEE2AA500979A7F /* Drawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drawing.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,7 +62,6 @@
 		9B6B0FAC1DF0A3C00057E116 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9B6B0FBA1DF0E4620057E116 /* ColorCell.swift */,
 				9B78B83A1DF45E3C00347436 /* CustomView.swift */,
 				9B6B0FAE1DF0A3DC0057E116 /* CustomButton.swift */,
 			);
@@ -187,7 +184,6 @@
 			files = (
 				9B78B83B1DF45E3C00347436 /* CustomView.swift in Sources */,
 				9BA68F061DEE2AA500979A7F /* AppDelegate.swift in Sources */,
-				9B6B0FBB1DF0E4620057E116 /* ColorCell.swift in Sources */,
 				9B6B0FB11DF0A57D0057E116 /* HomeVC.swift in Sources */,
 				9BA68F0E1DEE2AA500979A7F /* Drawing.xcdatamodeld in Sources */,
 				9B78B83D1DF46B3A00347436 /* Extension_UIColor.swift in Sources */,
