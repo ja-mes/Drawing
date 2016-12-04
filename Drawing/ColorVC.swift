@@ -22,4 +22,9 @@ class ColorVC: UIViewController {
     @IBAction func close(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
+    
+    @IBAction func colorPressed(_ sender: UIButton) {
+        
+    }
+    
 }

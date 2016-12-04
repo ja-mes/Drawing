@@ -219,8 +219,11 @@
                                                         <real key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="colorPressed:" destination="UjT-Mc-bYv" eventType="touchUpInside" id="1Ew-QE-L7x"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKr-8B-lmd" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKr-8B-lmd" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
                                                 <rect key="frame" x="59.5" y="0.0" width="30" height="30"/>
                                                 <color key="backgroundColor" red="0.9137254901960784" green="0.11764705882352941" blue="0.38823529411764707" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -232,8 +235,11 @@
                                                         <real key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="colorPressed:" destination="UjT-Mc-bYv" eventType="touchUpInside" id="zVJ-Rr-82J"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKI-E6-5RF" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKI-E6-5RF" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
                                                 <rect key="frame" x="119" y="0.0" width="30" height="30"/>
                                                 <color key="backgroundColor" red="0.61176470588235299" green="0.15294117647058825" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -245,8 +251,11 @@
                                                         <real key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="colorPressed:" destination="UjT-Mc-bYv" eventType="touchUpInside" id="pln-rP-a2Y"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csm-tb-lIA" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csm-tb-lIA" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
                                                 <rect key="frame" x="178.5" y="0.0" width="30" height="30"/>
                                                 <color key="backgroundColor" red="0.40392156862745099" green="0.22745098039215686" blue="0.71764705882352942" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -258,8 +267,11 @@
                                                         <real key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="colorPressed:" destination="UjT-Mc-bYv" eventType="touchUpInside" id="UFF-YA-E7E"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZT6-p9-NYF" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZT6-p9-NYF" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
                                                 <rect key="frame" x="238" y="0.0" width="30" height="30"/>
                                                 <color key="backgroundColor" red="0.24705882352941178" green="0.31764705882352939" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -271,6 +283,9 @@
                                                         <real key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="colorPressed:" destination="UjT-Mc-bYv" eventType="touchUpInside" id="32e-ZN-1q1"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
