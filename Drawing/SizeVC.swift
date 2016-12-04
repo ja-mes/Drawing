@@ -12,6 +12,7 @@ class SizeVC: UIViewController {
     var sketch: Sketch!
     
     @IBOutlet var buttons: [UIButton]!
+    @IBOutlet var sizes: [UIView]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +30,15 @@ class SizeVC: UIViewController {
     
     
     @IBAction func sizePressed(_ sender: UIButton) {
-        sketch.brushWidth = sender.frame.size.width
+        if sender == buttons[0] {
+           sketch.brushWidth = 1
+        } else if sender == buttons[1] {
+            sketch.brushWidth = 2
+        } else {
+            sketch.brushWidth = sizes[sender.tag].frame.size.width
+        }
+        
+        
+        dismiss(animated: true, completion: nil)
     }
 }

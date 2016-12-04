@@ -486,24 +486,27 @@
                                         </connections>
                                     </button>
                                     <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJw-8T-o2u" customClass="CustomView" customModule="Drawing" customModuleProvider="target">
-                                        <rect key="frame" x="73" y="18" width="4" height="4"/>
+                                        <rect key="frame" x="74" y="18" width="2" height="2"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="4" id="UZt-fN-GtV"/>
-                                            <constraint firstAttribute="height" constant="4" id="tQf-Eb-uTT"/>
+                                            <constraint firstAttribute="width" constant="2" id="UZt-fN-GtV"/>
+                                            <constraint firstAttribute="height" constant="2" id="tQf-Eb-uTT"/>
                                         </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
                                     </view>
                                     <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6pH-QU-pf2" customClass="CustomView" customModule="Drawing" customModuleProvider="target">
-                                        <rect key="frame" x="72" y="45" width="6" height="6"/>
+                                        <rect key="frame" x="73.5" y="45" width="3" height="3"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="6" id="KIw-2v-STq"/>
-                                            <constraint firstAttribute="width" constant="6" id="onV-dE-oBi"/>
+                                            <constraint firstAttribute="height" constant="3" id="KIw-2v-STq"/>
+                                            <constraint firstAttribute="width" constant="3" id="onV-dE-oBi"/>
+                                        </constraints>
+                                    </view>
+                                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cLk-nH-AJ9" customClass="CustomView" customModule="Drawing" customModuleProvider="target">
+                                        <rect key="frame" x="72" y="74" width="6" height="6"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="6" id="YPI-nU-LkF"/>
+                                            <constraint firstAttribute="height" constant="6" id="mdz-Mb-psS"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -511,29 +514,16 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cLk-nH-AJ9" customClass="CustomView" customModule="Drawing" customModuleProvider="target">
-                                        <rect key="frame" x="71" y="74" width="8" height="8"/>
+                                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z8N-Ck-I1M" customClass="CustomView" customModule="Drawing" customModuleProvider="target">
+                                        <rect key="frame" x="71" y="110" width="8" height="8"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="8" id="YPI-nU-LkF"/>
-                                            <constraint firstAttribute="height" constant="8" id="mdz-Mb-psS"/>
+                                            <constraint firstAttribute="width" constant="8" id="2fs-Oe-GR9"/>
+                                            <constraint firstAttribute="height" constant="8" id="DUY-tQ-aRO"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="4"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z8N-Ck-I1M" customClass="CustomView" customModule="Drawing" customModuleProvider="target">
-                                        <rect key="frame" x="70" y="110" width="10" height="10"/>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="10" id="2fs-Oe-GR9"/>
-                                            <constraint firstAttribute="height" constant="10" id="DUY-tQ-aRO"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
@@ -682,6 +672,13 @@
                         <outletCollection property="buttons" destination="fHC-8w-0g4" collectionClass="NSMutableArray" id="c9a-Oe-FH2"/>
                         <outletCollection property="buttons" destination="6Yl-oX-OkJ" collectionClass="NSMutableArray" id="xbd-u7-vrO"/>
                         <outletCollection property="buttons" destination="E15-IP-Wvr" collectionClass="NSMutableArray" id="BsQ-gG-cN3"/>
+                        <outletCollection property="sizes" destination="fJw-8T-o2u" collectionClass="NSMutableArray" id="YTQ-7f-GLC"/>
+                        <outletCollection property="sizes" destination="6pH-QU-pf2" collectionClass="NSMutableArray" id="SAL-2D-xtw"/>
+                        <outletCollection property="sizes" destination="cLk-nH-AJ9" collectionClass="NSMutableArray" id="BVA-ZI-4lO"/>
+                        <outletCollection property="sizes" destination="Z8N-Ck-I1M" collectionClass="NSMutableArray" id="6jR-Ya-YxI"/>
+                        <outletCollection property="sizes" destination="ne3-Iw-X1g" collectionClass="NSMutableArray" id="bdI-86-dw7"/>
+                        <outletCollection property="sizes" destination="dvp-aZ-Prd" collectionClass="NSMutableArray" id="0vi-E9-VeR"/>
+                        <outletCollection property="sizes" destination="mcT-Lz-rJE" collectionClass="NSMutableArray" id="fGd-jU-1Ce"/>
                     </connections>
                 </viewController>
             </objects>

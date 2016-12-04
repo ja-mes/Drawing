@@ -30,6 +30,10 @@ class SketchVC: UIViewController {
             if let destination = segue.destination as? ColorVC {
                 destination.sketch = sketch
             }
+        } else if segue.identifier == "SizeVC" {
+            if let destination = segue.destination as? SizeVC {
+                destination.sketch = sketch
+            }
         }
     }
     
