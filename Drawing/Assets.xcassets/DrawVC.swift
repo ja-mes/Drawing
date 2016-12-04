@@ -11,11 +11,7 @@ import UIKit
 class SketchVC: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     
-    var brushWidth: CGFloat = 64
-    var color = UIColor.black
-    
     var sketch: Sketch!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +40,7 @@ class SketchVC: UIViewController {
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
-            sketch.drawPointsWith(touch: touch)
+            sketch.touchesMoved(touch: touch)
         }
     }
     

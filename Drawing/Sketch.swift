@@ -96,7 +96,7 @@ class Sketch {
         _lastPoint = touch.location(in: _imageView)
     }
         
-    func drawPointsWith(touch: UITouch) {
+    func touchesMoved(touch: UITouch) {
         UIGraphicsBeginImageContextWithOptions(_imageView.frame.size, false, 0.0)
         let currentPoint = touch.location(in: _imageView)
         _prevPoint2 = _prevPoint1
