@@ -16,7 +16,6 @@ class Sketch {
     private var _brushWidth: CGFloat = 3
     private var _isErasing = false
     
-    private var _lastPoint = CGPoint.zero
     private var _prevPoint1 = CGPoint.zero
     private var _prevPoint2 = CGPoint.zero
     
@@ -42,14 +41,7 @@ class Sketch {
         return _isErasing
     }
     
-    var lastPoint: CGPoint {
-        get {
-            return _lastPoint
-        } set {
-            _lastPoint = newValue
-        }
-    }
-    
+
     var prevPoint1: CGPoint {
         get {
             return _prevPoint1
@@ -92,8 +84,6 @@ class Sketch {
     func touchesBegan(touch: UITouch) {
         _prevPoint1 = touch.previousLocation(in: _imageView)
         _prevPoint2 = touch.previousLocation(in: _imageView)
-        
-        _lastPoint = touch.location(in: _imageView)
     }
         
     func touchesMoved(touch: UITouch) {
@@ -124,7 +114,6 @@ class Sketch {
         
         UIGraphicsEndImageContext()
         
-        _lastPoint = currentPoint
     }
 }
 
