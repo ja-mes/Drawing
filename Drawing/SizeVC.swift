@@ -9,6 +9,7 @@
 import UIKit
 
 class SizeVC: UIViewController {
+    var sketch: Sketch!
     
     @IBOutlet var buttons: [UIButton]!
     
@@ -28,6 +29,6 @@ class SizeVC: UIViewController {
     
     
     @IBAction func sizePressed(_ sender: UIButton) {
-        print(sender.tag)
+        sketch.brushWidth = sender.frame.size.width
     }
 }
