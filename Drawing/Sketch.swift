@@ -10,12 +10,16 @@ import UIKit
 
 class Sketch {
     private var _imageView: UIImageView
-    
+    private var _previousColor: UIColor?
+
     private var _color = UIColor.black
     private var _brushWidth: CGFloat = 3
     private var _isErasing = false
-
-    private var _previousColor: UIColor?
+    
+    private var _lastPoint = CGPoint.zero
+    private var _prevPoint1 = CGPoint.zero
+    private var _prevPoint2 = CGPoint.zero
+    
 
     
     var color: UIColor {
@@ -37,6 +41,31 @@ class Sketch {
     var isErasing: Bool {
         return _isErasing
     }
+    
+    var lastPoint: CGPoint {
+        get {
+            return _lastPoint
+        } set {
+            _lastPoint = newValue
+        }
+    }
+    
+    var prevPoint1: CGPoint {
+        get {
+            return _prevPoint1
+        } set {
+            _prevPoint1 = newValue
+        }
+    }
+    
+    var prevPoint2: CGPoint {
+        get {
+            return _prevPoint1
+        } set {
+            _prevPoint2 = newValue
+        }
+    }
+    
     
     init(imageView: UIImageView) {
         _imageView = imageView
