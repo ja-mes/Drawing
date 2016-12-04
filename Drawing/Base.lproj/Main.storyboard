@@ -182,7 +182,7 @@
                     </tabBarItem>
                     <connections>
                         <outlet property="imageView" destination="TCd-sr-Wpl" id="Y7i-AP-Fiz"/>
-                        <segue destination="UjT-Mc-bYv" kind="presentation" identifier="ColorVC" id="XFx-Sv-Xwr"/>
+                        <segue destination="UjT-Mc-bYv" kind="presentation" identifier="ColorVC" modalPresentationStyle="overCurrentContext" id="XFx-Sv-Xwr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ffq-KV-mny" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -200,7 +200,21 @@
                     <view key="view" contentMode="scaleToFill" id="Iq6-F7-1vg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J90-gz-Byt">
+                                <rect key="frame" x="62" y="208" width="250" height="250"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="WDU-hD-55R"/>
+                                    <constraint firstAttribute="height" constant="250" id="llz-x8-byX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="J90-gz-Byt" firstAttribute="centerX" secondItem="Iq6-F7-1vg" secondAttribute="centerX" id="1jY-ya-gWI"/>
+                            <constraint firstItem="J90-gz-Byt" firstAttribute="centerY" secondItem="Iq6-F7-1vg" secondAttribute="centerY" id="8Jj-KA-wXM"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SAO-y4-mus" userLabel="First Responder" sceneMemberID="firstResponder"/>
