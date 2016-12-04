@@ -25,6 +25,15 @@ class SketchVC: UIViewController {
         sketch = Sketch()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ColorVC" {
+            if let destination = segue.destination as? ColorVC {
+                destination.sketch = sketch
+            }
+        }
+    }
+    
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         swiped = false
         
