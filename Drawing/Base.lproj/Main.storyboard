@@ -138,6 +138,9 @@
                                                 <real key="value" value="2"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="sizePressed:" destination="kMw-TX-14e" eventType="touchUpInside" id="M7e-R3-An8"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gQ-cc-Qg8" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
                                         <rect key="frame" x="210" y="0.0" width="55" height="24"/>
@@ -348,7 +351,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SAO-y4-mus" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1956" y="15"/>
+            <point key="canvasLocation" x="1956" y="30"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Y1n-yz-jKq">
@@ -394,10 +397,10 @@
             </objects>
             <point key="canvasLocation" x="202" y="139"/>
         </scene>
-        <!--View Controller-->
+        <!--SizeVC-->
         <scene sceneID="jm4-I0-uEh">
             <objects>
-                <viewController id="eQX-dj-gx0" sceneMemberID="viewController">
+                <viewController id="eQX-dj-gx0" customClass="SizeVC" customModule="Drawing" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MVp-8F-SZq"/>
                         <viewControllerLayoutGuide type="bottom" id="i39-T0-ik4"/>
@@ -488,7 +491,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HbC-Bw-gw2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1956" y="852.3238380809596"/>
+            <point key="canvasLocation" x="1956" y="812"/>
         </scene>
     </scenes>
     <resources>

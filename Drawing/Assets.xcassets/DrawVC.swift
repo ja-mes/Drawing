@@ -59,6 +59,11 @@ class SketchVC: UIViewController {
     @IBAction func colorPressed(_ sender: UIButton) {
         performSegue(withIdentifier: "ColorVC", sender: nil)
     }
+    
+    @IBAction func sizePressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "SizeVC", sender: nil)
+    }
+    
 }
 
 
