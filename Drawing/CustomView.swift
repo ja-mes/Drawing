@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable class ShadowView: UIView {
+@IBDesignable class CustomView: UIView {
     @IBInspectable var shadowColor: UIColor = UIColor.black {
         didSet {
             layer.shadowColor = shadowColor.cgColor
@@ -30,6 +30,12 @@ import UIKit
     @IBInspectable var shadowRadius: CGFloat = 0 {
         didSet {
             layer.shadowRadius = shadowRadius
+        }
+    }
+    
+    @IBInspectable var cornerRadius: CGFloat = 0 {
+        didSet {
+            layer.cornerRadius = cornerRadius
         }
     }
 
