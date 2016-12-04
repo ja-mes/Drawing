@@ -9,11 +9,17 @@
 import UIKit
 
 class SizeVC: UIViewController {
-
+    
+    @IBOutlet var buttons: [UIButton]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor.clear
+        
+        for i in buttons {
+            i.backgroundColor = UIColor.clear
+        }
     }
     
     @IBAction func close(_ sender: UIButton) {
