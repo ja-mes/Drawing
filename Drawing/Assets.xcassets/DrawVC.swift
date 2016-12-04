@@ -38,10 +38,7 @@ class SketchVC: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
-            sketch.prevPoint1 = touch.previousLocation(in: view)
-            sketch.prevPoint2 = touch.previousLocation(in: view)
-
-            sketch.lastPoint = touch.location(in: imageView)
+            sketch.touchesBegan(touch: touch)
         }
     }
     

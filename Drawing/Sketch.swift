@@ -88,6 +88,13 @@ class Sketch {
             _color = UIColor.white
         }
     }
+    
+    func touchesBegan(touch: UITouch) {
+        _prevPoint1 = touch.previousLocation(in: _imageView)
+        _prevPoint2 = touch.previousLocation(in: _imageView)
+        
+        _lastPoint = touch.location(in: _imageView)
+    }
         
     func drawPointsWith(touch: UITouch) {
         UIGraphicsBeginImageContextWithOptions(_imageView.frame.size, false, 0.0)
