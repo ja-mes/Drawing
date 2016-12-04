@@ -30,7 +30,9 @@ class ColorVC: UIViewController {
     }
     
     @IBAction func colorPressed(_ sender: UIButton) {
+        let selectedColor = colors[sender.tag]
         
+        dismiss(animated: true, completion: nil)
     }
     
 }
