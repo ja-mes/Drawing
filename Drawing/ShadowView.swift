@@ -14,13 +14,23 @@ import UIKit
             layer.shadowColor = shadowColor.cgColor
         }
     }
-
-    override func awakeFromNib() {
-        layer.shadowColor = UIColor.black.cgColor
-        layer.shadowOpacity = 1
-        layer.shadowOffset = CGSize(width: 0, height: 2)
-        
-        layer.shadowRadius = 7
-        
+    
+    @IBInspectable var shadowOpacity: Float = 1 {
+        didSet {
+            layer.shadowOpacity = shadowOpacity
+        }
     }
-}
+    
+    @IBInspectable var shadowOffset: CGSize = CGSize.zero {
+        didSet {
+            layer.shadowOffset = shadowOffset
+        }
+    }
+    
+    @IBInspectable var shadowRadius: CGFloat = 0 {
+        didSet {
+            layer.shadowRadius = shadowRadius
+        }
+    }
+
+  }
