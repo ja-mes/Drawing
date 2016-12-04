@@ -15,4 +15,13 @@ class SizeVC: UIViewController {
         
         self.view.backgroundColor = UIColor.clear
     }
+    
+    @IBAction func close(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func sizePressed(_ sender: UIButton) {
+        print(sender.tag)
+    }
 }
