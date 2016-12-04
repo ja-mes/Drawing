@@ -182,7 +182,7 @@
                     </tabBarItem>
                     <connections>
                         <outlet property="imageView" destination="TCd-sr-Wpl" id="Y7i-AP-Fiz"/>
-                        <segue destination="UjT-Mc-bYv" kind="presentation" identifier="ColorVC" modalPresentationStyle="overCurrentContext" modalTransitionStyle="flipHorizontal" id="XFx-Sv-Xwr"/>
+                        <segue destination="UjT-Mc-bYv" kind="presentation" identifier="ColorVC" modalPresentationStyle="overCurrentContext" modalTransitionStyle="coverVertical" id="XFx-Sv-Xwr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ffq-KV-mny" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -202,11 +202,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J90-gz-Byt" customClass="ShadowView" customModule="Drawing" customModuleProvider="target">
-                                <rect key="frame" x="62" y="208" width="250" height="250"/>
+                                <rect key="frame" x="37.5" y="183.5" width="300" height="300"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="WDU-hD-55R"/>
-                                    <constraint firstAttribute="height" constant="250" id="llz-x8-byX"/>
+                                    <constraint firstAttribute="width" constant="300" id="WDU-hD-55R"/>
+                                    <constraint firstAttribute="height" constant="300" id="llz-x8-byX"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
@@ -223,11 +223,32 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3nA-RM-RKO" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
+                                <rect key="frame" x="322.5" y="168.5" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.84698420763015747" green="0.84710663557052612" blue="0.8469575047492981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bNn-Sr-btK"/>
+                                    <constraint firstAttribute="width" constant="30" id="kPv-1c-UfP"/>
+                                </constraints>
+                                <state key="normal" image="close_icon">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="close:" destination="UjT-Mc-bYv" eventType="touchUpInside" id="hUQ-5X-QXt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="3nA-RM-RKO" firstAttribute="centerY" secondItem="Iq6-F7-1vg" secondAttribute="centerY" constant="-150" id="063-xk-4aT"/>
                             <constraint firstItem="J90-gz-Byt" firstAttribute="centerX" secondItem="Iq6-F7-1vg" secondAttribute="centerX" id="1jY-ya-gWI"/>
                             <constraint firstItem="J90-gz-Byt" firstAttribute="centerY" secondItem="Iq6-F7-1vg" secondAttribute="centerY" id="8Jj-KA-wXM"/>
+                            <constraint firstItem="3nA-RM-RKO" firstAttribute="centerX" secondItem="Iq6-F7-1vg" secondAttribute="centerX" constant="150" id="P01-en-N7S"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -281,6 +302,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="close_icon" width="15" height="15"/>
         <image name="create_icon" width="20" height="20"/>
         <image name="home_icon" width="19" height="24"/>
         <image name="profile_icon" width="20" height="20"/>
