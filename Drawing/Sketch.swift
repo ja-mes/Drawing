@@ -19,7 +19,6 @@ class Sketch {
     private var _prevPoint1 = CGPoint.zero
     private var _prevPoint2 = CGPoint.zero
     
-
     
     var color: UIColor {
         get {

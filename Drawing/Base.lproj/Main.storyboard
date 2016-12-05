@@ -130,7 +130,7 @@
                                             <constraint firstAttribute="width" constant="55" id="t3X-OH-TGK"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="12"/>
-                                        <state key="normal" title="SIZE: 3">
+                                        <state key="normal" title="SIZE">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
