@@ -48,8 +48,15 @@ class SketchVC: UIViewController {
         sketch.saveBackup()
     }
     
-    @IBAction func erasePressed(_ sender: Any) {
+    @IBAction func erasePressed(_ sender: UIButton) {
         sketch.toggleEraser()
+        
+        if sketch.isErasing {
+            sender.backgroundColor = UIColor(red:1.00, green:0.34, blue:0.13, alpha:1.0)
+        } else {
+            sender.backgroundColor = UIColor(red:0.93, green:0.60, blue:0.45, alpha:1.0)
+        }
+        
     }
     
     @IBAction func undoPressed(_ sender: UIButton) {
