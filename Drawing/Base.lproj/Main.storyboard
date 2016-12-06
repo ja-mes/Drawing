@@ -157,6 +157,9 @@
                     <tabBarItem key="tabBarItem" title="" image="home_icon" id="QLV-fB-Mri">
                         <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="tableView" destination="da6-FZ-aA1" id="92z-LD-4pr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
