@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseStorage
 
 class SketchVC: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
@@ -50,6 +51,22 @@ class SketchVC: UIViewController {
     }
     
     @IBAction func savePressed(_ sender: UIButton) {
+        if let img = imageView.image, let imgData = UIImageJPEGRepresentation(img, 0.2) {
+            let imgUid = NSUUID().uuidString
+            let ref = FIRStorage.storage().reference().child("drawings")
+            let metadata = FIRStorageMetadata()
+            metadata.contentType = "image/jpeg"
+            
+            
+            ref.child(imgUid).put(imgData, metadata: metadata, completion: { (metadata, error) in
+                if error != nil {
+                    print("Unable to upload image to firbase: \(error)")
+                }
+            })
+            
+            
+        }
+        
         
     }
     

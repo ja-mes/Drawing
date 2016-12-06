@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class Sketch {
     private var _imageView: UIImageView
     private var _previousColor: UIColor?
