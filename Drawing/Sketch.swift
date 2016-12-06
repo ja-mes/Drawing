@@ -12,6 +12,7 @@ class Sketch {
     private var _imageView: UIImageView
     private var _previousColor: UIColor?
     private var backups = [UIImage]()
+    private var hasRemovedFirstTouch = false
 
     private var _color = UIColor.black
     private var _brushWidth: CGFloat = 3
@@ -119,16 +120,26 @@ class Sketch {
     func saveBackup() {
         if let backupImage = _imageView.image {
             backups.append(backupImage)
-
+            
+            if backups.count > 100 {
+                backups.removeFirst()
+                hasRemovedFirstTouch = true
+            }
         }
     }
     
     func undo() {
-        if backups.count > 0 {
+        var num = 0
+        
+        if hasRemovedFirstTouch {
+            num = 1
+        }
+        
+        if backups.count > num {
             backups.removeLast()
+            _imageView.image = backups.last
         }
 
-        _imageView.image = backups.last
     }
 }
 
