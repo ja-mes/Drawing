@@ -16,6 +16,7 @@
 		9B78B83D1DF46B3A00347436 /* Extension_UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B78B83C1DF46B3A00347436 /* Extension_UIColor.swift */; };
 		9B78B83F1DF4722500347436 /* SizeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B78B83E1DF4722500347436 /* SizeVC.swift */; };
 		9B82A8D81DF7690D007B42BC /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B82A8D71DF7690D007B42BC /* CustomImageView.swift */; };
+		9B82A8DA1DF77007007B42BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B82A8D91DF77007007B42BC /* GoogleService-Info.plist */; };
 		9BA68F061DEE2AA500979A7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA68F051DEE2AA500979A7F /* AppDelegate.swift */; };
 		9BA68F0B1DEE2AA500979A7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BA68F091DEE2AA500979A7F /* Main.storyboard */; };
 		9BA68F0E1DEE2AA500979A7F /* Drawing.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9BA68F0C1DEE2AA500979A7F /* Drawing.xcdatamodeld */; };
@@ -33,6 +34,7 @@
 		9B78B83C1DF46B3A00347436 /* Extension_UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension_UIColor.swift; sourceTree = "<group>"; };
 		9B78B83E1DF4722500347436 /* SizeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeVC.swift; sourceTree = "<group>"; };
 		9B82A8D71DF7690D007B42BC /* CustomImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		9B82A8D91DF77007007B42BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9BA68F021DEE2AA500979A7F /* Drawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drawing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BA68F051DEE2AA500979A7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BA68F0A1DEE2AA500979A7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				9B6B0FAB1DF0A3BB0057E116 /* Controller */,
 				9BA68F0F1DEE2AA500979A7F /* Assets.xcassets */,
 				9BA68F141DEE2AA500979A7F /* Info.plist */,
+				9B82A8D91DF77007007B42BC /* GoogleService-Info.plist */,
 				9BA68F0C1DEE2AA500979A7F /* Drawing.xcdatamodeld */,
 			);
 			path = Drawing;
@@ -178,6 +181,7 @@
 				9BA68F131DEE2AA500979A7F /* LaunchScreen.storyboard in Resources */,
 				9BA68F101DEE2AA500979A7F /* Assets.xcassets in Resources */,
 				9BA68F0B1DEE2AA500979A7F /* Main.storyboard in Resources */,
+				9B82A8DA1DF77007007B42BC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,7 +328,7 @@
 				DEVELOPMENT_TEAM = 5ZLSFF34EF;
 				INFOPLIST_FILE = Drawing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Drawing;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jamez-brown.drawing";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -337,7 +341,7 @@
 				DEVELOPMENT_TEAM = 5ZLSFF34EF;
 				INFOPLIST_FILE = Drawing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Drawing;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jamez-brown.drawing";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
