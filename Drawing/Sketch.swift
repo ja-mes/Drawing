@@ -119,7 +119,6 @@ class Sketch {
     func saveBackup() {
         if let backupImage = _imageView.image {
             backups.append(backupImage)
-            onUndoStreak = false
 
         }
     }
@@ -130,9 +129,6 @@ class Sketch {
         }
 
         _imageView.image = backups.last
-        
-        onUndoStreak = true
-        
     }
 }
 
