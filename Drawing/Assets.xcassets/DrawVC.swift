@@ -54,7 +54,7 @@ class SketchVC: UIViewController {
         if sketch.isErasing {
             sender.backgroundColor = UIColor(red:1.00, green:0.34, blue:0.13, alpha:1.0)
         } else {
-            sender.backgroundColor = UIColor(red:0.93, green:0.60, blue:0.45, alpha:1.0)
+            sender.backgroundColor = UIColor(red:0.98, green:0.58, blue:0.42, alpha:1.0)
         }
         
     }

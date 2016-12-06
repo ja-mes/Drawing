@@ -147,7 +147,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gQ-cc-Qg8" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
                                         <rect key="frame" x="210" y="0.0" width="55" height="24"/>
-                                        <color key="backgroundColor" red="0.98339945077896118" green="0.58305984735488892" blue="0.42342805862426758" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.98431372549019602" green="0.58431372549019611" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="24" id="dtZ-vc-Htx"/>
                                             <constraint firstAttribute="width" constant="55" id="wSC-3h-1rR"/>
