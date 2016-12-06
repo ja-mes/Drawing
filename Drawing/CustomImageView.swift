@@ -9,9 +9,15 @@
 import UIKit
 
 @IBDesignable class CustomImageView: UIImageView {
-    @IBInspectable var cornerRadius: CGFloat = 0 {
-        didSet {
-            layer.cornerRadius = cornerRadius
-        }
+//    @IBInspectable var cornerRadius: CGFloat = 0 {
+//        didSet {
+//            layer.cornerRadius = cornerRadius
+//        }
+//    }
+    
+    override func layoutSubviews() {
+        layer.cornerRadius = frame.height / 2
+        layer.masksToBounds = false
+        clipsToBounds = true
     }
 }
