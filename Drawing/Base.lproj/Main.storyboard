@@ -213,6 +213,9 @@
                                                 <real key="value" value="2"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="savePressed:" destination="kMw-TX-14e" eventType="touchUpInside" id="NQp-bE-Uhb"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

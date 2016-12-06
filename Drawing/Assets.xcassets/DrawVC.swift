@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SketchVC: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
@@ -46,6 +47,10 @@ class SketchVC: UIViewController {
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         sketch.saveBackup()
+    }
+    
+    @IBAction func savePressed(_ sender: UIButton) {
+        
     }
     
     @IBAction func erasePressed(_ sender: UIButton) {
