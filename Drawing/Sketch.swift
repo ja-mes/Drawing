@@ -11,7 +11,8 @@ import UIKit
 class Sketch {
     private var _imageView: UIImageView
     private var _previousColor: UIColor?
-    private var _backups = [UIImage]()
+    private var backups = [UIImage]()
+    private var onUndoStreak = false
 
     private var _color = UIColor.black
     private var _brushWidth: CGFloat = 3
@@ -82,6 +83,8 @@ class Sketch {
     }
     
     func touchesBegan(touch: UITouch) {
+        onUndoStreak = false
+        
         _prevPoint1 = touch.previousLocation(in: _imageView)
         _prevPoint2 = touch.previousLocation(in: _imageView)
     }
@@ -118,12 +121,24 @@ class Sketch {
     
     func saveBackup() {
         if let backupImage = _imageView.image {
-            _backups.append(backupImage)
+            backups.append(backupImage)
         }
     }
     
     func undo() {
-        _imageView.image = _backups.last
+        if !onUndoStreak {
+            if backups.count > 0 {
+                backups.removeLast()
+            }
+        }
+        
+        _imageView.image = backups.last
+        
+        if backups.count > 0 {
+            backups.removeLast()
+        }
+        
+        onUndoStreak = true
     }
 }
 
