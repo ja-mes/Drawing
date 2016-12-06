@@ -11,6 +11,7 @@ import UIKit
 class Sketch {
     private var _imageView: UIImageView
     private var _previousColor: UIColor?
+    private var _backups = [UIImage]()
 
     private var _color = UIColor.black
     private var _brushWidth: CGFloat = 3
@@ -113,6 +114,16 @@ class Sketch {
         
         UIGraphicsEndImageContext()
         
+    }
+    
+    func saveBackup() {
+        if let backupImage = _imageView.image {
+            _backups.append(backupImage)
+        }
+    }
+    
+    func undo() {
+        _imageView.image = _backups.last
     }
 }
 

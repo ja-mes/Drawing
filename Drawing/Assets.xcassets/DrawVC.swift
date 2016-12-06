@@ -44,8 +44,16 @@ class SketchVC: UIViewController {
         }
     }
     
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        sketch.saveBackup()
+    }
+    
     @IBAction func erasePressed(_ sender: Any) {
         sketch.toggleEraser()
+    }
+    
+    @IBAction func undoPressed(_ sender: UIButton) {
+        sketch.undo()
     }
     
     @IBAction func colorPressed(_ sender: UIButton) {
