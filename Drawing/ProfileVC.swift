@@ -8,7 +8,7 @@
 
 import UIKit
 import Firebase
-
+import FirebaseDatabase
 
 class ProfileVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
@@ -20,7 +20,11 @@ class ProfileVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
         collectionView.delegate = self
         collectionView.dataSource = self
         
+        let ref = FIRDatabase().reference().child("sketches")
         
+        ref.observe(.value, with: { (snapshot) in
+            
+        })
     }
     
     
