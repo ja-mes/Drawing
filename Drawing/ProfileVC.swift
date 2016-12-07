@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+
 
 class ProfileVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
@@ -17,7 +19,11 @@ class ProfileVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
         
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        
     }
+    
+    
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
