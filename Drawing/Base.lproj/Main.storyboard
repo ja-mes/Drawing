@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9Fr-fp-Pem">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VMD-h3-OIu">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -685,21 +685,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="H6d-rx-U4M">
-                                <rect key="frame" x="16" y="112.5" width="288" height="78"/>
+                                <rect key="frame" x="16" y="112.5" width="288" height="98"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" background="text field background" translatesAutoresizingMaskIntoConstraints="NO" id="oGv-wL-Ufb">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="BOS-yF-f7Y"/>
+                                            <constraint firstAttribute="height" constant="40" id="BOS-yF-f7Y"/>
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" background="text field background" translatesAutoresizingMaskIntoConstraints="NO" id="umz-37-wQS">
-                                        <rect key="frame" x="0.0" y="48" width="288" height="30"/>
+                                        <rect key="frame" x="0.0" y="58" width="288" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="k3b-Ic-A3C"/>
+                                            <constraint firstAttribute="height" constant="40" id="k3b-Ic-A3C"/>
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
@@ -711,13 +711,32 @@
                                     <constraint firstItem="umz-37-wQS" firstAttribute="leading" secondItem="H6d-rx-U4M" secondAttribute="leading" id="f3z-8g-8iR"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mnG-oq-YDl" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
+                                <rect key="frame" x="16" y="235.5" width="288" height="40"/>
+                                <color key="backgroundColor" red="0.98339945077896118" green="0.58305984735488892" blue="0.42342805862426758" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0DQ-Yj-Sfq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="mnG-oq-YDl" firstAttribute="top" secondItem="H6d-rx-U4M" secondAttribute="bottom" constant="25" id="8b0-BJ-Ag9"/>
                             <constraint firstAttribute="trailingMargin" secondItem="H6d-rx-U4M" secondAttribute="trailing" id="IZm-5n-6iK"/>
                             <constraint firstItem="H6d-rx-U4M" firstAttribute="top" secondItem="qCy-rZ-j9f" secondAttribute="bottom" constant="35" id="JKe-oj-vWn"/>
                             <constraint firstItem="qCy-rZ-j9f" firstAttribute="top" secondItem="aww-uC-893" secondAttribute="bottom" constant="30" id="T05-3W-RQa"/>
                             <constraint firstItem="qCy-rZ-j9f" firstAttribute="centerX" secondItem="oJP-xL-vCQ" secondAttribute="centerX" id="c4I-fr-NIs"/>
+                            <constraint firstItem="mnG-oq-YDl" firstAttribute="leading" secondItem="oJP-xL-vCQ" secondAttribute="leadingMargin" id="eJH-RL-9CI"/>
+                            <constraint firstItem="mnG-oq-YDl" firstAttribute="trailing" secondItem="oJP-xL-vCQ" secondAttribute="trailingMargin" id="l4i-IX-h3t"/>
                             <constraint firstItem="H6d-rx-U4M" firstAttribute="leading" secondItem="oJP-xL-vCQ" secondAttribute="leadingMargin" id="xWU-bW-XQf"/>
                         </constraints>
                     </view>
