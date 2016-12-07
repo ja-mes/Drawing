@@ -14,4 +14,8 @@ class SignInVC: UIViewController {
         super.viewDidLoad()
 
     }
+    
+    @IBAction func signUpButtonPressed(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
 }
