@@ -20,11 +20,11 @@ class ProfileVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        let ref = FIRDatabase().reference().child("sketches")
+   //     let ref = FIRDatabase().reference().child("sketches")
         
-        ref.observe(.value, with: { (snapshot) in
-            
-        })
+//        ref.observe(.value, with: { (snapshot) in
+//            
+//        })
     }
     
     

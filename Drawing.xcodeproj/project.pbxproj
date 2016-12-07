@@ -101,6 +101,7 @@
 				9B65A5041DF8C942006AA60D /* Authentication */,
 				9B65A5011DF8C7EC006AA60D /* Sketch */,
 				9B6B0FB01DF0A57D0057E116 /* HomeVC.swift */,
+				9B82A8DB1DF7A811007B42BC /* ProfileVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -148,7 +149,6 @@
 			isa = PBXGroup;
 			children = (
 				9BA68F051DEE2AA500979A7F /* AppDelegate.swift */,
-				9B82A8DB1DF7A811007B42BC /* ProfileVC.swift */,
 				9BA68F091DEE2AA500979A7F /* Main.storyboard */,
 				9BA68F111DEE2AA500979A7F /* LaunchScreen.storyboard */,
 				9B6B0FAD1DF0A3C80057E116 /* Model */,
