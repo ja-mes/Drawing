@@ -8,19 +8,12 @@
 
 import UIKit
 
-class CustomField: UITextField {
-
-    let padding = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5);
-    
-    override func textRect(forBounds bounds: CGRect) -> CGRect {
-        return UIEdgeInsetsInsetRect(bounds, padding)
-    }
-    
-    override func placeholderRect(forBounds bounds: CGRect) -> CGRect {
-        return UIEdgeInsetsInsetRect(bounds, padding)
-    }
-    
-    override func editingRect(forBounds bounds: CGRect) -> CGRect {
-        return UIEdgeInsetsInsetRect(bounds, padding)
+@IBDesignable class CustomField: UITextField {
+    @IBInspectable var textPadding: CGFloat = 0 {
+        didSet {
+            let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: textPadding, height: frame.height))
+            leftView = paddingView
+            leftViewMode = UITextFieldViewMode.always
+        }
     }
 }
