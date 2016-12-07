@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9Fr-fp-Pem">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VMD-h3-OIu">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -666,10 +666,10 @@
             </objects>
             <point key="canvasLocation" x="200.80000000000001" y="999.85007496251887"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign UpVC-->
         <scene sceneID="0Eo-8o-i5G">
             <objects>
-                <viewController id="VMD-h3-OIu" sceneMemberID="viewController">
+                <viewController id="VMD-h3-OIu" customClass="SignUpVC" customModule="Drawing" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aww-uC-893"/>
                         <viewControllerLayoutGuide type="bottom" id="fgA-Ru-SdL"/>
@@ -765,10 +765,10 @@
             </objects>
             <point key="canvasLocation" x="-1710" y="125.70422535211267"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign InVC-->
         <scene sceneID="r5A-4l-DUh">
             <objects>
-                <viewController id="qWb-p5-FaY" sceneMemberID="viewController">
+                <viewController id="qWb-p5-FaY" customClass="SignInVC" customModule="Drawing" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dBf-cG-vVY"/>
                         <viewControllerLayoutGuide type="bottom" id="Coz-ge-2dm"/>
