@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VMD-h3-OIu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9Fr-fp-Pem">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -346,10 +346,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J90-gz-Byt" customClass="CustomView" customModule="Drawing" customModuleProvider="target">
-                                <rect key="frame" x="10" y="134" width="300" height="300"/>
+                                <rect key="frame" x="20" y="134" width="280" height="300"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="cIO-TQ-WXm">
-                                        <rect key="frame" x="16" y="20" width="268" height="30"/>
+                                        <rect key="frame" x="16" y="20" width="248" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8tC-Ff-BQA" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
@@ -368,7 +368,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKr-8B-lmd" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
-                                                <rect key="frame" x="59.5" y="0.0" width="30" height="30"/>
+                                                <rect key="frame" x="54.5" y="0.0" width="30" height="30"/>
                                                 <color key="backgroundColor" red="0.9137254901960784" green="0.11764705882352941" blue="0.38823529411764707" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="30" id="SW5-Js-nra"/>
@@ -384,7 +384,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKI-E6-5RF" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
-                                                <rect key="frame" x="119" y="0.0" width="30" height="30"/>
+                                                <rect key="frame" x="109" y="0.0" width="30" height="30"/>
                                                 <color key="backgroundColor" red="0.61176470588235299" green="0.15294117647058825" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="30" id="0Qd-Za-ufK"/>
@@ -400,7 +400,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csm-tb-lIA" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
-                                                <rect key="frame" x="178.5" y="0.0" width="30" height="30"/>
+                                                <rect key="frame" x="163.5" y="0.0" width="30" height="30"/>
                                                 <color key="backgroundColor" red="0.40392156862745099" green="0.22745098039215686" blue="0.71764705882352942" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="EPy-P6-w3O"/>
@@ -416,7 +416,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZT6-p9-NYF" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
-                                                <rect key="frame" x="238" y="0.0" width="30" height="30"/>
+                                                <rect key="frame" x="218" y="0.0" width="30" height="30"/>
                                                 <color key="backgroundColor" red="0.24705882352941178" green="0.31764705882352939" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="151-Ra-DqT"/>
@@ -436,7 +436,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="WDU-hD-55R"/>
+                                    <constraint firstAttribute="width" constant="280" id="WDU-hD-55R"/>
                                     <constraint firstItem="cIO-TQ-WXm" firstAttribute="leading" secondItem="J90-gz-Byt" secondAttribute="leading" constant="16" id="gP2-xK-mDr"/>
                                     <constraint firstAttribute="height" constant="300" id="llz-x8-byX"/>
                                     <constraint firstAttribute="trailing" secondItem="cIO-TQ-WXm" secondAttribute="trailing" constant="16" id="pFy-Bs-MMn"/>
@@ -461,7 +461,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3nA-RM-RKO" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
-                                <rect key="frame" x="295" y="119" width="30" height="30"/>
+                                <rect key="frame" x="285" y="119" width="30" height="30"/>
                                 <color key="backgroundColor" red="0.84698420763015747" green="0.84710663557052612" blue="0.8469575047492981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="bNn-Sr-btK"/>
@@ -485,7 +485,7 @@
                             <constraint firstItem="3nA-RM-RKO" firstAttribute="centerY" secondItem="Iq6-F7-1vg" secondAttribute="centerY" constant="-150" id="063-xk-4aT"/>
                             <constraint firstItem="J90-gz-Byt" firstAttribute="centerX" secondItem="Iq6-F7-1vg" secondAttribute="centerX" id="1jY-ya-gWI"/>
                             <constraint firstItem="J90-gz-Byt" firstAttribute="centerY" secondItem="Iq6-F7-1vg" secondAttribute="centerY" id="8Jj-KA-wXM"/>
-                            <constraint firstItem="3nA-RM-RKO" firstAttribute="centerX" secondItem="Iq6-F7-1vg" secondAttribute="centerX" constant="150" id="P01-en-N7S"/>
+                            <constraint firstItem="3nA-RM-RKO" firstAttribute="centerX" secondItem="Iq6-F7-1vg" secondAttribute="centerX" constant="140" id="P01-en-N7S"/>
                         </constraints>
                     </view>
                 </viewController>
