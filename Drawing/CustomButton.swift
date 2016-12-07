@@ -15,5 +15,15 @@ import UIKit
         }
     }
     
+    @IBInspectable var borderWidth: CGFloat = 0 {
+        didSet {
+            layer.borderWidth = borderWidth
+        }
+    }
     
+    @IBInspectable var borderColor: UIColor = UIColor.black {
+        didSet {
+            layer.borderColor = borderColor.cgColor
+        }
+    }
 }
