@@ -687,7 +687,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="H6d-rx-U4M">
                                 <rect key="frame" x="16" y="112.5" width="288" height="98"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" background="text field background" translatesAutoresizingMaskIntoConstraints="NO" id="oGv-wL-Ufb">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" background="text field background" translatesAutoresizingMaskIntoConstraints="NO" id="oGv-wL-Ufb" customClass="CustomField" customModule="Drawing" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="BOS-yF-f7Y"/>
@@ -696,7 +696,7 @@
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" background="text field background" translatesAutoresizingMaskIntoConstraints="NO" id="umz-37-wQS">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" background="text field background" translatesAutoresizingMaskIntoConstraints="NO" id="umz-37-wQS" customClass="CustomField" customModule="Drawing" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="58" width="288" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="k3b-Ic-A3C"/>

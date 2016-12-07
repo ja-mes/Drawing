@@ -13,6 +13,7 @@
 		9B6B0FB31DF0A5B50057E116 /* DrawVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6B0FB21DF0A5B50057E116 /* DrawVC.swift */; };
 		9B6B0FB51DF0A64B0057E116 /* Sketch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6B0FB41DF0A64B0057E116 /* Sketch.swift */; };
 		9B6B0FB91DF0E1100057E116 /* ColorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6B0FB81DF0E1100057E116 /* ColorVC.swift */; };
+		9B6B52DF1DF8A10E00ACA39F /* CustomField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6B52DE1DF8A10E00ACA39F /* CustomField.swift */; };
 		9B78B83B1DF45E3C00347436 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B78B83A1DF45E3C00347436 /* CustomView.swift */; };
 		9B78B83D1DF46B3A00347436 /* Extension_UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B78B83C1DF46B3A00347436 /* Extension_UIColor.swift */; };
 		9B78B83F1DF4722500347436 /* SizeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B78B83E1DF4722500347436 /* SizeVC.swift */; };
@@ -33,6 +34,7 @@
 		9B6B0FB21DF0A5B50057E116 /* DrawVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawVC.swift; path = Assets.xcassets/DrawVC.swift; sourceTree = "<group>"; };
 		9B6B0FB41DF0A64B0057E116 /* Sketch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sketch.swift; sourceTree = "<group>"; };
 		9B6B0FB81DF0E1100057E116 /* ColorVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorVC.swift; sourceTree = "<group>"; };
+		9B6B52DE1DF8A10E00ACA39F /* CustomField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomField.swift; sourceTree = "<group>"; };
 		9B78B83A1DF45E3C00347436 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		9B78B83C1DF46B3A00347436 /* Extension_UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension_UIColor.swift; sourceTree = "<group>"; };
 		9B78B83E1DF4722500347436 /* SizeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeVC.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 		9B6B0FAC1DF0A3C00057E116 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9B6B52DE1DF8A10E00ACA39F /* CustomField.swift */,
 				9B78B83A1DF45E3C00347436 /* CustomView.swift */,
 				9B82A8D71DF7690D007B42BC /* CustomImageView.swift */,
 				9B6B0FAE1DF0A3DC0057E116 /* CustomButton.swift */,
@@ -94,6 +97,7 @@
 		9B6B0FAD1DF0A3C80057E116 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9BA68F0F1DEE2AA500979A7F /* Assets.xcassets */,
 				9B6B0FB41DF0A64B0057E116 /* Sketch.swift */,
 				9B78B83C1DF46B3A00347436 /* Extension_UIColor.swift */,
 			);
@@ -122,13 +126,12 @@
 			isa = PBXGroup;
 			children = (
 				9BA68F051DEE2AA500979A7F /* AppDelegate.swift */,
-				9BA68F091DEE2AA500979A7F /* Main.storyboard */,
 				9B82A8DB1DF7A811007B42BC /* ProfileVC.swift */,
+				9BA68F091DEE2AA500979A7F /* Main.storyboard */,
 				9BA68F111DEE2AA500979A7F /* LaunchScreen.storyboard */,
 				9B6B0FAD1DF0A3C80057E116 /* Model */,
 				9B6B0FAC1DF0A3C00057E116 /* View */,
 				9B6B0FAB1DF0A3BB0057E116 /* Controller */,
-				9BA68F0F1DEE2AA500979A7F /* Assets.xcassets */,
 				9BA68F141DEE2AA500979A7F /* Info.plist */,
 				9B82A8D91DF77007007B42BC /* GoogleService-Info.plist */,
 				9BA68F0C1DEE2AA500979A7F /* Drawing.xcdatamodeld */,
@@ -279,6 +282,7 @@
 				9B78B83D1DF46B3A00347436 /* Extension_UIColor.swift in Sources */,
 				9B6B0FB51DF0A64B0057E116 /* Sketch.swift in Sources */,
 				9B82A8D81DF7690D007B42BC /* CustomImageView.swift in Sources */,
+				9B6B52DF1DF8A10E00ACA39F /* CustomField.swift in Sources */,
 				9B6B0FB31DF0A5B50057E116 /* DrawVC.swift in Sources */,
 				9B6B0FAF1DF0A3DC0057E116 /* CustomButton.swift in Sources */,
 				9B6B0FB91DF0E1100057E116 /* ColorVC.swift in Sources */,
