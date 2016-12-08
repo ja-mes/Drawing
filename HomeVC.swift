@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
@@ -17,9 +18,7 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.delegate = self
         tableView.dataSource = self
         
-        currentUser.signOut()
-        
-        if !currentUser.isSignedIn {
+        if FIRAuth.auth()?.currentUser == nil {
             DispatchQueue.main.async {
                 
                 let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SignUp")
