@@ -25,9 +25,7 @@ class ProfileVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
             
             let ref = FIRDatabase.database().reference().child("sketches").queryOrdered(byChild: "user").queryEqual(toValue: userId)
             
-            // ACCORDING TO THE DOCS, A CHILD EVENT OBSERVER IS THE RECOMMENDED WAY TO DO THIS
             ref.observe(.childAdded, with: { (snapshot) in
-                print(snapshot)
             })
             
         }
