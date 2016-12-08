@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import Firebase
-import FirebaseAuth
 
 class AuthVC: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
