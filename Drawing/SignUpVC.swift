@@ -11,6 +11,8 @@ import Firebase
 import FirebaseAuth
 
 class SignUpVC: UIViewController {
+    @IBOutlet weak var emailField: CustomField!
+    @IBOutlet weak var passwordField: CustomField!
     
     var user: User!
 
@@ -20,6 +22,9 @@ class SignUpVC: UIViewController {
         user = User()
     }
     
+    @IBAction func signUpPressed(_ sender: UIButton) {
+        
+    }
     
 
 }
