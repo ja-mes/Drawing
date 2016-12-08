@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		2DFEF777C5C5B0125144176B /* Pods_Drawing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EDA91E062761B6D461D5CC /* Pods_Drawing.framework */; };
 		9B3F6CE31DF9A7C50071C47F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3F6CE21DF9A7C50071C47F /* Constants.swift */; };
-		9B65A5031DF8C93D006AA60D /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B65A5021DF8C93D006AA60D /* SignUpVC.swift */; };
-		9B65A5061DF8C989006AA60D /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B65A5051DF8C989006AA60D /* SignInVC.swift */; };
+		9B65A5031DF8C93D006AA60D /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B65A5021DF8C93D006AA60D /* AuthVC.swift */; };
 		9B65A5081DF8E050006AA60D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B65A5071DF8E050006AA60D /* User.swift */; };
 		9B6B0FAF1DF0A3DC0057E116 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6B0FAE1DF0A3DC0057E116 /* CustomButton.swift */; };
 		9B6B0FB11DF0A57D0057E116 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6B0FB01DF0A57D0057E116 /* HomeVC.swift */; };
@@ -34,8 +33,7 @@
 /* Begin PBXFileReference section */
 		08EDA91E062761B6D461D5CC /* Pods_Drawing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Drawing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B3F6CE21DF9A7C50071C47F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		9B65A5021DF8C93D006AA60D /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
-		9B65A5051DF8C989006AA60D /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		9B65A5021DF8C93D006AA60D /* AuthVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
 		9B65A5071DF8E050006AA60D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9B6B0FAE1DF0A3DC0057E116 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		9B6B0FB01DF0A57D0057E116 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeVC.swift; path = ../HomeVC.swift; sourceTree = "<group>"; };
@@ -93,8 +91,7 @@
 		9B65A5041DF8C942006AA60D /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				9B65A5021DF8C93D006AA60D /* SignUpVC.swift */,
-				9B65A5051DF8C989006AA60D /* SignInVC.swift */,
+				9B65A5021DF8C93D006AA60D /* AuthVC.swift */,
 			);
 			name = Authentication;
 			sourceTree = "<group>";
@@ -301,7 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B65A5031DF8C93D006AA60D /* SignUpVC.swift in Sources */,
+				9B65A5031DF8C93D006AA60D /* AuthVC.swift in Sources */,
 				9B3F6CE31DF9A7C50071C47F /* Constants.swift in Sources */,
 				9B82A8DC1DF7A811007B42BC /* ProfileVC.swift in Sources */,
 				9B78B83B1DF45E3C00347436 /* CustomView.swift in Sources */,
@@ -317,7 +314,6 @@
 				9B6B0FB31DF0A5B50057E116 /* SketchVC.swift in Sources */,
 				9B6B0FAF1DF0A3DC0057E116 /* CustomButton.swift in Sources */,
 				9B6B0FB91DF0E1100057E116 /* ColorVC.swift in Sources */,
-				9B65A5061DF8C989006AA60D /* SignInVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
