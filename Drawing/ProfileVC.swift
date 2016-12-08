@@ -9,9 +9,10 @@
 import UIKit
 import Firebase
 import FirebaseDatabase
+import FirebaseAuth
 
 class ProfileVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
@@ -20,11 +21,24 @@ class ProfileVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
         collectionView.delegate = self
         collectionView.dataSource = self
         
-   //     let ref = FIRDatabase().reference().child("sketches")
-        
-//        ref.observe(.value, with: { (snapshot) in
-//            
-//        })
+        if let userId = FIRAuth.auth()?.currentUser?.uid {
+            let ref = FIRDatabase.database().reference().child("sketches").queryOrdered(byChild: "user").queryEqual(toValue: userId)
+            
+            ref.observe(.value, with: { (snapshot) in
+                if let snapshot = snapshot.children.allObjects as? [FIRDataSnapshot] {
+                    for child in snapshot {
+                        let value = child.value as? NSDictionary
+                        
+                        if let imgUrl = value?["imgUrl"] {
+                            print(imgUrl)
+                        }
+                    }
+                    
+                }
+                
+            })
+            
+        }
     }
     
     
@@ -41,5 +55,5 @@ class ProfileVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImgCell", for: indexPath)
         return cell
     }
-
+    
 }
