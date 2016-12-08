@@ -24,17 +24,19 @@ class AuthVC: UIViewController {
     
     @IBAction func signUpPressed(_ sender: UIButton) {
         guard let email = emailField.text, email.isEmpty == false else {
+            displayAlert(title: "Invalid Email", message: "Please enter a valid email address")
             return
         }
         
         guard let password = passwordField.text, password.isEmpty == false else {
+            displayAlert(title: "Invalid Password", message: "Please enter a valid password")
             return
         }
 
         if newUser {
             FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
                 if let error = error {
-                    print(error)
+                    self.displayAlert(title: "Error", message: error.localizedDescription)
                 } else {
                     self.dismiss(animated: true, completion: nil)
                 }
@@ -43,7 +45,7 @@ class AuthVC: UIViewController {
         } else {
             FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
                 if let error = error {
-                    print(error)
+                    self.displayAlert(title: "Error", message: error.localizedDescription)
                 } else {
                     self.dismiss(animated: true, completion: nil)
                 }
