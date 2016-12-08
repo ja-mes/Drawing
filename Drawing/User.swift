@@ -43,10 +43,9 @@ class User {
             FIRAuth.auth()?.createUser(withEmail: _email!, password: _password!, completion: { (user, error) in
                 if let error = error {
                     print("Unable to create user: \(error)")
-                    return
                 }
             })
-        }
+        }        
     }
     
     func isValid() -> Bool {
