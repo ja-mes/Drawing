@@ -16,13 +16,10 @@ class AuthVC: UIViewController {
     @IBOutlet weak var passwordField: CustomField!
     @IBOutlet weak var submitButton: CustomButton!
     
-    var user: User!
     var newUser = true
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        user = User()
     }
     
     @IBAction func signUpPressed(_ sender: UIButton) {
