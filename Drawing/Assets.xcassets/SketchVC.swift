@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseStorage
+import FirebaseAuth
 
 class SketchVC: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
@@ -62,12 +63,28 @@ class SketchVC: UIViewController {
                 if error != nil {
                     print("Unable to upload image to firbase: \(error)")
                 }
+                
+                if let url = metadata?.downloadURL()?.absoluteString {
+                    self.postToFirebase(imgUrl: url)
+                }
             })
             
             
         }
         
         
+    }
+    
+    
+    func postToFirebase(imgUrl: String) {
+        if let userId = FIRAuth.auth()?.currentUser?.uid {
+            let sketch = FIRDatabase.database().reference().child("sketches").childByAutoId()
+            
+            sketch.setValue([
+                "imgUrl": imgUrl,
+                "user": userId
+            ])
+        }
     }
     
     @IBAction func erasePressed(_ sender: UIButton) {
