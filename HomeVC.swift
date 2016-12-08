@@ -16,7 +16,9 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
         tableView.delegate = self
         tableView.dataSource = self
-                
+        
+        currentUser.signOut()
+        
         if !currentUser.isSignedIn {
             DispatchQueue.main.async {
                 
