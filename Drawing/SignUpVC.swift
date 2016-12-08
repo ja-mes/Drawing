@@ -7,11 +7,19 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class SignUpVC: UIViewController {
+    
+    var user: User!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        user = User()
     }
+    
+    
 
 }

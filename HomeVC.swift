@@ -18,7 +18,6 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.dataSource = self
     }
     
-    
     override func viewWillAppear(_ animated: Bool) {
         DispatchQueue.main.async {
             let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SignUp")
