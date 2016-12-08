@@ -26,7 +26,7 @@ class AuthVC: UIViewController {
     @IBAction func signUpPressed(_ sender: UIButton) {
         if newUser {
             do {
-                try currentUser.create(withEmail: emailField.text, password: passwordField.text)
+                try currentUser.authUser(withEmail: emailField.text, password: passwordField.text, newUser: true)
                 dismiss(animated: true , completion: nil)
             } catch User.Validation.invalidEmail {
                 print("user entered a invalid email")
@@ -34,6 +34,10 @@ class AuthVC: UIViewController {
                 print("user entered a invalid password")
             } catch {
                 fatalError()
+            }
+        } else {
+            do {
+                
             }
         }
     }

@@ -11,9 +11,10 @@ import Firebase
 import FirebaseAuth
 
 class User {
-    enum Validation: Error {
-        case invalidEmail
-        case invalidPassword
+    private var _errorMessage: String?
+    
+    var errorMessage: String? {
+        return _errorMessage
     }
     
     var email: String? {
@@ -29,13 +30,15 @@ class User {
         return false
     }
     
-    func authUser(withEmail email: String?, password: String?, newUser: Bool = false) throws {
+    func authUser(withEmail email: String?, password: String?, newUser: Bool = false) -> Bool {
         guard let email = email, !email.isEmpty else {
-            throw Validation.invalidEmail
+            _errorMessage = "Email address is invalid"
+            return false
         }
         
         guard let password = password, !password.isEmpty else {
-            throw Validation.invalidPassword
+            _errorMessage = "Password is invalid"
+            return false
         }
 
         
@@ -44,6 +47,8 @@ class User {
         } else {
             
         }
+        
+        return true
     }
     
     func signOut() {
