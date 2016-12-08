@@ -11,9 +11,9 @@ import Firebase
 import FirebaseAuth
 
 class User {
-    private var _errorMessage: String?
+    private var _errorMessage = ""
     
-    var errorMessage: String? {
+    var errorMessage: String {
         return _errorMessage
     }
     
@@ -45,12 +45,12 @@ class User {
         if newUser {
             saveToFirebase(withEmail: email, password: password)
         } else {
-            
+            loginWithFirebase(withEmail: email, password: password)
         }
         
         return true
     }
-    
+
     func signOut() {
         try! FIRAuth.auth()?.signOut()
     }

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class AuthVC: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
@@ -24,21 +26,31 @@ class AuthVC: UIViewController {
     }
     
     @IBAction func signUpPressed(_ sender: UIButton) {
+        guard let email = emailField.text, email.isEmpty == false else {
+            return
+        }
+        
+        guard let password = passwordField.text, password.isEmpty == false else {
+            return
+        }
+
         if newUser {
-            do {
-                try currentUser.authUser(withEmail: emailField.text, password: passwordField.text, newUser: true)
-                dismiss(animated: true , completion: nil)
-            } catch User.Validation.invalidEmail {
-                print("user entered a invalid email")
-            } catch User.Validation.invalidPassword {
-                print("user entered a invalid password")
-            } catch {
-                fatalError()
-            }
+            FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
+                if let error = error {
+                    print(error)
+                } else {
+                    self.dismiss(animated: true, completion: nil)
+                }
+            })
+            
         } else {
-            do {
-                
-            }
+            FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
+                if let error = error {
+                    print(error)
+                } else {
+                    self.dismiss(animated: true, completion: nil)
+                }
+            })
         }
     }
     
