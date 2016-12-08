@@ -11,6 +11,25 @@ import Firebase
 import FirebaseAuth
 
 class User {
+    private var _email: String?
+    private var _password: String?
+    
+    var email: String? {
+        get {
+            return _email
+        } set {
+            _email = newValue
+        }
+    }
+    
+    var password: String? {
+        get {
+            return _password
+        } set {
+            _password = newValue
+        }
+    }
+    
     var isSignedIn: Bool {
         if FIRAuth.auth()?.currentUser != nil {
             return true
