@@ -38,12 +38,26 @@ class User {
         return false
     }
     
-    func create(withEmail email: String, password: String) {
-        FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
-            if let error = error {
-                print("Unable to create user: \(error)")
-                return
-            }
-        })
+    func create() {
+        if isValid() {
+            FIRAuth.auth()?.createUser(withEmail: _email!, password: _password!, completion: { (user, error) in
+                if let error = error {
+                    print("Unable to create user: \(error)")
+                    return
+                }
+            })
+        }
+    }
+    
+    func isValid() -> Bool {
+        guard _email != nil else {
+            return false
+        }
+        
+        guard _password != nil else {
+            return false
+        }
+
+        return true
     }
 }
