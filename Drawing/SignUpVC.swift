@@ -11,10 +11,13 @@ import Firebase
 import FirebaseAuth
 
 class SignUpVC: UIViewController {
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var emailField: CustomField!
     @IBOutlet weak var passwordField: CustomField!
+    @IBOutlet weak var submitButton: CustomButton!
     
     var user: User!
+    var newUser = true
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,5 +38,18 @@ class SignUpVC: UIViewController {
         }
     }
     
+    @IBAction func signInPressed(_ sender: UIButton) {
+        if newUser {
+            newUser = false
+            
+            titleLabel.text = "Log in to your account"
+            submitButton.setTitle("Log In", for: .normal)
+        } else {
+            newUser = true
+            
+            titleLabel.text = "Create an account"
+            submitButton.setTitle("Sign Up", for: .normal)
+        }
+    }
 
 }
