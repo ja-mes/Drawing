@@ -35,6 +35,8 @@ class SignUpVC: UIViewController {
             if let error = error {
                 print("Unable to create user: \(error)")
             }
+            
+            self.dismiss(animated: true, completion: nil)
         })
     }
     
