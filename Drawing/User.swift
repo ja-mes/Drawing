@@ -29,7 +29,7 @@ class User {
         return false
     }
     
-    func create(withEmail email: String?, password: String?) throws {
+    func authUser(withEmail email: String?, password: String?, newUser: Bool = false) throws {
         guard let email = email, !email.isEmpty else {
             throw Validation.invalidEmail
         }
@@ -37,19 +37,31 @@ class User {
         guard let password = password, !password.isEmpty else {
             throw Validation.invalidPassword
         }
+
         
-        uploadToServer(withEmail: email, password: password)
-        
+        if newUser {
+            saveToFirebase(withEmail: email, password: password)
+        } else {
+            
+        }
     }
     
     func signOut() {
         try! FIRAuth.auth()?.signOut()
     }
     
-    private func uploadToServer(withEmail email: String, password: String) {
+    private func saveToFirebase(withEmail email: String, password: String) {
         FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
             if let error = error {
                 print("Unable to create user: \(error)")
+            }
+        })
+    }
+    
+    private func loginWithFirebase(withEmail email: String, password: String) {
+        FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
+            if let error = error {
+                print("Unable to authenticate user: \(error)")
             }
         })
     }
