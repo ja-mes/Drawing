@@ -20,6 +20,7 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     override func viewWillAppear(_ animated: Bool) {
         DispatchQueue.main.async {
+            
             let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SignUp")
             self.present(viewController, animated: true, completion: nil)
         }
@@ -42,3 +43,4 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
 }
+

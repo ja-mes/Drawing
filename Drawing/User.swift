@@ -11,6 +11,11 @@ import Firebase
 import FirebaseAuth
 
 class User {
+    enum Validation: Error {
+        case invalidEmail
+        case invalidPassword
+    }
+    
     private var _email: String?
     private var _password: String?
     
@@ -38,25 +43,24 @@ class User {
         return false
     }
     
-    func create() {
-        if isValid() {
-            FIRAuth.auth()?.createUser(withEmail: _email!, password: _password!, completion: { (user, error) in
-                if let error = error {
-                    print("Unable to create user: \(error)")
-                }
-            })
-        }        
-    }
-    
-    func isValid() -> Bool {
-        guard _email != nil else {
-            return false
+    func create() throws {
+        guard let _email = _email, !_email.isEmpty else {
+            throw Validation.invalidEmail
         }
         
-        guard _password != nil else {
-            return false
+        guard let _password = _password, !_password.isEmpty else {
+            throw Validation.invalidPassword
         }
-
-        return true
+        
+        uploadToServer(withEmail: _email, password: _password)
+        
+    }
+    
+    private func uploadToServer(withEmail email: String, password: String) {
+        FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
+            if let error = error {
+                print("Unable to create user: \(error)")
+            }
+        })
     }
 }

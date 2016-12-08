@@ -23,21 +23,19 @@ class SignUpVC: UIViewController {
     }
     
     @IBAction func signUpPressed(_ sender: UIButton) {
-        guard let email = emailField.text else {
-            return
-        }
+        currentUser.email = emailField.text
+        currentUser.password = passwordField.text
         
-        guard let password = passwordField.text else {
-            return
+        do {
+            try currentUser.create()
+            dismiss(animated: true , completion: nil)
+        } catch User.Validation.invalidEmail {
+            print("user entered a invalid email")
+        } catch User.Validation.invalidPassword {
+            print("user entered a invalid password")
+        } catch {
+            fatalError()
         }
-        
-        FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
-            if let error = error {
-                print("Unable to create user: \(error)")
-            }
-            
-            self.dismiss(animated: true, completion: nil)
-        })
     }
     
 
