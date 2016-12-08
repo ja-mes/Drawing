@@ -23,11 +23,8 @@ class SignUpVC: UIViewController {
     }
     
     @IBAction func signUpPressed(_ sender: UIButton) {
-        currentUser.email = emailField.text
-        currentUser.password = passwordField.text
-        
         do {
-            try currentUser.create()
+            try currentUser.create(withEmail: emailField.text, password: passwordField.text)
             dismiss(animated: true , completion: nil)
         } catch User.Validation.invalidEmail {
             print("user entered a invalid email")

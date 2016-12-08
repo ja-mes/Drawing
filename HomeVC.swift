@@ -16,14 +16,18 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
         tableView.delegate = self
         tableView.dataSource = self
+                
+        if !currentUser.isSignedIn {
+            DispatchQueue.main.async {
+                
+                let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SignUp")
+                self.present(viewController, animated: true, completion: nil)
+            }
+        }
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        DispatchQueue.main.async {
-            
-            let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SignUp")
-            self.present(viewController, animated: true, completion: nil)
-        }
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

@@ -16,24 +16,10 @@ class User {
         case invalidPassword
     }
     
-    private var _email: String?
-    private var _password: String?
-    
     var email: String? {
-        get {
-            return _email
-        } set {
-            _email = newValue
-        }
+        return FIRAuth.auth()?.currentUser?.email
     }
     
-    var password: String? {
-        get {
-            return _password
-        } set {
-            _password = newValue
-        }
-    }
     
     var isSignedIn: Bool {
         if FIRAuth.auth()?.currentUser != nil {
@@ -43,17 +29,21 @@ class User {
         return false
     }
     
-    func create() throws {
-        guard let _email = _email, !_email.isEmpty else {
+    func create(withEmail email: String?, password: String?) throws {
+        guard let email = email, !email.isEmpty else {
             throw Validation.invalidEmail
         }
         
-        guard let _password = _password, !_password.isEmpty else {
+        guard let password = password, !password.isEmpty else {
             throw Validation.invalidPassword
         }
         
-        uploadToServer(withEmail: _email, password: _password)
+        uploadToServer(withEmail: email, password: password)
         
+    }
+    
+    func signOut() {
+        try! FIRAuth.auth()?.signOut()
     }
     
     private func uploadToServer(withEmail email: String, password: String) {
