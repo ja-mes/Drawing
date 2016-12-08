@@ -24,12 +24,12 @@ class AuthVC: UIViewController {
     
     @IBAction func signUpPressed(_ sender: UIButton) {
         guard let email = emailField.text, email.isEmpty == false else {
-            displayAlert(title: "Invalid Email", message: "Please enter a valid email address")
+            displayAlert(title: "Invalid Email", message: "Please enter a email address")
             return
         }
         
         guard let password = passwordField.text, password.isEmpty == false else {
-            displayAlert(title: "Invalid Password", message: "Please enter a valid password")
+            displayAlert(title: "Invalid Password", message: "Please enter a password")
             return
         }
 

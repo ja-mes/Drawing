@@ -669,7 +669,7 @@
         <!--AuthVC-->
         <scene sceneID="0Eo-8o-i5G">
             <objects>
-                <viewController storyboardIdentifier="SignUp" id="VMD-h3-OIu" customClass="AuthVC" customModule="Drawing" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AuthVC" id="VMD-h3-OIu" customClass="AuthVC" customModule="Drawing" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aww-uC-893"/>
                         <viewControllerLayoutGuide type="bottom" id="fgA-Ru-SdL"/>

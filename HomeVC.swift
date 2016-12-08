@@ -21,7 +21,7 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         if FIRAuth.auth()?.currentUser == nil {
             DispatchQueue.main.async {
                 
-                let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SignUp")
+                let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AuthVC")
                 self.present(viewController, animated: true, completion: nil)
             }
         }
