@@ -25,23 +25,6 @@ class ProfileVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
             
             let ref = FIRDatabase.database().reference().child("sketches").queryOrdered(byChild: "user").queryEqual(toValue: userId)
             
-            // THIS .VALUE OBSERVER WILL RETURN THE ENTIRE LIST
-//            ref.observe(.value, with: { (snapshot) in
-//                if let snapshot = snapshot.children.allObjects as? [FIRDataSnapshot] {
-//                    for child in snapshot {
-//                        let value = child.value as? NSDictionary
-//                        
-//                        if let imgUrl = value?["imgUrl"] {
-//                            print(imgUrl)
-//                        }
-//                    }
-//                    
-//                }
-//                
-//            })
-//            
-            
-            
             // ACCORDING TO THE DOCS, A CHILD EVENT OBSERVER IS THE RECOMMENDED WAY TO DO THIS
             ref.observe(.childAdded, with: { (snapshot) in
                 print(snapshot)
