@@ -42,7 +42,6 @@ class ProfileVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
         return sketches.count
     }
     
@@ -51,6 +50,8 @@ class ProfileVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
             let sketchDict = sketches[indexPath.row].value as? [String: AnyObject]
             
             print(String(describing: sketchDict?["imgUrl"]))
+            
+            return cell
         }
         
         
