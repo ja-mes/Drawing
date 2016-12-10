@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2DFEF777C5C5B0125144176B /* Pods_Drawing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EDA91E062761B6D461D5CC /* Pods_Drawing.framework */; };
 		9B3F6CE31DF9A7C50071C47F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3F6CE21DF9A7C50071C47F /* Constants.swift */; };
+		9B3F6CE71DFC85200071C47F /* ProfileSketchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3F6CE61DFC85200071C47F /* ProfileSketchCell.swift */; };
 		9B65A5031DF8C93D006AA60D /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B65A5021DF8C93D006AA60D /* AuthVC.swift */; };
 		9B6B0FAF1DF0A3DC0057E116 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6B0FAE1DF0A3DC0057E116 /* CustomButton.swift */; };
 		9B6B0FB11DF0A57D0057E116 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6B0FB01DF0A57D0057E116 /* HomeVC.swift */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		08EDA91E062761B6D461D5CC /* Pods_Drawing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Drawing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B3F6CE21DF9A7C50071C47F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9B3F6CE61DFC85200071C47F /* ProfileSketchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSketchCell.swift; sourceTree = "<group>"; };
 		9B65A5021DF8C93D006AA60D /* AuthVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
 		9B6B0FAE1DF0A3DC0057E116 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		9B6B0FB01DF0A57D0057E116 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeVC.swift; path = ../HomeVC.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 		9B6B0FAC1DF0A3C00057E116 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9B3F6CE61DFC85200071C47F /* ProfileSketchCell.swift */,
 				9B6B52DE1DF8A10E00ACA39F /* CustomField.swift */,
 				9B78B83A1DF45E3C00347436 /* CustomView.swift */,
 				9B82A8D71DF7690D007B42BC /* CustomImageView.swift */,
@@ -300,6 +303,7 @@
 				9B82A8DC1DF7A811007B42BC /* ProfileVC.swift in Sources */,
 				9B78B83B1DF45E3C00347436 /* CustomView.swift in Sources */,
 				9B78B83F1DF4722500347436 /* SizeVC.swift in Sources */,
+				9B3F6CE71DFC85200071C47F /* ProfileSketchCell.swift in Sources */,
 				9BA68F061DEE2AA500979A7F /* AppDelegate.swift in Sources */,
 				9B6B0FB11DF0A57D0057E116 /* HomeVC.swift in Sources */,
 				9BA68F0E1DEE2AA500979A7F /* Drawing.xcdatamodeld in Sources */,

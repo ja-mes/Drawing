@@ -47,6 +47,8 @@ class ProfileVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImgCell", for: indexPath)
+        let sektchDict = sketches[indexPath.row].value as? [String: AnyObject]
+        
         return cell
     }
     
