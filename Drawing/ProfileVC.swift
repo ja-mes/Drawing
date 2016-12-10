@@ -30,6 +30,7 @@ class ProfileVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
             
             sketchRef.observe(.childAdded, with: { (snapshot) in
                 self.sketches.append(snapshot)
+                self.collectionView.insertItems(at: [IndexPath(row: self.sketches.count - 1, section: 0)])
             })
             
         }
@@ -48,6 +49,11 @@ class ProfileVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImgCell", for: indexPath) as? ProfileSketchCell {
             let sketchDict = sketches[indexPath.row].value as? [String: AnyObject]
+            
+            if let imgUrl = sketchDict?["imgUrl"] as? String {
+                
+                cell.configure(imgUrl: imgUrl)
+            }
             
             print(String(describing: sketchDict?["imgUrl"]))
             
