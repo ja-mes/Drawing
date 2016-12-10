@@ -15,6 +15,9 @@ class ProfileVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    var sketches: Array<FIRDataSnapshot> = []
+    lazy var ref = FIRDatabase.database().reference()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,9 +26,10 @@ class ProfileVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
         
         if let userId = FIRAuth.auth()?.currentUser?.uid {
             
-            let ref = FIRDatabase.database().reference().child("sketches").queryOrdered(byChild: "user").queryEqual(toValue: userId)
+            let sketchRef = ref.child("sketches").queryOrdered(byChild: "user").queryEqual(toValue: userId)
             
-            ref.observe(.childAdded, with: { (snapshot) in
+            sketchRef.observe(.childAdded, with: { (snapshot) in
+                self.sketches.append(snapshot)
             })
             
         }
@@ -47,3 +51,18 @@ class ProfileVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
     }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
