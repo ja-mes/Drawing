@@ -9,5 +9,5 @@
 import UIKit
 
 class ProfileSketchCell: UICollectionViewCell {
-    
+    @IBOutlet weak var imageView: UIImageView!
 }
