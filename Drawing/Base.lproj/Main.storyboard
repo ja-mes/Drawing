@@ -48,6 +48,9 @@
                                                 <real key="value" value="12"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="segmentChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J5X-n2-cb6"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jxi-WY-5ur" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
                                         <rect key="frame" x="100" y="0.0" width="90" height="26"/>
@@ -65,6 +68,9 @@
                                                 <real key="value" value="12"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="segmentChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ahn-Jw-f14"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GiC-1r-2ja" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
                                         <rect key="frame" x="200" y="0.0" width="90" height="26"/>
@@ -82,6 +88,9 @@
                                                 <real key="value" value="12"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="segmentChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yty-Bn-ic7"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -159,6 +168,9 @@
                     </tabBarItem>
                     <connections>
                         <outlet property="tableView" destination="da6-FZ-aA1" id="92z-LD-4pr"/>
+                        <outletCollection property="segments" destination="5Al-b1-Z93" collectionClass="NSMutableArray" id="dUP-Ei-E1d"/>
+                        <outletCollection property="segments" destination="Jxi-WY-5ur" collectionClass="NSMutableArray" id="BXu-Mg-T6L"/>
+                        <outletCollection property="segments" destination="GiC-1r-2ja" collectionClass="NSMutableArray" id="aU2-ew-Vdw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

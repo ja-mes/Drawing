@@ -11,6 +11,13 @@ import FirebaseAuth
 
 class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
+    
+    // Segment Outlets
+    @IBOutlet var segments: [CustomButton]!
+    
+    
+    var selectedSegmentIndex = 0
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,5 +54,31 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return UITableViewCell()
     }
     
+    
+    @IBAction func segmentChanged(_ sender: CustomButton) {
+        selectSegment(button: sender)
+    }
+    
+    func selectSegment(button: CustomButton) {
+        if let index = segments.index(of: button) {
+            selectedSegmentIndex = index
+        }
+        
+        for b in segments {
+            if b == button {
+                b.backgroundColor = UIColor(hexString: "#D6D6D6")
+            } else {
+                b.backgroundColor = UIColor.white
+            }
+        }
+        
+    }
+    
 }
+
+
+
+
+
+
 
