@@ -23,13 +23,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sketch App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UpE-YF-fP8">
-                                <rect key="frame" x="129.5" y="55" width="116.5" height="30.5"/>
+                                <rect key="frame" x="129.5" y="36" width="116.5" height="30.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.25882352939999997" green="0.25882352939999997" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2u0-mw-wjp">
-                                <rect key="frame" x="42.5" y="102.5" width="290" height="26"/>
+                                <rect key="frame" x="42.5" y="83.5" width="290" height="26"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Al-b1-Z93" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="90" height="26"/>
@@ -86,7 +86,7 @@
                                 </subviews>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="339" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="da6-FZ-aA1">
-                                <rect key="frame" x="0.0" y="153.5" width="375" height="464.5"/>
+                                <rect key="frame" x="0.0" y="134.5" width="375" height="483.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DrawCell" rowHeight="339" id="8s2-eG-JrF">
@@ -150,7 +150,7 @@
                             <constraint firstItem="da6-FZ-aA1" firstAttribute="top" secondItem="2u0-mw-wjp" secondAttribute="bottom" constant="25" id="D6j-t8-2Ay"/>
                             <constraint firstItem="2u0-mw-wjp" firstAttribute="top" secondItem="UpE-YF-fP8" secondAttribute="bottom" constant="17" id="GSC-3n-Vwe"/>
                             <constraint firstItem="UpE-YF-fP8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Obm-n5-vYD"/>
-                            <constraint firstItem="UpE-YF-fP8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="35" id="lKv-s5-UO3"/>
+                            <constraint firstItem="UpE-YF-fP8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="lKv-s5-UO3"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="da6-FZ-aA1" secondAttribute="bottom" id="spM-aO-bey"/>
                         </constraints>
                     </view>
