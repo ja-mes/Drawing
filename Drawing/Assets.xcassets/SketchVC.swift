@@ -14,22 +14,22 @@ import FirebaseAuth
 class SketchVC: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     
-    var sketch: SketchPad!
+    var sketchPad: SketchPad!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        sketch = SketchPad(imageView: imageView)
+        sketchPad = SketchPad(imageView: imageView)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ColorVC" {
             if let destination = segue.destination as? ColorVC {
-                destination.sketch = sketch
+                destination.sketch = sketchPad
             }
         } else if segue.identifier == "SizeVC" {
             if let destination = segue.destination as? SizeVC {
-                destination.sketch = sketch
+                destination.sketch = sketchPad
             }
         }
     }
@@ -37,18 +37,18 @@ class SketchVC: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
-            sketch.touchesBegan(touch: touch)
+            sketchPad.touchesBegan(touch: touch)
         }
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
-            sketch.touchesMoved(touch: touch)
+            sketchPad.touchesMoved(touch: touch)
         }
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        sketch.saveBackup()
+        sketchPad.saveBackup()
     }
     
     @IBAction func savePressed(_ sender: UIButton) {
@@ -88,9 +88,9 @@ class SketchVC: UIViewController {
     }
     
     @IBAction func erasePressed(_ sender: UIButton) {
-        sketch.toggleEraser()
+        sketchPad.toggleEraser()
         
-        if sketch.isErasing {
+        if sketchPad.isErasing {
             sender.backgroundColor = UIColor(red:1.00, green:0.34, blue:0.13, alpha:1.0)
         } else {
             sender.backgroundColor = UIColor(red:0.98, green:0.58, blue:0.42, alpha:1.0)
@@ -99,7 +99,7 @@ class SketchVC: UIViewController {
     }
     
     @IBAction func undoPressed(_ sender: UIButton) {
-        sketch.undo()
+        sketchPad.undo()
     }
     
     @IBAction func colorPressed(_ sender: UIButton) {

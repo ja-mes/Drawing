@@ -18,4 +18,9 @@ class Sketch {
         image = img
     }
     
+    
+    func save() {
+        
+    }
+    
 }
