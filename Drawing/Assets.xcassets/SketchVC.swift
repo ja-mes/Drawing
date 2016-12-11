@@ -14,12 +14,12 @@ import FirebaseAuth
 class SketchVC: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     
-    var sketch: Sketch!
+    var sketch: SketchPad!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        sketch = Sketch(imageView: imageView)
+        sketch = SketchPad(imageView: imageView)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

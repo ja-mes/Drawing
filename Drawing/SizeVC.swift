@@ -9,7 +9,7 @@
 import UIKit
 
 class SizeVC: UIViewController {
-    var sketch: Sketch!
+    var sketch: SketchPad!
     
     @IBOutlet var buttons: [UIButton]!
     @IBOutlet var sizes: [UIView]!

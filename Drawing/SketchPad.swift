@@ -9,7 +9,7 @@
 import UIKit
 
 
-class Sketch {
+class SketchPad {
     private var _imageView: UIImageView
     private var _previousColor: UIColor?
     private var backups = [UIImage]()

@@ -9,7 +9,7 @@
 import UIKit
 
 class ColorVC: UIViewController {
-    var sketch: Sketch!
+    var sketch: SketchPad!
     
     let colors = [
         UIColor(red:0.96, green:0.26, blue:0.21, alpha:1.0),
