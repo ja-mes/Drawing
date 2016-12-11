@@ -12,6 +12,12 @@ import FirebaseStorage
 class ProfileSketchCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     
+    override func awakeFromNib() {
+        self.layer.cornerRadius = 5
+        self.layer.borderColor = UIColor.black.cgColor
+        self.layer.borderWidth = 0.3
+    }
+    
     func configure(imgUrl: String) {
         let ref = FIRStorage.storage().reference(forURL: imgUrl)
         
