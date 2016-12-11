@@ -52,39 +52,12 @@ class SketchVC: UIViewController {
     }
     
     @IBAction func savePressed(_ sender: UIButton) {
-        if let img = imageView.image, let imgData = UIImageJPEGRepresentation(img, 0.2) {
-            let imgUid = NSUUID().uuidString
-            let ref = FIRStorage.storage().reference().child("drawings")
-            let metadata = FIRStorageMetadata()
-            metadata.contentType = "image/jpeg"
+        if let img = imageView.image {
+            let sketch = Sketch(img: img)
             
-            
-            ref.child(imgUid).put(imgData, metadata: metadata, completion: { (metadata, error) in
-                if error != nil {
-                    print("Unable to upload image to firbase: \(error)")
-                }
-                
-                if let url = metadata?.downloadURL()?.absoluteString {
-                    self.postToFirebase(imgUrl: url)
-                }
-            })
-            
-            
+            sketch.save()
         }
         
-        
-    }
-    
-    
-    func postToFirebase(imgUrl: String) {
-        if let userId = FIRAuth.auth()?.currentUser?.uid {
-            let sketch = FIRDatabase.database().reference().child("sketches").childByAutoId()
-            
-            sketch.setValue([
-                "imgUrl": imgUrl,
-                "user": userId
-            ])
-        }
     }
     
     @IBAction func erasePressed(_ sender: UIButton) {
