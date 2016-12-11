@@ -64,7 +64,7 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             selectedSegmentIndex = index
         }
         
-        for b in segments {
+        for b in segments { 
             if b == button {
                 b.backgroundColor = UIColor(hexString: "#D6D6D6")
             } else {
