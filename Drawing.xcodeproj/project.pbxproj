@@ -10,6 +10,7 @@
 		2DFEF777C5C5B0125144176B /* Pods_Drawing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EDA91E062761B6D461D5CC /* Pods_Drawing.framework */; };
 		9B3F6CE31DF9A7C50071C47F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3F6CE21DF9A7C50071C47F /* Constants.swift */; };
 		9B3F6CE71DFC85200071C47F /* ProfileSketchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3F6CE61DFC85200071C47F /* ProfileSketchCell.swift */; };
+		9B3F6CE91DFD97790071C47F /* Sketch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3F6CE81DFD97790071C47F /* Sketch.swift */; };
 		9B65A5031DF8C93D006AA60D /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B65A5021DF8C93D006AA60D /* AuthVC.swift */; };
 		9B6B0FAF1DF0A3DC0057E116 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6B0FAE1DF0A3DC0057E116 /* CustomButton.swift */; };
 		9B6B0FB11DF0A57D0057E116 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6B0FB01DF0A57D0057E116 /* HomeVC.swift */; };
@@ -34,6 +35,7 @@
 		08EDA91E062761B6D461D5CC /* Pods_Drawing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Drawing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B3F6CE21DF9A7C50071C47F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9B3F6CE61DFC85200071C47F /* ProfileSketchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSketchCell.swift; sourceTree = "<group>"; };
+		9B3F6CE81DFD97790071C47F /* Sketch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sketch.swift; path = ../Sketch.swift; sourceTree = "<group>"; };
 		9B65A5021DF8C93D006AA60D /* AuthVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
 		9B6B0FAE1DF0A3DC0057E116 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		9B6B0FB01DF0A57D0057E116 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeVC.swift; path = ../HomeVC.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				9B6B0FB41DF0A64B0057E116 /* SketchPad.swift */,
+				9B3F6CE81DFD97790071C47F /* Sketch.swift */,
 				9B78B83C1DF46B3A00347436 /* Extension_UIColor.swift */,
 			);
 			name = Model;
@@ -298,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B3F6CE91DFD97790071C47F /* Sketch.swift in Sources */,
 				9B65A5031DF8C93D006AA60D /* AuthVC.swift in Sources */,
 				9B3F6CE31DF9A7C50071C47F /* Constants.swift in Sources */,
 				9B82A8DC1DF7A811007B42BC /* ProfileVC.swift in Sources */,
