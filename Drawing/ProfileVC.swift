@@ -23,8 +23,8 @@ class ProfileVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        sketches = Sketches(collectionView: collectionView)
-        sketches.handle()
+        sketches = Sketches()
+        sketches.handleCollectionView(collectionView)
     }
     
     
@@ -42,6 +42,8 @@ class ProfileVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
             let sketchDict = sketches.items[indexPath.row].value as? [String: AnyObject]
             
             if let imgUrl = sketchDict?["imgUrl"] as? String {
+               
+                //cell.imageView.image = sketches.downloadImageFrom(url: imgUrl)
                 
                 cell.configure(imgUrl: imgUrl)
             }

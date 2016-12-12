@@ -22,6 +22,7 @@ class ProfileSketchCell: UICollectionViewCell {
         let ref = FIRStorage.storage().reference(forURL: imgUrl)
         
         ref.data(withMaxSize: 2 * 1024 * 1024, completion: { (data, error) in
+            
             if error != nil {
                 print("Unable to download sketch from firebase storage")
                 return
@@ -32,5 +33,6 @@ class ProfileSketchCell: UICollectionViewCell {
                 self.imageView.image = img
             }
         })
+        
     }
 }
