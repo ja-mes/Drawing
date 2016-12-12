@@ -15,8 +15,7 @@ class ProfileVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var sketches: Array<FIRDataSnapshot> = []
-    lazy var ref = FIRDatabase.database().reference()
+    var sketches: Sketches!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,16 +23,8 @@ class ProfileVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        if let userId = FIRAuth.auth()?.currentUser?.uid {
-            
-            let sketchRef = ref.child("sketches").queryOrdered(byChild: "user").queryEqual(toValue: userId)
-            
-            sketchRef.observe(.childAdded, with: { (snapshot) in
-                self.sketches.append(snapshot)
-                self.collectionView.insertItems(at: [IndexPath(row: self.sketches.count - 1, section: 0)])
-            })
-            
-        }
+        sketches = Sketches(collectionView: collectionView)
+        sketches.handle()
     }
     
     
@@ -43,12 +34,12 @@ class ProfileVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return sketches.count
+        return sketches.items.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImgCell", for: indexPath) as? ProfileSketchCell {
-            let sketchDict = sketches[indexPath.row].value as? [String: AnyObject]
+            let sketchDict = sketches.items[indexPath.row].value as? [String: AnyObject]
             
             if let imgUrl = sketchDict?["imgUrl"] as? String {
                 

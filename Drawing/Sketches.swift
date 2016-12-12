@@ -21,12 +21,10 @@ class Sketches {
     
     init(tableView: UITableView) {
         _itemsView = tableView
-        handle()
     }
     
     init(collectionView: UICollectionView) {
         _itemsView = collectionView
-        handle()
     }
     
     
@@ -46,6 +44,7 @@ class Sketches {
             })
         }
     }
+    
     
     
 }
