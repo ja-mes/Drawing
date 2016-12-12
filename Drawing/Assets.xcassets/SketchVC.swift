@@ -82,7 +82,6 @@ class SketchVC: UIViewController {
     @IBAction func sizePressed(_ sender: UIButton) {
         performSegue(withIdentifier: "SizeVC", sender: nil)
     }
-    
 }
 
 

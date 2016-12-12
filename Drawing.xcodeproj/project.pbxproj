@@ -11,6 +11,7 @@
 		9B3F6CE31DF9A7C50071C47F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3F6CE21DF9A7C50071C47F /* Constants.swift */; };
 		9B3F6CE71DFC85200071C47F /* ProfileSketchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3F6CE61DFC85200071C47F /* ProfileSketchCell.swift */; };
 		9B3F6CE91DFD97790071C47F /* Sketch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3F6CE81DFD97790071C47F /* Sketch.swift */; };
+		9B3F6CEB1DFE264B0071C47F /* Sketches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3F6CEA1DFE264B0071C47F /* Sketches.swift */; };
 		9B65A5031DF8C93D006AA60D /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B65A5021DF8C93D006AA60D /* AuthVC.swift */; };
 		9B6B0FAF1DF0A3DC0057E116 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6B0FAE1DF0A3DC0057E116 /* CustomButton.swift */; };
 		9B6B0FB11DF0A57D0057E116 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6B0FB01DF0A57D0057E116 /* HomeVC.swift */; };
@@ -36,6 +37,7 @@
 		9B3F6CE21DF9A7C50071C47F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9B3F6CE61DFC85200071C47F /* ProfileSketchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSketchCell.swift; sourceTree = "<group>"; };
 		9B3F6CE81DFD97790071C47F /* Sketch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sketch.swift; path = ../Sketch.swift; sourceTree = "<group>"; };
+		9B3F6CEA1DFE264B0071C47F /* Sketches.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sketches.swift; sourceTree = "<group>"; };
 		9B65A5021DF8C93D006AA60D /* AuthVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
 		9B6B0FAE1DF0A3DC0057E116 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		9B6B0FB01DF0A57D0057E116 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeVC.swift; path = ../HomeVC.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				9B6B0FB41DF0A64B0057E116 /* SketchPad.swift */,
+				9B3F6CEA1DFE264B0071C47F /* Sketches.swift */,
 				9B3F6CE81DFD97790071C47F /* Sketch.swift */,
 				9B78B83C1DF46B3A00347436 /* Extension_UIColor.swift */,
 			);
@@ -312,6 +315,7 @@
 				9B6B0FB11DF0A57D0057E116 /* HomeVC.swift in Sources */,
 				9BA68F0E1DEE2AA500979A7F /* Drawing.xcdatamodeld in Sources */,
 				9B78B83D1DF46B3A00347436 /* Extension_UIColor.swift in Sources */,
+				9B3F6CEB1DFE264B0071C47F /* Sketches.swift in Sources */,
 				9B6B0FB51DF0A64B0057E116 /* SketchPad.swift in Sources */,
 				9B82A8D81DF7690D007B42BC /* CustomImageView.swift in Sources */,
 				9B6B52DF1DF8A10E00ACA39F /* CustomField.swift in Sources */,
