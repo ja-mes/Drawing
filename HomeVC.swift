@@ -15,13 +15,16 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     // Segment Outlets
     @IBOutlet var segments: [CustomButton]!
     
-    
+    var sketches: Sketches!
     var selectedSegmentIndex = 0
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        sketches = Sketches()
+        sketches.handleTableView(tableView)
+        
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -35,15 +38,12 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-    }
-    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return sketches.items.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
