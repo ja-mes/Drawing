@@ -44,12 +44,8 @@ class Sketches {
         }
     }
     
-    func downloadImageFrom(url: String) -> UIImage? {
-        DispatchQueue.main.async {
-            
-        }
+    func downloadImageTo(imageView: UIImageView, url: String) {
         let ref = FIRStorage.storage().reference(forURL: url)
-        var img: UIImage?
         
         ref.data(withMaxSize: 2 * 1024 * 1024, completion: { (data, error) in
             
@@ -58,12 +54,9 @@ class Sketches {
             }
             
             if let imgData = data {
-                img = UIImage(data: imgData)
+                imageView.image = UIImage(data: imgData)
             }
         })
-        
-        
-        return img
     }
     
 }
