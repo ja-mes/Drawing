@@ -17,9 +17,4 @@ class ProfileSketchCell: UICollectionViewCell {
         self.layer.borderColor = UIColor.black.cgColor
         self.layer.borderWidth = 0.3
     }
-    
-    func configure(imgUrl: String) {
-        Sketches().downloadImageTo(imageView: imageView, url: imgUrl)
-        
-    }
 }
