@@ -47,7 +47,13 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "DrawCell") {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "SketchCell") {
+            let sketchDict = sketches.items[indexPath.row].value as? [String: AnyObject]
+            
+            if let imgUrl = sketchDict?["imgUrl"] as? String, let imageView = cell.imageView {
+                sketches.downloadImageTo(imageView: imageView, url: imgUrl)
+            }
+            
             return cell
         }
         

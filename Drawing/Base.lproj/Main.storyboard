@@ -98,7 +98,7 @@
                                 <rect key="frame" x="0.0" y="134.5" width="375" height="483.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DrawCell" rowHeight="339" id="8s2-eG-JrF">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SketchCell" rowHeight="339" id="8s2-eG-JrF" customClass="HomeSketchCell" customModule="Drawing" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="339"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8s2-eG-JrF" id="0My-Xb-SqY">
@@ -139,14 +139,24 @@
                                                         </label>
                                                     </subviews>
                                                 </stackView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dWQ-kr-53R">
+                                                    <rect key="frame" x="8" y="46" width="359" height="285"/>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailingMargin" secondItem="3Pi-f9-z65" secondAttribute="trailing" constant="30" id="0aK-DK-PQB"/>
+                                                <constraint firstAttribute="trailing" secondItem="dWQ-kr-53R" secondAttribute="trailing" constant="8" id="AQS-Mk-dZ4"/>
+                                                <constraint firstItem="dWQ-kr-53R" firstAttribute="top" secondItem="BG6-Fz-S9J" secondAttribute="bottom" constant="8" id="FYT-sS-ZLd"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="BG6-Fz-S9J" secondAttribute="trailing" id="K5p-aV-atB"/>
+                                                <constraint firstItem="dWQ-kr-53R" firstAttribute="leading" secondItem="0My-Xb-SqY" secondAttribute="leading" constant="8" id="VGV-pM-gAS"/>
                                                 <constraint firstItem="BG6-Fz-S9J" firstAttribute="top" secondItem="0My-Xb-SqY" secondAttribute="topMargin" id="boy-Jz-k0t"/>
                                                 <constraint firstItem="BG6-Fz-S9J" firstAttribute="leading" secondItem="0My-Xb-SqY" secondAttribute="leadingMargin" id="jAB-fv-zw2"/>
+                                                <constraint firstAttribute="bottom" secondItem="dWQ-kr-53R" secondAttribute="bottom" constant="8" id="rbG-qc-4G9"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageView" destination="dWQ-kr-53R" id="v3Y-22-bOb"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
