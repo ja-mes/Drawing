@@ -47,9 +47,7 @@ class ProfileVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
                 
                 cell.configure(imgUrl: imgUrl)
             }
-            
-            print(String(describing: sketchDict?["imgUrl"]))
-            
+                        
             return cell
         }
         

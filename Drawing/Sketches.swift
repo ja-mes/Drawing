@@ -45,6 +45,9 @@ class Sketches {
     }
     
     func downloadImageFrom(url: String) -> UIImage? {
+        DispatchQueue.main.async {
+            
+        }
         let ref = FIRStorage.storage().reference(forURL: url)
         var img: UIImage?
         

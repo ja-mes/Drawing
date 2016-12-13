@@ -19,20 +19,22 @@ class ProfileSketchCell: UICollectionViewCell {
     }
     
     func configure(imgUrl: String) {
-        let ref = FIRStorage.storage().reference(forURL: imgUrl)
+//        let ref = FIRStorage.storage().reference(forURL: imgUrl)
+//        
+//        ref.data(withMaxSize: 2 * 1024 * 1024, completion: { (data, error) in
+//            
+//            if error != nil {
+//                print("Unable to download sketch from firebase storage")
+//                return
+//            }
+//            
+//            if let imgData = data {
+//                let img = UIImage(data: imgData)
+//                self.imageView.image = img
+//            }
+//        })
         
-        ref.data(withMaxSize: 2 * 1024 * 1024, completion: { (data, error) in
-            
-            if error != nil {
-                print("Unable to download sketch from firebase storage")
-                return
-            }
-            
-            if let imgData = data {
-                let img = UIImage(data: imgData)
-                self.imageView.image = img
-            }
-        })
+        self.imageView.image = Sketches().downloadImageFrom(url: imgUrl)
         
     }
 }
