@@ -20,6 +20,7 @@
 		9BA68F0E1DEE2AA500979A7F /* Drawing.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9BA68F0C1DEE2AA500979A7F /* Drawing.xcdatamodeld */; };
 		9BA68F101DEE2AA500979A7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BA68F0F1DEE2AA500979A7F /* Assets.xcassets */; };
 		9BA68F131DEE2AA500979A7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BA68F111DEE2AA500979A7F /* LaunchScreen.storyboard */; };
+		9BFFE0EC1E01FC3F00D62E9A /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFFE0EB1E01FC3F00D62E9A /* MainVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		9BA68F0F1DEE2AA500979A7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BA68F121DEE2AA500979A7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BA68F141DEE2AA500979A7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BFFE0EB1E01FC3F00D62E9A /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		E29D16B3E1E2AFF18CEF0B53 /* Pods-Drawing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drawing.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Drawing/Pods-Drawing.debug.xcconfig"; sourceTree = "<group>"; };
 		FAE80069A8115FF92A3F9102 /* Pods-Drawing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drawing.release.xcconfig"; path = "Pods/Target Support Files/Pods-Drawing/Pods-Drawing.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +77,7 @@
 		9B6B0FAB1DF0A3BB0057E116 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				9BFFE0EB1E01FC3F00D62E9A /* MainVC.swift */,
 				9B65A5011DF8C7EC006AA60D /* Sketch */,
 			);
 			name = Controller;
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B78B83B1DF45E3C00347436 /* CustomView.swift in Sources */,
+				9BFFE0EC1E01FC3F00D62E9A /* MainVC.swift in Sources */,
 				9B78B83F1DF4722500347436 /* SizeVC.swift in Sources */,
 				9BA68F061DEE2AA500979A7F /* AppDelegate.swift in Sources */,
 				9BA68F0E1DEE2AA500979A7F /* Drawing.xcdatamodeld in Sources */,
