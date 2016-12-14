@@ -23,27 +23,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zWz-Ng-AH0">
-                                <rect key="frame" x="16" y="40" width="130" height="24"/>
+                                <rect key="frame" x="16" y="40" width="55" height="24"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hy3-6S-fBz" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="55" height="24"/>
-                                        <color key="backgroundColor" red="0.4679151177406311" green="0.84761649370193481" blue="0.55808353424072266" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="24" id="Mxa-Qz-shC"/>
-                                            <constraint firstAttribute="width" constant="55" id="Qu5-0y-TYM"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="12"/>
-                                        <state key="normal" title="NEW">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hf6-cH-fdj" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
-                                        <rect key="frame" x="75" y="0.0" width="55" height="24"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="55" height="24"/>
                                         <color key="backgroundColor" red="0.4679151177406311" green="0.84761649370193481" blue="0.55808353424072266" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="55" id="ceE-sK-OiP"/>
