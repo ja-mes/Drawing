@@ -7,9 +7,6 @@
 //
 
 import UIKit
-import Firebase
-import FirebaseStorage
-import FirebaseAuth
 
 class SketchVC: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
