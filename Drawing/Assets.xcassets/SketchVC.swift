@@ -52,11 +52,6 @@ class SketchVC: UIViewController {
     }
     
     @IBAction func savePressed(_ sender: UIButton) {
-        if let img = imageView.image {
-            let sketch = Sketch(img: img)
-            
-            sketch.save()
-        }
         
     }
     
