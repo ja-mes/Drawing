@@ -12,7 +12,6 @@
 		9B3F6CE71DFC85200071C47F /* ProfileSketchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3F6CE61DFC85200071C47F /* ProfileSketchCell.swift */; };
 		9B3F6CE91DFD97790071C47F /* Sketch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3F6CE81DFD97790071C47F /* Sketch.swift */; };
 		9B3F6CEB1DFE264B0071C47F /* Sketches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3F6CEA1DFE264B0071C47F /* Sketches.swift */; };
-		9B65A5031DF8C93D006AA60D /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B65A5021DF8C93D006AA60D /* AuthVC.swift */; };
 		9B6B0FAF1DF0A3DC0057E116 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6B0FAE1DF0A3DC0057E116 /* CustomButton.swift */; };
 		9B6B0FB11DF0A57D0057E116 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6B0FB01DF0A57D0057E116 /* HomeVC.swift */; };
 		9B6B0FB31DF0A5B50057E116 /* SketchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6B0FB21DF0A5B50057E116 /* SketchVC.swift */; };
@@ -38,7 +37,6 @@
 		9B3F6CE61DFC85200071C47F /* ProfileSketchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSketchCell.swift; sourceTree = "<group>"; };
 		9B3F6CE81DFD97790071C47F /* Sketch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sketch.swift; path = ../Sketch.swift; sourceTree = "<group>"; };
 		9B3F6CEA1DFE264B0071C47F /* Sketches.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sketches.swift; sourceTree = "<group>"; };
-		9B65A5021DF8C93D006AA60D /* AuthVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
 		9B6B0FAE1DF0A3DC0057E116 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		9B6B0FB01DF0A57D0057E116 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeVC.swift; path = ../HomeVC.swift; sourceTree = "<group>"; };
 		9B6B0FB21DF0A5B50057E116 /* SketchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SketchVC.swift; path = Assets.xcassets/SketchVC.swift; sourceTree = "<group>"; };
@@ -92,18 +90,9 @@
 			name = Sketch;
 			sourceTree = "<group>";
 		};
-		9B65A5041DF8C942006AA60D /* Authentication */ = {
-			isa = PBXGroup;
-			children = (
-				9B65A5021DF8C93D006AA60D /* AuthVC.swift */,
-			);
-			name = Authentication;
-			sourceTree = "<group>";
-		};
 		9B6B0FAB1DF0A3BB0057E116 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				9B65A5041DF8C942006AA60D /* Authentication */,
 				9B65A5011DF8C7EC006AA60D /* Sketch */,
 				9B6B0FB01DF0A57D0057E116 /* HomeVC.swift */,
 				9B82A8DB1DF7A811007B42BC /* ProfileVC.swift */,
@@ -305,7 +294,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B3F6CE91DFD97790071C47F /* Sketch.swift in Sources */,
-				9B65A5031DF8C93D006AA60D /* AuthVC.swift in Sources */,
 				9B3F6CE31DF9A7C50071C47F /* Constants.swift in Sources */,
 				9B82A8DC1DF7A811007B42BC /* ProfileVC.swift in Sources */,
 				9B78B83B1DF45E3C00347436 /* CustomView.swift in Sources */,
