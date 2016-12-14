@@ -36,13 +36,31 @@
                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="25" maxY="0.0"/>
                                 <state key="normal" image="plus_icon"/>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="300" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VtA-va-4k5">
+                                <rect key="frame" x="0.0" y="97" width="375" height="570"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="300" id="wTs-A3-wcH">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="300"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wTs-A3-wcH" id="1JJ-Rv-C61">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="299"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="bcm-B2-0Kc" firstAttribute="top" secondItem="Vjc-oJ-GhV" secondAttribute="bottom" constant="12" id="67D-Bz-Yeh"/>
+                            <constraint firstItem="VtA-va-4k5" firstAttribute="leading" secondItem="cia-Pt-BjG" secondAttribute="leading" id="9Fh-K4-Wc0"/>
+                            <constraint firstItem="UhN-4l-FFO" firstAttribute="top" secondItem="VtA-va-4k5" secondAttribute="bottom" id="Gea-yD-DOi"/>
                             <constraint firstItem="q3o-xz-iaV" firstAttribute="top" secondItem="Vjc-oJ-GhV" secondAttribute="bottom" constant="20" id="Ne7-gs-FMY"/>
                             <constraint firstItem="q3o-xz-iaV" firstAttribute="centerX" secondItem="cia-Pt-BjG" secondAttribute="centerX" id="UJH-Qn-n4n"/>
                             <constraint firstAttribute="trailing" secondItem="bcm-B2-0Kc" secondAttribute="trailing" id="V1H-O9-Hs3"/>
+                            <constraint firstItem="VtA-va-4k5" firstAttribute="top" secondItem="bcm-B2-0Kc" secondAttribute="bottom" constant="25" id="VHi-4a-dBY"/>
+                            <constraint firstAttribute="trailing" secondItem="VtA-va-4k5" secondAttribute="trailing" id="otB-lg-rmI"/>
                             <constraint firstItem="bcm-B2-0Kc" firstAttribute="leading" secondItem="q3o-xz-iaV" secondAttribute="trailing" constant="8" id="uYX-jY-jm0"/>
                         </constraints>
                     </view>
