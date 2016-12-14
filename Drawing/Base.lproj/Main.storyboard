@@ -22,15 +22,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Sketches" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3o-xz-iaV">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Sketches" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3o-xz-iaV">
                                 <rect key="frame" x="120" y="28" width="135" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="22"/>
                                 <color key="textColor" red="0.25882352939999997" green="0.25882352939999997" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcm-B2-0Kc">
+                                <rect key="frame" x="328" y="32" width="20" height="22"/>
+                                <state key="normal" image="plus_icon"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="bcm-B2-0Kc" secondAttribute="trailing" constant="11" id="6dz-xH-LWF"/>
+                            <constraint firstItem="q3o-xz-iaV" firstAttribute="top" secondItem="Vjc-oJ-GhV" secondAttribute="bottom" constant="8" id="9nm-kc-w7k"/>
+                            <constraint firstItem="q3o-xz-iaV" firstAttribute="centerX" secondItem="cia-Pt-BjG" secondAttribute="centerX" id="D4m-0G-1Bl"/>
+                            <constraint firstItem="bcm-B2-0Kc" firstAttribute="top" secondItem="Vjc-oJ-GhV" secondAttribute="bottom" constant="12" id="v4H-CF-lyb"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="69B-bW-DH0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -627,5 +636,6 @@
     <resources>
         <image name="close_icon" width="15" height="15"/>
         <image name="create_icon" width="20" height="20"/>
+        <image name="plus_icon" width="20" height="20"/>
     </resources>
 </document>
