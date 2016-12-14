@@ -9,10 +9,13 @@
 import UIKit
 
 class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
