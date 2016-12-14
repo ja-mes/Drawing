@@ -23,16 +23,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zWz-Ng-AH0">
-                                <rect key="frame" x="16" y="40" width="55" height="24"/>
+                                <rect key="frame" x="16" y="40" width="75" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hf6-cH-fdj" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="55" height="24"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="30"/>
                                         <color key="backgroundColor" red="0.4679151177406311" green="0.84761649370193481" blue="0.55808353424072266" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="55" id="ceE-sK-OiP"/>
-                                            <constraint firstAttribute="height" constant="24" id="ijn-7P-ZFS"/>
+                                            <constraint firstAttribute="width" constant="75" id="ceE-sK-OiP"/>
+                                            <constraint firstAttribute="height" constant="30" id="ijn-7P-ZFS"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
                                         <state key="normal" title="SAVE">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -47,17 +47,13 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="TAd-oB-GyF">
-                                <rect key="frame" x="55" y="618" width="265" height="24"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="TAd-oB-GyF">
+                                <rect key="frame" x="16" y="612" width="343" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQZ-KQ-pUv" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="55" height="24"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="74.5" height="30"/>
                                         <color key="backgroundColor" red="0.98339945077896118" green="0.58305984735488892" blue="0.42342805862426758" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="55" id="kyQ-mW-bs5"/>
-                                            <constraint firstAttribute="height" constant="24" id="y8a-nC-oAN"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
                                         <state key="normal" title="UNDO">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -71,13 +67,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ly-ZJ-R7N" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
-                                        <rect key="frame" x="70" y="0.0" width="55" height="24"/>
+                                        <rect key="frame" x="89.5" y="0.0" width="74.5" height="30"/>
                                         <color key="backgroundColor" red="0.98339945077896118" green="0.58305984735488892" blue="0.42342805862426758" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="55" id="Lds-5S-rfK"/>
-                                            <constraint firstAttribute="height" constant="24" id="aYd-gv-CL8"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
                                         <state key="normal" title="ERASE">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -91,13 +83,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hdr-6X-2Nh" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
-                                        <rect key="frame" x="140" y="0.0" width="55" height="24"/>
+                                        <rect key="frame" x="179" y="0.0" width="74.5" height="30"/>
                                         <color key="backgroundColor" red="0.98339945077896118" green="0.58305984735488892" blue="0.42342805862426758" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="24" id="Git-du-m4I"/>
-                                            <constraint firstAttribute="width" constant="55" id="t3X-OH-TGK"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
                                         <state key="normal" title="SIZE">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -111,13 +99,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gQ-cc-Qg8" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
-                                        <rect key="frame" x="210" y="0.0" width="55" height="24"/>
+                                        <rect key="frame" x="268.5" y="0.0" width="74.5" height="30"/>
                                         <color key="backgroundColor" red="0.98431372549019602" green="0.58431372549019611" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="24" id="dtZ-vc-Htx"/>
-                                            <constraint firstAttribute="width" constant="55" id="wSC-3h-1rR"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
                                         <state key="normal" title="COLOR">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -131,18 +115,22 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4GG-iT-Igu"/>
+                                </constraints>
                             </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TCd-sr-Wpl">
-                                <rect key="frame" x="0.0" y="72" width="375" height="538"/>
+                                <rect key="frame" x="0.0" y="78" width="375" height="526"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="TAd-oB-GyF" firstAttribute="centerX" secondItem="auj-5K-9nF" secondAttribute="centerX" id="0fJ-xG-AX0"/>
                             <constraint firstItem="TAd-oB-GyF" firstAttribute="top" secondItem="TCd-sr-Wpl" secondAttribute="bottom" constant="8" id="8oZ-in-Fj0"/>
                             <constraint firstItem="TCd-sr-Wpl" firstAttribute="top" secondItem="zWz-Ng-AH0" secondAttribute="bottom" constant="8" id="DWw-3G-uSt"/>
                             <constraint firstAttribute="trailing" secondItem="TCd-sr-Wpl" secondAttribute="trailing" id="H6t-Fo-4jT"/>
+                            <constraint firstItem="TAd-oB-GyF" firstAttribute="leading" secondItem="auj-5K-9nF" secondAttribute="leadingMargin" id="Jfg-Ot-JL5"/>
                             <constraint firstItem="TCd-sr-Wpl" firstAttribute="leading" secondItem="auj-5K-9nF" secondAttribute="leading" id="KaS-MY-gyM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TAd-oB-GyF" secondAttribute="trailing" id="Tr8-Aa-Ka7"/>
                             <constraint firstItem="dZO-w0-fOU" firstAttribute="top" secondItem="TAd-oB-GyF" secondAttribute="bottom" constant="25" id="YJw-9w-KLu"/>
                             <constraint firstItem="zWz-Ng-AH0" firstAttribute="leading" secondItem="auj-5K-9nF" secondAttribute="leadingMargin" id="bMm-sJ-yK1"/>
                             <constraint firstItem="zWz-Ng-AH0" firstAttribute="top" secondItem="gay-5Q-N43" secondAttribute="bottom" constant="20" id="tbZ-N6-cex"/>
