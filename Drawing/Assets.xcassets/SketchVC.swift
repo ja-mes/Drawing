@@ -12,6 +12,7 @@ class SketchVC: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     
     var sketchPad: SketchPad!
+    var sketch: Sketch?
     
     override func viewDidLoad() {
         super.viewDidLoad()
