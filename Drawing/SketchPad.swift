@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class SketchPad {
     private var _imageView: UIImageView
@@ -140,6 +141,10 @@ class SketchPad {
             _imageView.image = backups.last
         }
 
+    }
+    
+    func save() {
+        let item = Sketch(context: context)
     }
 }
 
