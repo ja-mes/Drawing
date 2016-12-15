@@ -23,11 +23,11 @@ class SketchVC: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ColorVC" {
             if let destination = segue.destination as? ColorVC {
-                destination.sketch = sketchPad
+                destination.sketchPad = sketchPad
             }
         } else if segue.identifier == "SizeVC" {
             if let destination = segue.destination as? SizeVC {
-                destination.sketch = sketchPad
+                destination.sketchPad = sketchPad
             }
         }
     }

@@ -9,7 +9,7 @@
 import UIKit
 
 class ColorVC: UIViewController {
-    var sketch: SketchPad!
+    var sketchPad: SketchPad!
     
     let colors = [
         UIColor(red:0.96, green:0.26, blue:0.21, alpha:1.0),
@@ -31,7 +31,7 @@ class ColorVC: UIViewController {
     }
     
     @IBAction func colorPressed(_ sender: UIButton) {
-        sketch.color = colors[sender.tag]
+        sketchPad.color = colors[sender.tag]
         
         dismiss(animated: true, completion: nil)
     }
