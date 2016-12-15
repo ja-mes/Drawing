@@ -82,7 +82,9 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
     func configureCell(cell: UITableViewCell, indexPath: IndexPath) {
         let sketch = controller.object(at: indexPath)
         
-        
+        if let image = sketch.image as? UIImage {
+            cell.imageView?.image = image
+        }
     }
     
     func fetchSketches() {
