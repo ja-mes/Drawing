@@ -84,7 +84,14 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         
         if let image = sketch.image as? UIImage {
             cell.sketchImageView.image = image
-            cell.dateLl.text = "\(Date())"
+            
+            if let date =  sketch.date as? Date {
+                let dateFormatter = DateFormatter()
+                
+                dateFormatter.dateStyle = .long
+                
+                cell.dateLl.text = dateFormatter.string(from: date)
+            }
         }
     }
     
