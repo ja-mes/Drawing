@@ -24,6 +24,16 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         fetchSketches()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "SketchVC" {
+            if let destination = segue.destination as? SketchVC {
+                if let sketch = sender as? Sketch {
+                    destination.sketch = sketch
+                }
+            }
+        }
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         if let sections = controller.sections {
             return sections.count
