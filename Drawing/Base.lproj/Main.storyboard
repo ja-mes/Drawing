@@ -151,31 +151,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zWz-Ng-AH0">
-                                <rect key="frame" x="16" y="40" width="75" height="30"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hf6-cH-fdj" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="75" height="30"/>
-                                        <color key="backgroundColor" red="0.4679151177406311" green="0.84761649370193481" blue="0.55808353424072266" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="75" id="ceE-sK-OiP"/>
-                                            <constraint firstAttribute="height" constant="30" id="ijn-7P-ZFS"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
-                                        <state key="normal" title="SAVE">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="savePressed:" destination="kMw-TX-14e" eventType="touchUpInside" id="NQp-bE-Uhb"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="TAd-oB-GyF">
                                 <rect key="frame" x="16" y="612" width="343" height="30"/>
                                 <subviews>
@@ -251,18 +226,47 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TCd-sr-Wpl">
                                 <rect key="frame" x="0.0" y="78" width="375" height="526"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hf6-cH-fdj" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
+                                <rect key="frame" x="284" y="40" width="75" height="30"/>
+                                <color key="backgroundColor" red="0.4679151177406311" green="0.84761649370193481" blue="0.55808353424072266" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="ceE-sK-OiP"/>
+                                    <constraint firstAttribute="height" constant="30" id="ijn-7P-ZFS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                <state key="normal" title="SAVE">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="savePressed:" destination="kMw-TX-14e" eventType="touchUpInside" id="NQp-bE-Uhb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TS1-2h-HMk">
+                                <rect key="frame" x="16" y="40" width="54" height="36"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="0.98339945077896118" green="0.58305984735488892" blue="0.42342805862426758" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="TAd-oB-GyF" firstAttribute="top" secondItem="TCd-sr-Wpl" secondAttribute="bottom" constant="8" id="8oZ-in-Fj0"/>
-                            <constraint firstItem="TCd-sr-Wpl" firstAttribute="top" secondItem="zWz-Ng-AH0" secondAttribute="bottom" constant="8" id="DWw-3G-uSt"/>
                             <constraint firstAttribute="trailing" secondItem="TCd-sr-Wpl" secondAttribute="trailing" id="H6t-Fo-4jT"/>
                             <constraint firstItem="TAd-oB-GyF" firstAttribute="leading" secondItem="auj-5K-9nF" secondAttribute="leadingMargin" id="Jfg-Ot-JL5"/>
                             <constraint firstItem="TCd-sr-Wpl" firstAttribute="leading" secondItem="auj-5K-9nF" secondAttribute="leading" id="KaS-MY-gyM"/>
+                            <constraint firstItem="TCd-sr-Wpl" firstAttribute="top" secondItem="hf6-cH-fdj" secondAttribute="bottom" constant="8" id="Myy-i6-plx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="TAd-oB-GyF" secondAttribute="trailing" id="Tr8-Aa-Ka7"/>
                             <constraint firstItem="dZO-w0-fOU" firstAttribute="top" secondItem="TAd-oB-GyF" secondAttribute="bottom" constant="25" id="YJw-9w-KLu"/>
-                            <constraint firstItem="zWz-Ng-AH0" firstAttribute="leading" secondItem="auj-5K-9nF" secondAttribute="leadingMargin" id="bMm-sJ-yK1"/>
-                            <constraint firstItem="zWz-Ng-AH0" firstAttribute="top" secondItem="gay-5Q-N43" secondAttribute="bottom" constant="20" id="tbZ-N6-cex"/>
+                            <constraint firstItem="hf6-cH-fdj" firstAttribute="top" secondItem="gay-5Q-N43" secondAttribute="bottom" constant="20" id="bFa-eL-oQV"/>
+                            <constraint firstItem="TS1-2h-HMk" firstAttribute="top" secondItem="gay-5Q-N43" secondAttribute="bottom" constant="20" id="cro-ni-Ksg"/>
+                            <constraint firstItem="hf6-cH-fdj" firstAttribute="trailing" secondItem="auj-5K-9nF" secondAttribute="trailingMargin" id="h4l-Oh-VDa"/>
+                            <constraint firstItem="TS1-2h-HMk" firstAttribute="leading" secondItem="auj-5K-9nF" secondAttribute="leadingMargin" id="jyJ-eo-U7f"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="create_icon" id="l1Y-MZ-CBq">

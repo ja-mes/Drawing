@@ -50,6 +50,7 @@ class SketchVC: UIViewController {
     
     @IBAction func savePressed(_ sender: UIButton) {
         sketchPad.save()
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func erasePressed(_ sender: UIButton) {
