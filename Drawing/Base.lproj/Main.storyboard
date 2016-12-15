@@ -35,6 +35,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="25" maxY="0.0"/>
                                 <state key="normal" image="plus_icon"/>
+                                <connections>
+                                    <action selector="plusButtonPressed:" destination="k5w-j8-blz" eventType="touchUpInside" id="zxq-mn-p6e"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="300" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VtA-va-4k5">
                                 <rect key="frame" x="0.0" y="97" width="414" height="639"/>
@@ -124,6 +127,7 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="VtA-va-4k5" id="YBa-th-Bv0"/>
+                        <segue destination="kMw-TX-14e" kind="show" identifier="SketchVC" id="dpf-Pv-m0g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="69B-bW-DH0" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -34,4 +34,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return UITableViewCell()
     }
 
+    @IBAction func plusButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "SketchVC", sender: nil)
+    }
 }
