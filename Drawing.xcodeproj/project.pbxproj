@@ -15,7 +15,7 @@
 		9B78B83B1DF45E3C00347436 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B78B83A1DF45E3C00347436 /* CustomView.swift */; };
 		9B78B83D1DF46B3A00347436 /* Extension_UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B78B83C1DF46B3A00347436 /* Extension_UIColor.swift */; };
 		9B78B83F1DF4722500347436 /* SizeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B78B83E1DF4722500347436 /* SizeVC.swift */; };
-		9BA0C7811E03275D003EA819 /* SketchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA0C7801E03275D003EA819 /* SketchCell.swift */; };
+		9BA0C7831E032E74003EA819 /* SketchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA0C7821E032E74003EA819 /* SketchCell.swift */; };
 		9BA68F061DEE2AA500979A7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA68F051DEE2AA500979A7F /* AppDelegate.swift */; };
 		9BA68F0B1DEE2AA500979A7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BA68F091DEE2AA500979A7F /* Main.storyboard */; };
 		9BA68F0E1DEE2AA500979A7F /* Drawing.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9BA68F0C1DEE2AA500979A7F /* Drawing.xcdatamodeld */; };
@@ -33,7 +33,7 @@
 		9B78B83A1DF45E3C00347436 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		9B78B83C1DF46B3A00347436 /* Extension_UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension_UIColor.swift; sourceTree = "<group>"; };
 		9B78B83E1DF4722500347436 /* SizeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeVC.swift; sourceTree = "<group>"; };
-		9BA0C7801E03275D003EA819 /* SketchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SketchCell.swift; sourceTree = "<group>"; };
+		9BA0C7821E032E74003EA819 /* SketchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SketchCell.swift; sourceTree = "<group>"; };
 		9BA68F021DEE2AA500979A7F /* Drawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drawing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BA68F051DEE2AA500979A7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BA68F0A1DEE2AA500979A7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 		9B6B0FAC1DF0A3C00057E116 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9BA0C7801E03275D003EA819 /* SketchCell.swift */,
+				9BA0C7821E032E74003EA819 /* SketchCell.swift */,
 				9B78B83A1DF45E3C00347436 /* CustomView.swift */,
 				9B6B0FAE1DF0A3DC0057E116 /* CustomButton.swift */,
 			);
@@ -278,7 +278,7 @@
 				9BA68F0E1DEE2AA500979A7F /* Drawing.xcdatamodeld in Sources */,
 				9B78B83D1DF46B3A00347436 /* Extension_UIColor.swift in Sources */,
 				9B6B0FB51DF0A64B0057E116 /* SketchPad.swift in Sources */,
-				9BA0C7811E03275D003EA819 /* SketchCell.swift in Sources */,
+				9BA0C7831E032E74003EA819 /* SketchCell.swift in Sources */,
 				9B6B0FB31DF0A5B50057E116 /* SketchVC.swift in Sources */,
 				9B6B0FAF1DF0A3DC0057E116 /* CustomButton.swift in Sources */,
 				9B6B0FB91DF0E1100057E116 /* ColorVC.swift in Sources */,
