@@ -43,6 +43,10 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "SketchCell") as? SketchCell {
             configureCell(cell: cell, indexPath: indexPath)
+            
+            cell.editButton.tag = indexPath.row
+            cell.editButton.addTarget(self, action: #selector(editButtonPressed(sender:)), for: .touchUpInside)
+            
             return cell
         }
         
@@ -112,6 +116,13 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         }
     }
 
+    func editButtonPressed(sender: UIButton) {
+        let indexPath = IndexPath(row: sender.tag, section: 0)
+        
+        performSegue(withIdentifier: "SketchVC", sender: controller.object(at: indexPath))
+    }
+    
+    
     @IBAction func plusButtonPressed(_ sender: Any) {
         performSegue(withIdentifier: "SketchVC", sender: nil)
     }

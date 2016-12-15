@@ -111,6 +111,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="dateLl" destination="F91-AR-inf" id="D1x-0c-DMH"/>
+                                            <outlet property="editButton" destination="yev-9r-Fj7" id="nLB-ye-CcI"/>
                                             <outlet property="sketchImageView" destination="fn4-iM-tup" id="qg7-4g-U8P"/>
                                         </connections>
                                     </tableViewCell>
