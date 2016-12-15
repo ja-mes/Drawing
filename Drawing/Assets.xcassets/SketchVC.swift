@@ -53,6 +53,10 @@ class SketchVC: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func cancelPressed(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     @IBAction func erasePressed(_ sender: UIButton) {
         sketchPad.toggleEraser()
         

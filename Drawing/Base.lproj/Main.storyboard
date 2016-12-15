@@ -252,6 +252,9 @@
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" red="0.98339945077896118" green="0.58305984735488892" blue="0.42342805862426758" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="cancelPressed:" destination="kMw-TX-14e" eventType="touchUpInside" id="xro-Se-qXg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
