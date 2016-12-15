@@ -41,7 +41,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "SketchCell") {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "SketchCell") as? SketchCell {
             configureCell(cell: cell, indexPath: indexPath)
             return cell
         }
@@ -63,7 +63,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
             break
         case.update:
             if let indexPath = indexPath {
-                if let cell = tableView.cellForRow(at: indexPath) {
+                if let cell = tableView.cellForRow(at: indexPath) as? SketchCell {
                     configureCell(cell: cell, indexPath: indexPath)
                 }
             }
@@ -79,11 +79,11 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         }
     }
 
-    func configureCell(cell: UITableViewCell, indexPath: IndexPath) {
+    func configureCell(cell: SketchCell, indexPath: IndexPath) {
         let sketch = controller.object(at: indexPath)
         
         if let image = sketch.image as? UIImage {
-            cell.imageView?.image = image
+            cell.sketchImageView.image = image
         }
     }
     
