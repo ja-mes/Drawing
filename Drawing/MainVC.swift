@@ -80,14 +80,39 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
     }
 
     func configureCell(cell: UITableViewCell, indexPath: IndexPath) {
+        let sketch = controller.object(at: indexPath)
+        
         
     }
     
     func fetchSketches() {
+        let fetchRequest: NSFetchRequest<Sketch> = Sketch.fetchRequest()
         
+        fetchRequest.sortDescriptors = [NSSortDescriptor(key: "date", ascending: true)]
+        
+        let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+        self.controller = controller
+        
+        controller.delegate = self
+        
+        do {
+            try controller.performFetch()
+        } catch {
+            print("Unable to fetch sketches: \(error)")
+        }
     }
 
     @IBAction func plusButtonPressed(_ sender: Any) {
         performSegue(withIdentifier: "SketchVC", sender: nil)
     }
 }
+
+
+
+
+
+
+
+
+
+
