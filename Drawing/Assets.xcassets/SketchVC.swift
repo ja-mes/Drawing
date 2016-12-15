@@ -49,7 +49,7 @@ class SketchVC: UIViewController {
     }
     
     @IBAction func savePressed(_ sender: UIButton) {
-        
+        sketchPad.save()
     }
     
     @IBAction func erasePressed(_ sender: UIButton) {

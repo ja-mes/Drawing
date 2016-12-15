@@ -145,6 +145,15 @@ class SketchPad {
     
     func save() {
         let item = Sketch(context: context)
+        
+        item.date = NSDate()
+        item.image = _imageView.image
+        
+        do {
+            try context.save()
+        } catch {
+            fatalError("Unable to save sketch to core data")
+        }
     }
 }
 
