@@ -45,7 +45,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SketchCell" rowHeight="380" id="wTs-A3-wcH">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SketchCell" rowHeight="380" id="wTs-A3-wcH" customClass="SketchCell" customModule="Drawing" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="380"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wTs-A3-wcH" id="1JJ-Rv-C61">
@@ -109,6 +109,9 @@
                                                 <constraint firstItem="5Xs-Tj-qd4" firstAttribute="centerX" secondItem="1JJ-Rv-C61" secondAttribute="centerX" id="xNH-HN-deN"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="sketchImageView" destination="fn4-iM-tup" id="qg7-4g-U8P"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -133,7 +136,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="69B-bW-DH0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="363.768115942029" y="516.84782608695662"/>
+            <point key="canvasLocation" x="129" y="518"/>
         </scene>
         <!--SketchVC-->
         <scene sceneID="tqX-N9-tjq">
@@ -272,7 +275,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ffq-KV-mny" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1056.8" y="517.6911544227886"/>
+            <point key="canvasLocation" x="997" y="518"/>
         </scene>
         <!--ColorVC-->
         <scene sceneID="rad-uU-MdC">
@@ -432,7 +435,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SAO-y4-mus" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1956" y="30"/>
+            <point key="canvasLocation" x="1954" y="170"/>
         </scene>
         <!--SizeVC-->
         <scene sceneID="jm4-I0-uEh">
@@ -719,7 +722,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HbC-Bw-gw2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1956" y="811.84407796101959"/>
+            <point key="canvasLocation" x="1954" y="873"/>
         </scene>
     </scenes>
     <resources>
