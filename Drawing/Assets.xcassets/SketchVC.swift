@@ -18,6 +18,12 @@ class SketchVC: UIViewController {
         super.viewDidLoad()
         
         sketchPad = SketchPad(imageView: imageView)
+        
+        if let sketch = sketch {
+            if let image = sketch.image as? UIImage {
+                imageView.image = image
+            }
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
