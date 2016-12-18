@@ -56,7 +56,11 @@ class SketchVC: UIViewController {
     }
     
     @IBAction func savePressed(_ sender: UIButton) {
-        sketchPad.save()
+        if let sketch = sketch {
+            sketchPad.update(sketch: sketch)
+        } else {
+            sketchPad.save()
+        }
         dismiss(animated: true, completion: nil)
     }
     

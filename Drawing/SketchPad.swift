@@ -152,7 +152,17 @@ class SketchPad {
         do {
             try context.save()
         } catch {
-            fatalError("Unable to save sketch to core data")
+            fatalError("Unable to save sketch to core data \(error)")
+        }
+    }
+    
+    func update(sketch: Sketch) {
+        sketch.image = _imageView.image
+        
+        do {
+             try context.save()
+        } catch {
+            fatalError("Unable to save sketch to core data \(error)")
         }
     }
 }
