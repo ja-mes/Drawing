@@ -13,7 +13,7 @@ class SketchPad {
     private var _imageView: UIImageView
     private var _previousColor: UIColor?
     private var backups = [UIImage]()
-    private var _shouldClearAtBegining = false
+    private var _shouldClearAtBegining = true
 
     private var _color = UIColor.black
     private var _brushWidth: CGFloat = 3
@@ -122,18 +122,18 @@ class SketchPad {
         if let backupImage = _imageView.image {
             backups.append(backupImage)
             
-            if backups.count > 100 {
+            if backups.count > 5 {
                 backups.removeFirst()
-                _shouldClearAtBegining = true
+                _shouldClearAtBegining = false
             }
         }
     }
     
     func undo() {
-        var num = 0
+        var num = 1
         
         if _shouldClearAtBegining {
-            num = 1
+            num = 0
         }
         
         if backups.count > num {
