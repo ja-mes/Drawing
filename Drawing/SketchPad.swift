@@ -13,7 +13,7 @@ class SketchPad {
     private var _imageView: UIImageView
     private var _previousColor: UIColor?
     private var backups = [UIImage]()
-    private var _shouldClearAtBegining = true
+    private var shouldClearAtBegining = true
 
     private var _color = UIColor.black
     private var _brushWidth: CGFloat = 3
@@ -62,9 +62,9 @@ class SketchPad {
     
     var shouldClearAtBeginning: Bool {
         get {
-            return _shouldClearAtBegining
+            return shouldClearAtBegining
         } set {
-            _shouldClearAtBegining = newValue
+            shouldClearAtBegining = newValue
         }
     }
     
@@ -132,7 +132,7 @@ class SketchPad {
             
             if backups.count > 5 {
                 backups.removeFirst()
-                _shouldClearAtBegining = false
+                shouldClearAtBegining = false
             }
         }
     }
@@ -140,7 +140,7 @@ class SketchPad {
     func undo() {
         var num = 1
         
-        if _shouldClearAtBegining {
+        if shouldClearAtBegining {
             num = 0
         }
         
@@ -172,6 +172,11 @@ class SketchPad {
         } catch {
             fatalError("Unable to save sketch to core data \(error)")
         }
+    }
+    
+    func editing() {
+        saveBackup()
+        shouldClearAtBegining = false
     }
 }
 
