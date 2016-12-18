@@ -12,11 +12,11 @@ class ColorVC: UIViewController {
     var sketchPad: SketchPad!
     
     let colors = [
-        UIColor(red:0.96, green:0.26, blue:0.21, alpha:1.0),
-        UIColor(red:0.91, green:0.12, blue:0.39, alpha:1.0),
-        UIColor(red:0.61, green:0.15, blue:0.69, alpha:1.0),
-        UIColor(red:0.4, green:0.23, blue:0.72, alpha:1.0),
-        UIColor(red:0.25, green:0.32, blue:0.71, alpha:1.0)
+        UIColor(red: 244/255, green: 67/255, blue: 54/255, alpha: 1.0),
+        UIColor(red: 233/255, green: 28/255, blue: 99/255, alpha: 1.0),
+        UIColor(red: 156/255, green: 31/255, blue: 176/255, alpha: 1.0),
+        UIColor(red: 103/255, green: 53/255, blue: 183/255, alpha: 1.0),
+        UIColor(red: 64/255, green: 78/255, blue: 181/255, alpha: 1.0),
     ]
 
     override func viewDidLoad() {
