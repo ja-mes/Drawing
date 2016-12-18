@@ -16,7 +16,7 @@ class SketchPad {
     private var shouldClearAtBegining = true
 
     private var _color = UIColor.black
-    private var _brushWidth: CGFloat = 3
+    private var _brushWidth: CGFloat = 2
     private var _isErasing = false
     
     private var _prevPoint1 = CGPoint.zero
