@@ -165,6 +165,7 @@ class SketchPad {
     }
     
     func update(sketch: Sketch) {
+        sketch.date = NSDate()
         sketch.image = _imageView.image
         
         do {
