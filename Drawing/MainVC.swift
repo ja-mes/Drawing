@@ -63,7 +63,6 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         return UITableViewCell()
     }
     
-    
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         tableView.beginUpdates()
     }
