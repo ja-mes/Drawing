@@ -120,7 +120,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
     func fetchSketches() {
         let fetchRequest: NSFetchRequest<Sketch> = Sketch.fetchRequest()
         
-        fetchRequest.sortDescriptors = [NSSortDescriptor(key: "date", ascending: true)]
+        fetchRequest.sortDescriptors = [NSSortDescriptor(key: "date", ascending: false)]
         
         let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
         self.controller = controller
