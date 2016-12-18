@@ -130,7 +130,7 @@ class SketchPad {
         if let backupImage = _imageView.image {
             backups.append(backupImage)
             
-            if backups.count > 5 {
+            if backups.count > 100 {
                 backups.removeFirst()
                 shouldClearAtBegining = false
             }
