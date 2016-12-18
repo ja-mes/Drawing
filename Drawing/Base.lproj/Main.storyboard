@@ -97,6 +97,9 @@
                                                     <state key="normal" title="Edit">
                                                         <color key="titleColor" red="0.4679151177406311" green="0.84761649370193481" blue="0.55808353424072266" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="editButtonPressed:" destination="k5w-j8-blz" eventType="touchUpInside" id="SYW-t2-PlE"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -111,7 +114,6 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="dateLl" destination="F91-AR-inf" id="D1x-0c-DMH"/>
-                                            <outlet property="editButton" destination="yev-9r-Fj7" id="nLB-ye-CcI"/>
                                             <outlet property="sketchImageView" destination="fn4-iM-tup" id="qg7-4g-U8P"/>
                                         </connections>
                                     </tableViewCell>

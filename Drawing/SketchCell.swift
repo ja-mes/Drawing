@@ -11,5 +11,4 @@ import UIKit
 class SketchCell: UITableViewCell {
     @IBOutlet weak var dateLl: UILabel!
     @IBOutlet var sketchImageView: UIImageView!
-    @IBOutlet weak var editButton: UIButton!
 }
