@@ -60,6 +60,14 @@ class SketchPad {
         }
     }
     
+    var shouldClearAtBeginning: Bool {
+        get {
+            return _shouldClearAtBegining
+        } set {
+            _shouldClearAtBegining = newValue
+        }
+    }
+    
     
     init(imageView: UIImageView) {
         _imageView = imageView
