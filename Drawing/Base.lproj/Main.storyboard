@@ -257,6 +257,23 @@
                                     <action selector="cancelPressed:" destination="kMw-TX-14e" eventType="touchUpInside" id="xro-Se-qXg"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSO-BP-l5u" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
+                                <rect key="frame" x="189" y="40" width="75" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.15586599707603455" blue="0.14548662304878235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="SEr-In-eCK"/>
+                                    <constraint firstAttribute="height" constant="30" id="sVH-eQ-qdv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                <state key="normal" title="DELETE">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -267,8 +284,10 @@
                             <constraint firstItem="TCd-sr-Wpl" firstAttribute="top" secondItem="hf6-cH-fdj" secondAttribute="bottom" constant="8" id="Myy-i6-plx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="TAd-oB-GyF" secondAttribute="trailing" id="Tr8-Aa-Ka7"/>
                             <constraint firstItem="dZO-w0-fOU" firstAttribute="top" secondItem="TAd-oB-GyF" secondAttribute="bottom" constant="25" id="YJw-9w-KLu"/>
+                            <constraint firstItem="hf6-cH-fdj" firstAttribute="leading" secondItem="PSO-BP-l5u" secondAttribute="trailing" constant="20" id="YP8-az-Isn"/>
                             <constraint firstItem="hf6-cH-fdj" firstAttribute="top" secondItem="gay-5Q-N43" secondAttribute="bottom" constant="20" id="bFa-eL-oQV"/>
                             <constraint firstItem="TS1-2h-HMk" firstAttribute="top" secondItem="gay-5Q-N43" secondAttribute="bottom" constant="20" id="cro-ni-Ksg"/>
+                            <constraint firstItem="PSO-BP-l5u" firstAttribute="top" secondItem="gay-5Q-N43" secondAttribute="bottom" constant="20" id="eSq-EE-yOL"/>
                             <constraint firstItem="hf6-cH-fdj" firstAttribute="trailing" secondItem="auj-5K-9nF" secondAttribute="trailingMargin" id="h4l-Oh-VDa"/>
                             <constraint firstItem="TS1-2h-HMk" firstAttribute="leading" secondItem="auj-5K-9nF" secondAttribute="leadingMargin" id="jyJ-eo-U7f"/>
                         </constraints>
