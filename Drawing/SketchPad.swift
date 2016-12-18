@@ -175,6 +175,16 @@ class SketchPad {
         }
     }
     
+    func destroy(sketch: Sketch!) {
+        context.delete(sketch)
+        
+        do {
+            try context.save()
+        } catch {
+            fatalError("Unable to delete sketch: \(error)")
+        }
+    }
+    
     func editing() {
         saveBackup()
         shouldClearAtBegining = false

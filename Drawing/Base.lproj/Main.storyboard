@@ -257,7 +257,7 @@
                                     <action selector="cancelPressed:" destination="kMw-TX-14e" eventType="touchUpInside" id="xro-Se-qXg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSO-BP-l5u" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSO-BP-l5u" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
                                 <rect key="frame" x="189" y="40" width="75" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.15586599707603455" blue="0.14548662304878235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -273,6 +273,9 @@
                                         <real key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deletePressed:" destination="kMw-TX-14e" eventType="touchUpInside" id="hLn-Hp-x3h"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -296,6 +299,7 @@
                         <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
                     </tabBarItem>
                     <connections>
+                        <outlet property="deleteButton" destination="PSO-BP-l5u" id="fsD-ng-KkP"/>
                         <outlet property="imageView" destination="TCd-sr-Wpl" id="Y7i-AP-Fiz"/>
                         <segue destination="UjT-Mc-bYv" kind="presentation" identifier="ColorVC" modalPresentationStyle="overCurrentContext" modalTransitionStyle="coverVertical" id="XFx-Sv-Xwr"/>
                         <segue destination="eQX-dj-gx0" kind="presentation" identifier="SizeVC" modalPresentationStyle="overCurrentContext" id="mrt-pq-eXY"/>

@@ -10,6 +10,7 @@ import UIKit
 
 class SketchVC: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var deleteButton: CustomButton!
     
     var sketchPad: SketchPad!
     var sketch: Sketch?
@@ -23,6 +24,8 @@ class SketchVC: UIViewController {
             if let image = sketch.image as? UIImage {
                 imageView.image = image
                 sketchPad.editing()
+                
+                deleteButton.isHidden = false
             }
         }
     }
@@ -63,6 +66,13 @@ class SketchVC: UIViewController {
             sketchPad.save()
         }
         dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func deletePressed(_ sender: UIButton) {
+        if let sketch = sketch {
+            sketchPad.destroy(sketch: sketch)
+            dismiss(animated: true, completion: nil)
+        }
     }
     
     @IBAction func cancelPressed(_ sender: UIButton) {
