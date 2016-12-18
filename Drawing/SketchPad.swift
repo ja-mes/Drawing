@@ -13,7 +13,7 @@ class SketchPad {
     private var _imageView: UIImageView
     private var _previousColor: UIColor?
     private var backups = [UIImage]()
-    private var hasRemovedFirstTouch = false
+    private var _shouldClearAtBegining = false
 
     private var _color = UIColor.black
     private var _brushWidth: CGFloat = 3
@@ -124,7 +124,7 @@ class SketchPad {
             
             if backups.count > 100 {
                 backups.removeFirst()
-                hasRemovedFirstTouch = true
+                _shouldClearAtBegining = true
             }
         }
     }
@@ -132,7 +132,7 @@ class SketchPad {
     func undo() {
         var num = 0
         
-        if hasRemovedFirstTouch {
+        if _shouldClearAtBegining {
             num = 1
         }
         
