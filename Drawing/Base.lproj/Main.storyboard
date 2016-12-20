@@ -302,6 +302,7 @@
                     </tabBarItem>
                     <connections>
                         <outlet property="deleteButton" destination="PSO-BP-l5u" id="fsD-ng-KkP"/>
+                        <outlet property="eraseButton" destination="0ly-ZJ-R7N" id="ym2-P1-hxM"/>
                         <outlet property="imageView" destination="TCd-sr-Wpl" id="Y7i-AP-Fiz"/>
                         <segue destination="UjT-Mc-bYv" kind="presentation" identifier="ColorVC" modalPresentationStyle="overCurrentContext" modalTransitionStyle="coverVertical" id="XFx-Sv-Xwr"/>
                         <segue destination="eQX-dj-gx0" kind="presentation" identifier="SizeVC" modalPresentationStyle="overCurrentContext" id="mrt-pq-eXY"/>

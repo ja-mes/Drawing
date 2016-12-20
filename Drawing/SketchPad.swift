@@ -89,6 +89,8 @@ class SketchPad {
             _previousColor = _color
             _color = UIColor.white
         }
+        
+        NotificationCenter.default.post(name: Notification.Name("SketchPad:eraserToggled"), object: nil)
     }
     
     func touchesBegan(touch: UITouch) {

@@ -11,6 +11,7 @@ import UIKit
 class SketchVC: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var deleteButton: CustomButton!
+    @IBOutlet weak var eraseButton: CustomButton!
     
     var sketchPad: SketchPad!
     var sketch: Sketch?
@@ -28,6 +29,8 @@ class SketchVC: UIViewController {
                 deleteButton.isHidden = false
             }
         }
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(toggleEraser), name: NSNotification.Name("SketchPad:eraserToggled"), object: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -81,13 +84,6 @@ class SketchVC: UIViewController {
     
     @IBAction func erasePressed(_ sender: UIButton) {
         sketchPad.toggleEraser()
-        
-        if sketchPad.isErasing {
-            sender.backgroundColor = UIColor(red:1.00, green:0.34, blue:0.13, alpha:1.0)
-        } else {
-            sender.backgroundColor = UIColor(red:0.98, green:0.58, blue:0.42, alpha:1.0)
-        }
-        
     }
     
     @IBAction func undoPressed(_ sender: UIButton) {
@@ -100,6 +96,14 @@ class SketchVC: UIViewController {
     
     @IBAction func sizePressed(_ sender: UIButton) {
         performSegue(withIdentifier: "SizeVC", sender: nil)
+    }
+    
+    func toggleEraser() {
+        if sketchPad.isErasing {
+            eraseButton.backgroundColor = UIColor(red:1.00, green:0.34, blue:0.13, alpha:1.0)
+        } else {
+            eraseButton.backgroundColor = UIColor(red:0.98, green:0.58, blue:0.42, alpha:1.0)
+        }
     }
 }
 
