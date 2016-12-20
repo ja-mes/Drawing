@@ -261,7 +261,7 @@
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSO-BP-l5u" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
                                 <rect key="frame" x="189" y="40" width="75" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.15586599707603455" blue="0.14548662304878235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.93617749214172363" green="0.32650941610336304" blue="0.31376990675926208" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="SEr-In-eCK"/>
                                     <constraint firstAttribute="height" constant="30" id="sVH-eQ-qdv"/>
