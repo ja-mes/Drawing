@@ -73,8 +73,18 @@ class SketchVC: UIViewController {
     
     @IBAction func deletePressed(_ sender: UIButton) {
         if let sketch = sketch {
-            sketchPad.destroy(sketch: sketch)
-            dismiss(animated: true, completion: nil)
+            let alertController = UIAlertController(title: "", message: "Are you sure you want to delete this sketch?", preferredStyle: .actionSheet)
+            
+            let deleteAction = UIAlertAction(title: "Delete Sketch", style: .destructive, handler: { (action) in
+                self.sketchPad.destroy(sketch: sketch)
+                self.dismiss(animated: true, completion: nil)
+            })
+            alertController.addAction(deleteAction)
+            
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+            alertController.addAction(cancelAction)
+            
+            present(alertController, animated: true, completion: nil)
         }
     }
     
