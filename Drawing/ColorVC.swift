@@ -49,6 +49,10 @@ class ColorVC: UIViewController {
     }
     
     @IBAction func colorPressed(_ sender: UIButton) {
+        if sketchPad.isErasing {
+            sketchPad.toggleEraser()
+        }
+        
         sketchPad.color = colors[sender.tag]
         
         dismiss(animated: true, completion: nil)
