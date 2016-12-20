@@ -63,10 +63,20 @@ class SketchVC: UIViewController {
     }
     
     @IBAction func savePressed(_ sender: UIButton) {
+        if let sketch = sketch {
+            sketchPad.update(sketch: sketch)
+        } else {
+            sketchPad.save()
+        }
+        
         let alertController = UIAlertController(title: "", message: "What would you like to do with this sketch?", preferredStyle: .actionSheet)
         
         let saveLocallyAction = UIAlertAction(title: "Save to Photo Library", style: .default) { (action) in
-            
+            if let image = self.imageView.image {
+                UIImageWriteToSavedPhotosAlbum(image, self, #selector(self.image(_image:didFinishSavingWithError:contextInfo:)), nil)
+            }
+
+            self.dismiss(animated: true, completion: nil)
         }
         alertController.addAction(saveLocallyAction)
         
@@ -75,13 +85,6 @@ class SketchVC: UIViewController {
         
         present(alertController, animated: true, completion: nil)
         
-        
-        if let sketch = sketch {
-            sketchPad.update(sketch: sketch)
-        } else {
-            sketchPad.save()
-        }
-        //dismiss(animated: true, completion: nil)
     }
     
     @IBAction func deletePressed(_ sender: UIButton) {
@@ -126,6 +129,12 @@ class SketchVC: UIViewController {
             eraseButton.backgroundColor = UIColor(red:1.00, green:0.34, blue:0.13, alpha:1.0)
         } else {
             eraseButton.backgroundColor = UIColor(red:0.98, green:0.58, blue:0.42, alpha:1.0)
+        }
+    }
+    
+    func image(_image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+        if let error = error {
+            print(error)
         }
     }
 }
