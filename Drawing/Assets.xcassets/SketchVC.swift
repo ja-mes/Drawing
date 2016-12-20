@@ -63,12 +63,25 @@ class SketchVC: UIViewController {
     }
     
     @IBAction func savePressed(_ sender: UIButton) {
+        let alertController = UIAlertController(title: "", message: "What would you like to do with this sketch?", preferredStyle: .actionSheet)
+        
+        let saveLocallyAction = UIAlertAction(title: "Save to Photo Library", style: .default) { (action) in
+            
+        }
+        alertController.addAction(saveLocallyAction)
+        
+        let doNothingAction = UIAlertAction(title: "Don't export", style: .cancel, handler: nil)
+        alertController.addAction(doNothingAction)
+        
+        present(alertController, animated: true, completion: nil)
+        
+        
         if let sketch = sketch {
             sketchPad.update(sketch: sketch)
         } else {
             sketchPad.save()
         }
-        dismiss(animated: true, completion: nil)
+        //dismiss(animated: true, completion: nil)
     }
     
     @IBAction func deletePressed(_ sender: UIButton) {
