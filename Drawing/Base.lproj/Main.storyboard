@@ -91,9 +91,9 @@
                                                     <color key="textColor" red="0.25882352939999997" green="0.25882352939999997" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yev-9r-Fj7">
-                                                    <rect key="frame" x="285.5" y="13" width="30" height="34"/>
-                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yev-9r-Fj7">
+                                                    <rect key="frame" x="151.5" y="13" width="163.5" height="37"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
                                                     <state key="normal" title="Edit">
                                                         <color key="titleColor" red="0.4679151177406311" green="0.84761649370193481" blue="0.55808353424072266" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
@@ -104,6 +104,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="yev-9r-Fj7" firstAttribute="top" secondItem="1JJ-Rv-C61" secondAttribute="topMargin" constant="5" id="8yu-OX-J9v"/>
+                                                <constraint firstItem="yev-9r-Fj7" firstAttribute="leading" secondItem="F91-AR-inf" secondAttribute="trailing" constant="8" id="MYJ-lG-fMZ"/>
                                                 <constraint firstItem="F91-AR-inf" firstAttribute="leading" secondItem="5Xs-Tj-qd4" secondAttribute="leading" id="RIT-MV-BzK"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="5Xs-Tj-qd4" secondAttribute="bottom" constant="8" id="Rbz-yK-yTa"/>
                                                 <constraint firstItem="yev-9r-Fj7" firstAttribute="trailing" secondItem="5Xs-Tj-qd4" secondAttribute="trailing" id="VH2-rW-17H"/>
@@ -140,7 +141,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="69B-bW-DH0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="129" y="518"/>
+            <point key="canvasLocation" x="127.5" y="517.6056338028169"/>
         </scene>
         <!--SketchVC-->
         <scene sceneID="tqX-N9-tjq">
@@ -159,7 +160,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQZ-KQ-pUv" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="61" height="30"/>
-                                        <color key="backgroundColor" red="0.98431372549019602" green="0.58431372549019611" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.9832608699798584" green="0.58678716421127319" blue="0.42354980111122131" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
                                         <state key="normal" title="UNDO">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -175,7 +176,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ly-ZJ-R7N" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
                                         <rect key="frame" x="76" y="0.0" width="60.5" height="30"/>
-                                        <color key="backgroundColor" red="0.98339945077896118" green="0.58305984735488892" blue="0.42342805862426758" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.9832608699798584" green="0.58678716421127319" blue="0.42354980111122131" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
                                         <state key="normal" title="ERASE">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -191,7 +192,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hdr-6X-2Nh" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
                                         <rect key="frame" x="151.5" y="0.0" width="61" height="30"/>
-                                        <color key="backgroundColor" red="0.98339945077896118" green="0.58305984735488892" blue="0.42342805862426758" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.9832608699798584" green="0.58678716421127319" blue="0.42354980111122131" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
                                         <state key="normal" title="SIZE">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -207,7 +208,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gQ-cc-Qg8" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
                                         <rect key="frame" x="227.5" y="0.0" width="60.5" height="30"/>
-                                        <color key="backgroundColor" red="0.98431372549019602" green="0.58431372549019611" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.9832608699798584" green="0.58678716421127319" blue="0.42354980111122131" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
                                         <state key="normal" title="COLOR">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -234,7 +235,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSO-BP-l5u" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="86" height="30"/>
-                                        <color key="backgroundColor" red="0.98431372549019602" green="0.58431372549019611" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.9832608699798584" green="0.58678716421127319" blue="0.42354980111122131" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="sVH-eQ-qdv"/>
                                         </constraints>
@@ -253,7 +254,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDT-jj-9rO" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
                                         <rect key="frame" x="101" y="0.0" width="86" height="30"/>
-                                        <color key="backgroundColor" red="0.46791511769999999" green="0.84761649370000003" blue="0.55808353420000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.46706345677375793" green="0.85053414106369019" blue="0.55687946081161499" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="mCp-mq-2xT"/>
                                         </constraints>
@@ -272,7 +273,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hf6-cH-fdj" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
                                         <rect key="frame" x="202" y="0.0" width="86" height="30"/>
-                                        <color key="backgroundColor" red="0.4679151177406311" green="0.84761649370193481" blue="0.55808353424072266" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.46706345677375793" green="0.85053414106369019" blue="0.55687946081161499" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="ijn-7P-ZFS"/>
                                         </constraints>
