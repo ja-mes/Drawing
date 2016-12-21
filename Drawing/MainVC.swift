@@ -24,6 +24,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         if UIDevice.current.userInterfaceIdiom == UIUserInterfaceIdiom.pad {
             tableView.rowHeight = 600
             plusButton.setImage(#imageLiteral(resourceName: "plus_icon-lg"), for: .normal)
+            plusButton.contentEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 60)
         }
         
         fetchSketches()
