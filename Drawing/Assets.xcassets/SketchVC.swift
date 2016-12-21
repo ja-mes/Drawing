@@ -26,6 +26,8 @@ class SketchVC: UIViewController {
                 imageView.image = image
                 sketchPad.editing()
             }
+        } else {
+            deleteButton.setTitle("CANCEL", for: .normal)
         }
         
         NotificationCenter.default.addObserver(self, selector: #selector(toggleEraser), name: NSNotification.Name("SketchPad:eraserToggled"), object: nil)
