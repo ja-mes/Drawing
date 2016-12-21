@@ -21,7 +21,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         tableView.dataSource = self
         
         if UIDevice.current.userInterfaceIdiom == UIUserInterfaceIdiom.pad {
-            tableView.rowHeight = 650
+            tableView.rowHeight = 600
         }
         
         fetchSketches()
