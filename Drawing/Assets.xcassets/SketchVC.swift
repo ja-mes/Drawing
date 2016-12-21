@@ -75,12 +75,12 @@ class SketchVC: UIViewController {
             if let image = self.imageView.image {
                 UIImageWriteToSavedPhotosAlbum(image, self, #selector(self.image(_image:didFinishSavingWithError:contextInfo:)), nil)
             }
-
-            self.dismiss(animated: true, completion: nil)
         }
         alertController.addAction(saveLocallyAction)
         
-        let doNothingAction = UIAlertAction(title: "Don't export", style: .cancel, handler: nil)
+        let doNothingAction = UIAlertAction(title: "Don't export", style: .cancel) { (action) in
+            self.dismiss(animated: true, completion: nil)
+        }
         alertController.addAction(doNothingAction)
         
         present(alertController, animated: true, completion: nil)
@@ -135,6 +135,8 @@ class SketchVC: UIViewController {
     func image(_image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
         if let error = error {
             print(error)
+        } else {
+            dismiss(animated: true, completion: nil)
         }
     }
 }
