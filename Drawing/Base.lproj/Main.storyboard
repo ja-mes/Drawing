@@ -233,7 +233,7 @@
                                 <rect key="frame" x="24" y="40" width="272" height="30"/>
                                 <subviews>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSO-BP-l5u" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="80.5" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
                                         <color key="backgroundColor" red="0.93617749214172363" green="0.32650941610336304" blue="0.31376990675926208" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="sVH-eQ-qdv"/>
@@ -252,7 +252,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDT-jj-9rO" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
-                                        <rect key="frame" x="95.5" y="0.0" width="81" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="128.5" height="30"/>
                                         <color key="backgroundColor" red="0.46791511769999999" green="0.84761649370000003" blue="0.55808353420000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="mCp-mq-2xT"/>
@@ -267,11 +267,11 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="savePressed:" destination="kMw-TX-14e" eventType="touchUpInside" id="Foj-5c-rRX"/>
+                                            <action selector="sharePressed:" destination="kMw-TX-14e" eventType="touchUpInside" id="RBM-Qe-nIR"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hf6-cH-fdj" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
-                                        <rect key="frame" x="191.5" y="0.0" width="80.5" height="30"/>
+                                        <rect key="frame" x="143.5" y="0.0" width="128.5" height="30"/>
                                         <color key="backgroundColor" red="0.4679151177406311" green="0.84761649370193481" blue="0.55808353424072266" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="ijn-7P-ZFS"/>

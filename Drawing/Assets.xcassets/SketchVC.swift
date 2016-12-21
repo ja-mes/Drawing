@@ -68,34 +68,16 @@ class SketchVC: UIViewController {
         } else {
             sketchPad.save()
         }
-
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func sharePressed(_ sender: UIButton) {
         if let image = imageView.image {
             let activityVC = UIActivityViewController(activityItems: [image], applicationActivities: nil)
             activityVC.excludedActivityTypes = [UIActivityType.airDrop, UIActivityType.assignToContact]
             present(activityVC, animated: true, completion: nil)
         }
-
-//        let alertController = UIAlertController(title: "", message: "What would you like to do with this sketch?", preferredStyle: .actionSheet)
-//        
-//        let saveLocallyAction = UIAlertAction(title: "Save to Photo Library", style: .default) { (action) in
-//            if let image = self.imageView.image {
-//                UIImageWriteToSavedPhotosAlbum(image, self, #selector(self.image(_image:didFinishSavingWithError:contextInfo:)), nil)
-//            }
-//        }
-//        alertController.addAction(saveLocallyAction)
-//        
-//        let postToFacebookAction = UIAlertAction(title: "Post to Facebook", style: .default) { (action) in
-//            
-//        }
-//        alertController.addAction(postToFacebookAction)
-//        
-//        let doNothingAction = UIAlertAction(title: "Don't export", style: .cancel) { (action) in
-//            self.dismiss(animated: true, completion: nil)
-//        }
-//        alertController.addAction(doNothingAction)
-//        
-//        present(alertController, animated: true, completion: nil)
-        
     }
     
     @IBAction func deletePressed(_ sender: UIButton) {
