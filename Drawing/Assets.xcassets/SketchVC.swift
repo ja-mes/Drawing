@@ -11,6 +11,7 @@ import UIKit
 class SketchVC: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var deleteButton: CustomButton!
+    @IBOutlet weak var shareButton: CustomButton!
     @IBOutlet weak var eraseButton: CustomButton!
     
     var sketchPad: SketchPad!
@@ -77,6 +78,10 @@ class SketchVC: UIViewController {
         if let image = imageView.image {
             let activityVC = UIActivityViewController(activityItems: [image], applicationActivities: nil)
             activityVC.excludedActivityTypes = [UIActivityType.airDrop, UIActivityType.assignToContact]
+            
+            activityVC.popoverPresentationController?.sourceView = shareButton
+            activityVC.popoverPresentationController?.sourceRect = CGRect(x: view.frame.midX / 2, y: shareButton.frame.height, width: 0, height: 0)
+            
             present(activityVC, animated: true, completion: nil)
         }
     }
