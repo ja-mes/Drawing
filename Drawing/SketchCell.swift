@@ -11,4 +11,10 @@ import UIKit
 class SketchCell: UITableViewCell {
     @IBOutlet weak var dateLl: UILabel!
     @IBOutlet var sketchImageView: UIImageView!
+    @IBOutlet weak var customView: CustomView!
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        customView.frame = CGRect(x: 0, y: 0, width: 480, height: 480)
+    }
 }
