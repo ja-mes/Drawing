@@ -15,6 +15,8 @@ class SketchCell: UITableViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        customView.frame = CGRect(x: 0, y: 0, width: 480, height: 480)
+        
+        // this line makes the custom view expand with the cell. the aspect ratio and the top and bottom constraints make this possible
+        customView.frame = CGRect(x: 0, y: 0, width: 1000, height: 1000)
     }
 }
