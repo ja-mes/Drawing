@@ -24,7 +24,7 @@ class SketchVC: UIViewController {
         if let sketch = sketch {
             if let image = sketch.image as? UIImage {
                 imageView.image = image
-                sketchPad.editing()                
+                sketchPad.editing()
             }
         }
         
@@ -92,6 +92,8 @@ class SketchVC: UIViewController {
             alertController.addAction(cancelAction)
             
             present(alertController, animated: true, completion: nil)
+        } else {
+            dismiss(animated: true, completion: nil)
         }
     }
     
