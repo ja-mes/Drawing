@@ -24,9 +24,7 @@ class SketchVC: UIViewController {
         if let sketch = sketch {
             if let image = sketch.image as? UIImage {
                 imageView.image = image
-                sketchPad.editing()
-                
-                deleteButton.isHidden = false
+                sketchPad.editing()                
             }
         }
         

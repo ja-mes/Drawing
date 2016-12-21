@@ -232,7 +232,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="a45-LY-IjN">
                                 <rect key="frame" x="16" y="40" width="288" height="30"/>
                                 <subviews>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSO-BP-l5u" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSO-BP-l5u" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="86" height="30"/>
                                         <color key="backgroundColor" red="0.93617749214172363" green="0.32650941610336304" blue="0.31376990675926208" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
