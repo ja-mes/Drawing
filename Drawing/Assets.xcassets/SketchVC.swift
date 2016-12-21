@@ -15,6 +15,7 @@ class SketchVC: UIViewController {
     
     var sketchPad: SketchPad!
     var sketch: Sketch?
+    var previousEraserColor: UIColor?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -117,9 +118,12 @@ class SketchVC: UIViewController {
     
     func toggleEraser() {
         if sketchPad.isErasing {
+            previousEraserColor = eraseButton.backgroundColor
             eraseButton.backgroundColor = UIColor(red:1.00, green:0.34, blue:0.13, alpha:1.0)
         } else {
-            eraseButton.backgroundColor = UIColor(red:0.98, green:0.58, blue:0.42, alpha:1.0)
+            if let previousEraserColor = previousEraserColor {
+                eraseButton.backgroundColor = previousEraserColor
+            }
         }
     }
     
