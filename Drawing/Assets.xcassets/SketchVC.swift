@@ -90,6 +90,10 @@ class SketchVC: UIViewController {
         if let sketch = sketch {
             let alertController = UIAlertController(title: "", message: "Are you sure you want to delete this sketch?", preferredStyle: .actionSheet)
             
+            alertController.popoverPresentationController?.sourceView = deleteButton
+            alertController.popoverPresentationController?.sourceRect = CGRect(x: 0, y: deleteButton.frame.height, width: 0, height: 0)
+            alertController.popoverPresentationController?.permittedArrowDirections = .up
+            
             let deleteAction = UIAlertAction(title: "Delete Sketch", style: .destructive, handler: { (action) in
                 self.sketchPad.destroy(sketch: sketch)
                 self.dismiss(animated: true, completion: nil)
