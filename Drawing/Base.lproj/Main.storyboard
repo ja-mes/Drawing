@@ -230,10 +230,10 @@
                                 <rect key="frame" x="0.0" y="78" width="320" height="427"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="a45-LY-IjN">
-                                <rect key="frame" x="24" y="40" width="272" height="30"/>
+                                <rect key="frame" x="16" y="40" width="288" height="30"/>
                                 <subviews>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSO-BP-l5u" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="86" height="30"/>
                                         <color key="backgroundColor" red="0.93617749214172363" green="0.32650941610336304" blue="0.31376990675926208" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="sVH-eQ-qdv"/>
@@ -252,7 +252,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDT-jj-9rO" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="128.5" height="30"/>
+                                        <rect key="frame" x="101" y="0.0" width="86" height="30"/>
                                         <color key="backgroundColor" red="0.46791511769999999" green="0.84761649370000003" blue="0.55808353420000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="mCp-mq-2xT"/>
@@ -271,7 +271,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hf6-cH-fdj" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
-                                        <rect key="frame" x="143.5" y="0.0" width="128.5" height="30"/>
+                                        <rect key="frame" x="202" y="0.0" width="86" height="30"/>
                                         <color key="backgroundColor" red="0.4679151177406311" green="0.84761649370193481" blue="0.55808353424072266" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="ijn-7P-ZFS"/>
@@ -303,10 +303,10 @@
                             <constraint firstItem="TCd-sr-Wpl" firstAttribute="leading" secondItem="auj-5K-9nF" secondAttribute="leading" id="KaS-MY-gyM"/>
                             <constraint firstAttribute="trailingMargin" secondItem="TAd-oB-GyF" secondAttribute="trailing" id="Tr8-Aa-Ka7"/>
                             <constraint firstItem="dZO-w0-fOU" firstAttribute="top" secondItem="TAd-oB-GyF" secondAttribute="bottom" constant="25" id="YJw-9w-KLu"/>
-                            <constraint firstItem="a45-LY-IjN" firstAttribute="leading" secondItem="auj-5K-9nF" secondAttribute="leadingMargin" constant="8" id="cQB-8M-sgl"/>
+                            <constraint firstItem="a45-LY-IjN" firstAttribute="leading" secondItem="auj-5K-9nF" secondAttribute="leadingMargin" id="cQB-8M-sgl"/>
                             <constraint firstItem="TCd-sr-Wpl" firstAttribute="top" secondItem="a45-LY-IjN" secondAttribute="bottom" constant="8" id="dT7-ZX-rJa"/>
                             <constraint firstItem="a45-LY-IjN" firstAttribute="top" secondItem="gay-5Q-N43" secondAttribute="bottom" constant="20" id="fLF-8D-DBy"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="a45-LY-IjN" secondAttribute="trailing" constant="8" id="k9b-Wi-oGI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="a45-LY-IjN" secondAttribute="trailing" id="k9b-Wi-oGI"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="create_icon" id="l1Y-MZ-CBq">
