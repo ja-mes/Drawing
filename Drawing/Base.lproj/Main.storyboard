@@ -33,7 +33,7 @@
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcm-B2-0Kc">
-                                <rect key="frame" x="483.5" y="32" width="284.5" height="40"/>
+                                <rect key="frame" x="483.5" y="37" width="284.5" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="38L-83-1J0"/>
                                 </constraints>
@@ -44,7 +44,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="380" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VtA-va-4k5">
-                                <rect key="frame" x="0.0" y="97" width="768" height="927"/>
+                                <rect key="frame" x="0.0" y="102" width="768" height="922"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
@@ -135,7 +135,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="bcm-B2-0Kc" firstAttribute="top" secondItem="Vjc-oJ-GhV" secondAttribute="bottom" constant="12" id="67D-Bz-Yeh"/>
+                            <constraint firstItem="bcm-B2-0Kc" firstAttribute="top" secondItem="Vjc-oJ-GhV" secondAttribute="bottom" constant="12" id="67D-Bz-Yeh">
+                                <variation key="heightClass=regular-widthClass=regular" constant="17"/>
+                            </constraint>
                             <constraint firstItem="VtA-va-4k5" firstAttribute="leading" secondItem="cia-Pt-BjG" secondAttribute="leading" id="9Fh-K4-Wc0"/>
                             <constraint firstItem="UhN-4l-FFO" firstAttribute="top" secondItem="VtA-va-4k5" secondAttribute="bottom" id="Gea-yD-DOi"/>
                             <constraint firstItem="q3o-xz-iaV" firstAttribute="top" secondItem="Vjc-oJ-GhV" secondAttribute="bottom" constant="20" id="Ne7-gs-FMY"/>
