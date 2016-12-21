@@ -115,7 +115,6 @@ class SketchVC: UIViewController {
         }
     }
     
- 
     @IBAction func erasePressed(_ sender: UIButton) {
         sketchPad.toggleEraser()
     }
