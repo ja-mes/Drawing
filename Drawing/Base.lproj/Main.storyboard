@@ -229,26 +229,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TCd-sr-Wpl">
                                 <rect key="frame" x="0.0" y="78" width="375" height="526"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hf6-cH-fdj" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
-                                <rect key="frame" x="284" y="40" width="75" height="30"/>
-                                <color key="backgroundColor" red="0.4679151177406311" green="0.84761649370193481" blue="0.55808353424072266" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="75" id="ceE-sK-OiP"/>
-                                    <constraint firstAttribute="height" constant="30" id="ijn-7P-ZFS"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
-                                <state key="normal" title="SAVE">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="savePressed:" destination="kMw-TX-14e" eventType="touchUpInside" id="NQp-bE-Uhb"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TS1-2h-HMk">
                                 <rect key="frame" x="16" y="40" width="68" height="34"/>
                                 <constraints>
@@ -262,26 +242,71 @@
                                     <action selector="cancelPressed:" destination="kMw-TX-14e" eventType="touchUpInside" id="xro-Se-qXg"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSO-BP-l5u" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
-                                <rect key="frame" x="189" y="40" width="75" height="30"/>
-                                <color key="backgroundColor" red="0.93617749214172363" green="0.32650941610336304" blue="0.31376990675926208" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="a45-LY-IjN">
+                                <rect key="frame" x="92" y="40" width="259" height="30"/>
+                                <subviews>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSO-BP-l5u" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="76.5" height="30"/>
+                                        <color key="backgroundColor" red="0.93617749214172363" green="0.32650941610336304" blue="0.31376990675926208" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="sVH-eQ-qdv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                        <state key="normal" title="DELETE">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="deletePressed:" destination="kMw-TX-14e" eventType="touchUpInside" id="hLn-Hp-x3h"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDT-jj-9rO" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
+                                        <rect key="frame" x="91.5" y="0.0" width="76" height="30"/>
+                                        <color key="backgroundColor" red="0.46791511769999999" green="0.84761649370000003" blue="0.55808353420000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="mCp-mq-2xT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                        <state key="normal" title="SHARE">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="savePressed:" destination="kMw-TX-14e" eventType="touchUpInside" id="Foj-5c-rRX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hf6-cH-fdj" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
+                                        <rect key="frame" x="182.5" y="0.0" width="76.5" height="30"/>
+                                        <color key="backgroundColor" red="0.4679151177406311" green="0.84761649370193481" blue="0.55808353424072266" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="ijn-7P-ZFS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                        <state key="normal" title="SAVE">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="savePressed:" destination="kMw-TX-14e" eventType="touchUpInside" id="NQp-bE-Uhb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="75" id="SEr-In-eCK"/>
-                                    <constraint firstAttribute="height" constant="30" id="sVH-eQ-qdv"/>
+                                    <constraint firstAttribute="height" constant="30" id="j4h-RR-8M3"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
-                                <state key="normal" title="DELETE">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="deletePressed:" destination="kMw-TX-14e" eventType="touchUpInside" id="hLn-Hp-x3h"/>
-                                </connections>
-                            </button>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -289,15 +314,14 @@
                             <constraint firstAttribute="trailing" secondItem="TCd-sr-Wpl" secondAttribute="trailing" id="H6t-Fo-4jT"/>
                             <constraint firstItem="TAd-oB-GyF" firstAttribute="leading" secondItem="auj-5K-9nF" secondAttribute="leadingMargin" id="Jfg-Ot-JL5"/>
                             <constraint firstItem="TCd-sr-Wpl" firstAttribute="leading" secondItem="auj-5K-9nF" secondAttribute="leading" id="KaS-MY-gyM"/>
-                            <constraint firstItem="TCd-sr-Wpl" firstAttribute="top" secondItem="hf6-cH-fdj" secondAttribute="bottom" constant="8" id="Myy-i6-plx"/>
+                            <constraint firstItem="a45-LY-IjN" firstAttribute="leading" secondItem="TS1-2h-HMk" secondAttribute="trailing" constant="8" id="Pwe-JD-8MU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="TAd-oB-GyF" secondAttribute="trailing" id="Tr8-Aa-Ka7"/>
                             <constraint firstItem="dZO-w0-fOU" firstAttribute="top" secondItem="TAd-oB-GyF" secondAttribute="bottom" constant="25" id="YJw-9w-KLu"/>
-                            <constraint firstItem="hf6-cH-fdj" firstAttribute="leading" secondItem="PSO-BP-l5u" secondAttribute="trailing" constant="20" id="YP8-az-Isn"/>
-                            <constraint firstItem="hf6-cH-fdj" firstAttribute="top" secondItem="gay-5Q-N43" secondAttribute="bottom" constant="20" id="bFa-eL-oQV"/>
                             <constraint firstItem="TS1-2h-HMk" firstAttribute="top" secondItem="gay-5Q-N43" secondAttribute="bottom" constant="20" id="cro-ni-Ksg"/>
-                            <constraint firstItem="PSO-BP-l5u" firstAttribute="top" secondItem="gay-5Q-N43" secondAttribute="bottom" constant="20" id="eSq-EE-yOL"/>
-                            <constraint firstItem="hf6-cH-fdj" firstAttribute="trailing" secondItem="auj-5K-9nF" secondAttribute="trailingMargin" id="h4l-Oh-VDa"/>
+                            <constraint firstItem="TCd-sr-Wpl" firstAttribute="top" secondItem="a45-LY-IjN" secondAttribute="bottom" constant="8" id="dT7-ZX-rJa"/>
+                            <constraint firstItem="a45-LY-IjN" firstAttribute="top" secondItem="gay-5Q-N43" secondAttribute="bottom" constant="20" id="fLF-8D-DBy"/>
                             <constraint firstItem="TS1-2h-HMk" firstAttribute="leading" secondItem="auj-5K-9nF" secondAttribute="leadingMargin" id="jyJ-eo-U7f"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="a45-LY-IjN" secondAttribute="trailing" constant="8" id="k9b-Wi-oGI"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="create_icon" id="l1Y-MZ-CBq">
