@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="k5w-j8-blz">
-    <device id="ipad9_7" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,11 +19,11 @@
                         <viewControllerLayoutGuide type="bottom" id="UhN-4l-FFO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cia-Pt-BjG">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Sketches" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3o-xz-iaV">
-                                <rect key="frame" x="293" y="40" width="183" height="41"/>
+                                <rect key="frame" x="120.5" y="40" width="134.5" height="30.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="22"/>
                                 <color key="textColor" red="0.25882352939999997" green="0.25882352939999997" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -32,7 +32,7 @@
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcm-B2-0Kc">
-                                <rect key="frame" x="484" y="32" width="284" height="40"/>
+                                <rect key="frame" x="263" y="32" width="112" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="38L-83-1J0"/>
                                 </constraints>
@@ -43,19 +43,19 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="380" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VtA-va-4k5">
-                                <rect key="frame" x="0.0" y="97" width="768" height="927"/>
+                                <rect key="frame" x="0.0" y="97" width="375" height="570"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SketchCell" rowHeight="380" id="wTs-A3-wcH" customClass="SketchCell" customModule="Drawing" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="768" height="380"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="380"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wTs-A3-wcH" id="1JJ-Rv-C61">
-                                            <rect key="frame" x="0.0" y="0.0" width="768" height="380"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="380"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Xs-Tj-qd4" customClass="CustomView" customModule="Drawing" customModuleProvider="target">
-                                                    <rect key="frame" x="228.5" y="53" width="311" height="311"/>
+                                                    <rect key="frame" x="32" y="53" width="311" height="311"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fn4-iM-tup">
                                                             <rect key="frame" x="0.0" y="0.0" width="311" height="311"/>
@@ -89,13 +89,13 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="December 13, 2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F91-AR-inf">
-                                                    <rect key="frame" x="228.5" y="20" width="149" height="22"/>
+                                                    <rect key="frame" x="32" y="20" width="149" height="22"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
                                                     <color key="textColor" red="0.25882352939999997" green="0.25882352939999997" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yev-9r-Fj7">
-                                                    <rect key="frame" x="385.5" y="13" width="154" height="37"/>
+                                                    <rect key="frame" x="189" y="13" width="154" height="37"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
                                                     <state key="normal" title="Edit">
                                                         <color key="titleColor" red="0.4679151177406311" green="0.84761649370193481" blue="0.55808353424072266" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -155,14 +155,14 @@
                         <viewControllerLayoutGuide type="bottom" id="dZO-w0-fOU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="auj-5K-9nF">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="TAd-oB-GyF">
-                                <rect key="frame" x="20" y="969" width="728" height="30"/>
+                                <rect key="frame" x="16" y="612" width="343" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQZ-KQ-pUv" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="171" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="74.5" height="30"/>
                                         <color key="backgroundColor" red="0.9832608699798584" green="0.58678716421127319" blue="0.42354980111122131" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
                                         <state key="normal" title="UNDO">
@@ -178,7 +178,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ly-ZJ-R7N" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
-                                        <rect key="frame" x="186" y="0.0" width="170.5" height="30"/>
+                                        <rect key="frame" x="89.5" y="0.0" width="74.5" height="30"/>
                                         <color key="backgroundColor" red="0.9832608699798584" green="0.58678716421127319" blue="0.42354980111122131" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
                                         <state key="normal" title="ERASE">
@@ -194,7 +194,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hdr-6X-2Nh" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
-                                        <rect key="frame" x="371.5" y="0.0" width="171" height="30"/>
+                                        <rect key="frame" x="179" y="0.0" width="74.5" height="30"/>
                                         <color key="backgroundColor" red="0.9832608699798584" green="0.58678716421127319" blue="0.42354980111122131" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
                                         <state key="normal" title="SIZE">
@@ -210,7 +210,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gQ-cc-Qg8" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
-                                        <rect key="frame" x="557.5" y="0.0" width="170.5" height="30"/>
+                                        <rect key="frame" x="268.5" y="0.0" width="74.5" height="30"/>
                                         <color key="backgroundColor" red="0.9832608699798584" green="0.58678716421127319" blue="0.42354980111122131" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
                                         <state key="normal" title="COLOR">
@@ -231,13 +231,13 @@
                                 </constraints>
                             </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TCd-sr-Wpl">
-                                <rect key="frame" x="0.0" y="78" width="768" height="883"/>
+                                <rect key="frame" x="0.0" y="78" width="375" height="526"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="a45-LY-IjN">
-                                <rect key="frame" x="20" y="40" width="728" height="30"/>
+                                <rect key="frame" x="16" y="40" width="343" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSO-BP-l5u" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="232.5" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="104.5" height="30"/>
                                         <color key="backgroundColor" red="0.9832608699798584" green="0.58678716421127319" blue="0.42354980111122131" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="sVH-eQ-qdv"/>
@@ -256,7 +256,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDT-jj-9rO" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
-                                        <rect key="frame" x="247.5" y="0.0" width="233" height="30"/>
+                                        <rect key="frame" x="119.5" y="0.0" width="104" height="30"/>
                                         <color key="backgroundColor" red="0.46706345677375793" green="0.85053414106369019" blue="0.55687946081161499" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="mCp-mq-2xT"/>
@@ -275,7 +275,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hf6-cH-fdj" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
-                                        <rect key="frame" x="495.5" y="0.0" width="232.5" height="30"/>
+                                        <rect key="frame" x="238.5" y="0.0" width="104.5" height="30"/>
                                         <color key="backgroundColor" red="0.46706345677375793" green="0.85053414106369019" blue="0.55687946081161499" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="ijn-7P-ZFS"/>
@@ -313,9 +313,6 @@
                             <constraint firstAttribute="trailingMargin" secondItem="a45-LY-IjN" secondAttribute="trailing" id="k9b-Wi-oGI"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="create_icon" id="l1Y-MZ-CBq">
-                        <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
-                    </tabBarItem>
                     <connections>
                         <outlet property="deleteButton" destination="PSO-BP-l5u" id="fsD-ng-KkP"/>
                         <outlet property="eraseButton" destination="0ly-ZJ-R7N" id="ym2-P1-hxM"/>
@@ -337,11 +334,11 @@
                         <viewControllerLayoutGuide type="bottom" id="A1h-t0-2Et"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Iq6-F7-1vg">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J90-gz-Byt" customClass="CustomView" customModule="Drawing" customModuleProvider="target">
-                                <rect key="frame" x="244" y="362" width="280" height="300"/>
+                                <rect key="frame" x="47.5" y="183.5" width="280" height="300"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="AGl-Uy-nge">
                                         <rect key="frame" x="16" y="20" width="248" height="258"/>
@@ -716,7 +713,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3nA-RM-RKO" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
-                                <rect key="frame" x="509" y="347" width="30" height="30"/>
+                                <rect key="frame" x="312.5" y="168.5" width="30" height="30"/>
                                 <color key="backgroundColor" red="0.84698420763015747" green="0.84710663557052612" blue="0.8469575047492981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="bNn-Sr-btK"/>
@@ -757,11 +754,11 @@
                         <viewControllerLayoutGuide type="bottom" id="i39-T0-ik4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7HU-de-CIb">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LSY-a3-niw" customClass="CustomView" customModule="Drawing" customModuleProvider="target">
-                                <rect key="frame" x="309" y="337" width="150" height="350"/>
+                                <rect key="frame" x="112.5" y="158.5" width="150" height="350"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wuW-6W-qur">
                                         <rect key="frame" x="0.0" y="10" width="150" height="25"/>
@@ -988,7 +985,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFW-ac-XQ1" customClass="CustomButton" customModule="Drawing" customModuleProvider="target">
-                                <rect key="frame" x="444" y="322" width="30" height="30"/>
+                                <rect key="frame" x="247.5" y="143.5" width="30" height="30"/>
                                 <color key="backgroundColor" red="0.84698420763015747" green="0.84710663557052612" blue="0.8469575047492981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="A11-d6-icH"/>
@@ -1039,7 +1036,6 @@
     </scenes>
     <resources>
         <image name="close_icon" width="15" height="15"/>
-        <image name="create_icon" width="20" height="20"/>
         <image name="plus_icon" width="20" height="20"/>
     </resources>
 </document>
