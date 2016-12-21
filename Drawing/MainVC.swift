@@ -11,6 +11,7 @@ import CoreData
 
 class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFetchedResultsControllerDelegate {
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var plusButton: UIButton!
     
     var controller: NSFetchedResultsController<Sketch>!
 
@@ -22,6 +23,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         
         if UIDevice.current.userInterfaceIdiom == UIUserInterfaceIdiom.pad {
             tableView.rowHeight = 600
+            plusButton.setImage(#imageLiteral(resourceName: "plus_icon-lg"), for: .normal)
         }
         
         fetchSketches()

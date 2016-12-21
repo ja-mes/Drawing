@@ -24,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Sketches" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3o-xz-iaV">
-                                <rect key="frame" x="292.5" y="40" width="183" height="41"/>
+                                <rect key="frame" x="293" y="40" width="183" height="41"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="22"/>
                                 <color key="textColor" red="0.25882352939999997" green="0.25882352939999997" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -33,12 +33,12 @@
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcm-B2-0Kc">
-                                <rect key="frame" x="483.5" y="37" width="284.5" height="40"/>
+                                <rect key="frame" x="484" y="37" width="284" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="38L-83-1J0"/>
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="25" maxY="0.0"/>
-                                <state key="normal" image="plus_icon"/>
+                                <state key="normal" image="plus_icon-sm"/>
                                 <connections>
                                     <action selector="plusButtonPressed:" destination="k5w-j8-blz" eventType="touchUpInside" id="zxq-mn-p6e"/>
                                 </connections>
@@ -149,6 +149,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="plusButton" destination="bcm-B2-0Kc" id="86O-3w-GTw"/>
                         <outlet property="tableView" destination="VtA-va-4k5" id="YBa-th-Bv0"/>
                         <segue destination="kMw-TX-14e" kind="show" identifier="SketchVC" id="dpf-Pv-m0g"/>
                     </connections>
@@ -1047,6 +1048,6 @@
     </scenes>
     <resources>
         <image name="close_icon" width="15" height="15"/>
-        <image name="plus_icon" width="20" height="20"/>
+        <image name="plus_icon-sm" width="20" height="20"/>
     </resources>
 </document>
