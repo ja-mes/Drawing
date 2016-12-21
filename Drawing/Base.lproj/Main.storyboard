@@ -56,10 +56,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Xs-Tj-qd4" customClass="CustomView" customModule="Drawing" customModuleProvider="target">
-                                                    <rect key="frame" x="228.5" y="53" width="311" height="311"/>
+                                                    <rect key="frame" x="231" y="58" width="306" height="306"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fn4-iM-tup">
-                                                            <rect key="frame" x="0.0" y="0.0" width="311" height="311"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="306" height="306"/>
                                                         </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -89,17 +89,23 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="December 13, 2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F91-AR-inf">
-                                                    <rect key="frame" x="228.5" y="20" width="149" height="22"/>
+                                                    <rect key="frame" x="231" y="20" width="176" height="26"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
                                                     <color key="textColor" red="0.25882352939999997" green="0.25882352939999997" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="19"/>
+                                                    </variation>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yev-9r-Fj7">
-                                                    <rect key="frame" x="385.5" y="13" width="154" height="37"/>
+                                                    <rect key="frame" x="415" y="13" width="122" height="40"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
                                                     <state key="normal" title="Edit">
                                                         <color key="titleColor" red="0.4679151177406311" green="0.84761649370193481" blue="0.55808353424072266" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
+                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                                    </variation>
                                                     <connections>
                                                         <action selector="editButtonPressed:" destination="k5w-j8-blz" eventType="touchUpInside" id="SYW-t2-PlE"/>
                                                     </connections>
@@ -111,7 +117,9 @@
                                                 <constraint firstItem="F91-AR-inf" firstAttribute="leading" secondItem="5Xs-Tj-qd4" secondAttribute="leading" id="RIT-MV-BzK"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="5Xs-Tj-qd4" secondAttribute="bottom" constant="8" id="Rbz-yK-yTa"/>
                                                 <constraint firstItem="yev-9r-Fj7" firstAttribute="trailing" secondItem="5Xs-Tj-qd4" secondAttribute="trailing" id="VH2-rW-17H"/>
-                                                <constraint firstItem="5Xs-Tj-qd4" firstAttribute="top" secondItem="1JJ-Rv-C61" secondAttribute="topMargin" constant="45" id="a59-IJ-KX4"/>
+                                                <constraint firstItem="5Xs-Tj-qd4" firstAttribute="top" secondItem="1JJ-Rv-C61" secondAttribute="topMargin" constant="45" id="a59-IJ-KX4">
+                                                    <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                                </constraint>
                                                 <constraint firstItem="F91-AR-inf" firstAttribute="top" secondItem="1JJ-Rv-C61" secondAttribute="topMargin" constant="12" id="tk0-0H-LRu"/>
                                                 <constraint firstItem="5Xs-Tj-qd4" firstAttribute="centerX" secondItem="1JJ-Rv-C61" secondAttribute="centerX" id="xNH-HN-deN"/>
                                             </constraints>
